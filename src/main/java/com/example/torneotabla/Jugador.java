@@ -3,6 +3,7 @@ package com.example.torneotabla;
 public class Jugador {
     private int RangoInicial;
     private String FIDEID;
+    private String Nombre;
     private int ELO;
     private String Pais;
     private boolean CV;
@@ -10,9 +11,10 @@ public class Jugador {
     private int rangofinal;
     private String NomTorneo;
 
-    public Jugador(int rangoInicial, String FIDEID, int ELO, String pais, boolean CV, boolean hotel, int rangofinal, String nomTorneo) {
+    public Jugador(int rangoInicial, String FIDEID,String Nombre, int ELO, String pais, boolean CV, boolean hotel, int rangofinal, String nomTorneo) {
         this.RangoInicial = rangoInicial;
         this.FIDEID = FIDEID;
+        this.Nombre = Nombre;
         this.ELO = ELO;
         this.Pais = pais;
         this.CV = CV;
@@ -32,6 +34,13 @@ public class Jugador {
     public void setFIDEID(String FIDEID) {
         this.FIDEID = FIDEID;
     }
+    public String getNombre() {
+        return Nombre;
+    }
+    public void setNombre(String Nombre) {
+        this.Nombre = Nombre;
+    }
+
     public int getELO() {
         return ELO;
     }

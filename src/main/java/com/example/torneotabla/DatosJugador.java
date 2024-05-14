@@ -1,5 +1,8 @@
 package com.example.torneotabla;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
@@ -22,25 +25,7 @@ public class DatosJugador {
     }
 
     public static void main(String[] args) {
-        try{
-            sc=new Scanner(System.in);
-            int opcion;
-            do{
-                menu();
-                opcion=Integer.parseInt(sc.nextLine());
-                switch(opcion){
-                    case 1:
-                        AddJugador();
-                        break;
 
-
-                }
-
-
-            }while(opcion!=0);
-        }catch(SQLException e){
-            e.printStackTrace();
-        }
 
     }
 
@@ -50,13 +35,26 @@ public class DatosJugador {
         String password="root";
         return DriverManager.getConnection(url,user,password);
     }
-    public static void menu(){
-        System.out.println("Gestionar Jugadores");
-        System.out.println("-----------------");
-        System.out.println("1. Añadir Jugador");
-    }
-    private static void AddJugador() throws SQLException{
-        PreparedStatement ps= cnx.prepareStatement("INSERT INTO Jugador(RangoInicial)");
+
+    private static void TablaJugador(String Rangoinicial,String FIDEID,String nombre,int ELO,String Pais,boolean CV,boolean Hotel,int rangofinal,String nomtorneo) throws SQLException, IOException {
+        PreparedStatement ps = cnx.prepareStatement("INSERT INTO Jugador(RangoInicial,FIDEID,Nombre,ELO,Pais,CV,Hotel,rangofinal,NomTorneo) VALUES(?,?,?,?,?,?,?,?,?)");
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        ps.setString(1, Rangoinicial);
+        ps.setString(2, FIDEID);
+        ps.setString(3, nombre);
+        ps.setInt(4, ELO);
+        ps.setString(5, Pais);
+        ps.setBoolean(6, CV);
+        ps.setBoolean(7, Hotel);
+        ps.setInt(8, rangofinal);
+        ps.setString(9, nomtorneo);
+        ps.executeUpdate();
+        br.close();
+
+
+
+
+
 
 
 

@@ -15,24 +15,7 @@ public class DatosPremios {
         }
     }
     public static void main(String[] args) {
-        try{
-            sc = new Scanner(System.in);
-            int opcion;
-            do{
-                menu();
-                opcion =Integer.parseInt(sc.nextLine());
-                switch(opcion){
-                    case 1:
-                        MostrarPremio();
-                        break;
-                }
-            }while(opcion!=0);
 
-
-
-        }catch (SQLException e){
-            e.printStackTrace();
-        }
 
 
     }
@@ -41,11 +24,6 @@ public class DatosPremios {
         String user="root";
         String password="root";
         return DriverManager.getConnection(url,user,password);
-    }
-    public static void menu(){
-        System.out.println("Gestionar Premio");
-        System.out.println("----------------");
-        System.out.println("1.Mostrar datos");
     }
     private static void MostrarPremio() throws SQLException{
         try{
