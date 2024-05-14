@@ -1,0 +1,37 @@
+Index: src/main/java/com/example/torneotabla/DatosJugador.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.example.torneotabla;\n\nimport java.sql.Connection;\nimport java.sql.DriverManager;\nimport java.sql.PreparedStatement;\nimport java.sql.SQLException;\nimport java.util.Scanner;\n\npublic class DatosJugador {\n    static Connection cnx;\n    static Scanner sc;\n    static{\n        try{\n            cnx=getConexion();\n        }catch(SQLException e){\n            e.printStackTrace();\n        }\n\n\n\n\n    }\n\n    public static void main(String[] args) {\n        try{\n            sc=new Scanner(System.in);\n            int opcion;\n            do{\n                menu();\n                opcion=Integer.parseInt(sc.nextLine());\n                switch(opcion){\n                    case 1:\n                        AddJugador();\n                        break;\n\n\n                }\n\n\n            }while(opcion!=0);\n        }catch(SQLException e){\n            e.printStackTrace();\n        }\n\n    }\n\n    private static Connection getConexion() throws SQLException {\n        String url=\"jdbc:mysql://localhost:3306/torneo\";\n        String user=\"root\";\n        String password=\"root\";\n        return DriverManager.getConnection(url,user,password);\n    }\n    public static void menu(){\n        System.out.println(\"Gestionar Jugadores\");\n        System.out.println(\"-----------------\");\n        System.out.println(\"1. Añadir Jugador\");\n    }\n    private static void AddJugador() throws SQLException{\n        PreparedStatement ps= cnx.prepareStatement(\"INSERT INTO Jugador(RangoInicial)\");\n\n\n\n    }\n\n}\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/com/example/torneotabla/DatosJugador.java b/src/main/java/com/example/torneotabla/DatosJugador.java
+--- a/src/main/java/com/example/torneotabla/DatosJugador.java	(revision 6c4b3b8fd2cb4956d347307c869a710a9f676095)
++++ b/src/main/java/com/example/torneotabla/DatosJugador.java	(date 1715672687298)
+@@ -17,8 +17,6 @@
+         }
+ 
+ 
+-
+-
+     }
+ 
+     public static void main(String[] args) {
+@@ -35,8 +33,6 @@
+ 
+ 
+                 }
+-
+-
+             }while(opcion!=0);
+         }catch(SQLException e){
+             e.printStackTrace();
+@@ -45,7 +41,7 @@
+     }
+ 
+     private static Connection getConexion() throws SQLException {
+-        String url="jdbc:mysql://localhost:3306/torneo";
++        String url="jdbc:mariadb://localhost:3306/torneo";
+         String user="root";
+         String password="root";
+         return DriverManager.getConnection(url,user,password);

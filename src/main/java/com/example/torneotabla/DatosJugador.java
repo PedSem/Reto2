@@ -30,15 +30,14 @@ public class DatosJugador {
     }
 
     private static Connection getConexion() throws SQLException {
-        String url="jdbc:mysql://localhost:3306/torneo";
+        String url="jdbc:mariadb://localhost:3306/torneo";
         String user="root";
         String password="root";
         return DriverManager.getConnection(url,user,password);
     }
 
-    private static void TablaJugador(String Rangoinicial,String FIDEID,String nombre,int ELO,String Pais,boolean CV,boolean Hotel,int rangofinal,String nomtorneo) throws SQLException, IOException {
-        PreparedStatement ps = cnx.prepareStatement("INSERT INTO Jugador(RangoInicial,FIDEID,Nombre,ELO,Pais,CV,Hotel,rangofinal,NomTorneo) VALUES(?,?,?,?,?,?,?,?,?)");
-        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+    public static void TablaJugador(String Rangoinicial,String FIDEID,String nombre,int ELO,String Pais,boolean CV,boolean Hotel,int rangofinal,String nomtorneo) throws SQLException, IOException {
+        PreparedStatement ps = cnx.prepareStatement("INSERT INTO jugador(RangoInicial,FIDEID,Nombre,ELO,Pais,CV,Hotel,rangofinal,NomTorneo) VALUES(?,?,?,?,?,?,?,?,?)");
         ps.setString(1, Rangoinicial);
         ps.setString(2, FIDEID);
         ps.setString(3, nombre);
@@ -49,15 +48,7 @@ public class DatosJugador {
         ps.setInt(8, rangofinal);
         ps.setString(9, nomtorneo);
         ps.executeUpdate();
-        br.close();
-
-
-
-
-
-
-
-
+        ps.close();
     }
 
 }

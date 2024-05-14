@@ -3,6 +3,7 @@ package com.example.torneotabla;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
+import java.sql.SQLException;
 
 public class LecturaCSV {
     public static void main(String[] args){
@@ -13,8 +14,10 @@ public class LecturaCSV {
         while ((line = br.readLine()) != null){
             String[] data = line.split(";");
             if (cont >= 5) {
-                int rInicial = Integer.parseInt(data[0]);
-            int fideID = Integer.parseInt(data[6]);
+
+            String rInicial = data[0];
+            int elo = Integer.parseInt(data[4]);
+            String fideID = data[6];
             String nombre = data[2];
             String pais = data[3];
                 boolean cv = false;
@@ -33,10 +36,9 @@ public class LecturaCSV {
                      hotel = false;
                 }
 
-                int rFinal = 0;
-            String nomTorneo = "xd";
-
-                System.out.println(rInicial + "," + fideID + "," + nombre + "," + pais + "," + cv + "," + hotel + "," + rFinal + "," + nomTorneo);
+                int rFinal = cont;
+            String nomTorneo = "OPEN A";
+                DatosJugador.TablaJugador(rInicial,fideID,nombre,elo,pais,cv,hotel,rFinal,nomTorneo);
             cont++;
             }else cont++;
         }
@@ -44,6 +46,8 @@ public class LecturaCSV {
             e.printStackTrace();
         }catch (ArrayIndexOutOfBoundsException e){
             System.out.println("Se acabaron los jugadores");
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
         }
     }
 }
