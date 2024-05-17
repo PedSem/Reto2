@@ -13,5 +13,4 @@
 
     <Label fx:id="welcomeText" />
     <Button fx:id="btnOpenB" onAction="#abrirOpenB" prefHeight="78.0" prefWidth="150.0" text="Open B" />
-   <Button fx:id="listaAlojados" mnemonicParsing="false" onAction="#mostrarAlojados" prefHeight="38.0" prefWidth="194.0" text="Alojados" />
 </VBox>

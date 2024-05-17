@@ -7,11 +7,11 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="561.0" prefWidth="938.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.torneotabla.ControlOpenA">
    <children>
-      <Button layoutX="40.0" layoutY="356.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="186.0" text="Jugadores-Premios Optan" />
-      <Button fx:id="btnImportarDatos" layoutX="72.0" layoutY="55.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="123.0" text="Importar Datos" />
-      <Button layoutX="40.0" layoutY="457.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="186.0" text="Lista Final Ganadores" />
-      <Button layoutX="72.0" layoutY="102.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="123.0" text="Insertar Jugador" />
-      <Button layoutX="72.0" layoutY="149.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="123.0" text="Modificar Jugador" />
+      <Button layoutX="44.0" layoutY="336.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="186.0" text="Jugadores-Premios Optan" />
+      <Button fx:id="btnImportarDatos" layoutX="43.0" layoutY="60.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="186.0" text="Importación Jugadores" />
+      <Button layoutX="44.0" layoutY="379.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="186.0" text="Lista Final Ganadores" />
+      <Button layoutX="75.0" layoutY="109.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="123.0" text="Insertar Jugador" />
+      <Button layoutX="74.0" layoutY="154.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="123.0" text="Modificar Jugador" />
       <TableView fx:id="tablaRanking" layoutX="237.0" layoutY="21.0" prefHeight="506.0" prefWidth="678.0">
         <columns>
             <TableColumn prefWidth="75.0" text="RankingFinal" />
@@ -25,7 +25,7 @@
             <TableColumn prefWidth="75.0" text="Torneo" />
         </columns>
       </TableView>
-      <Button layoutX="40.0" layoutY="407.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="186.0" text="Importación Ganadores" />
-      <Button layoutX="71.0" layoutY="197.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="123.0" text="Eliminar Jugador" />
+      <Button layoutX="42.0" layoutY="247.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="186.0" text="Importación Ganadores" />
+      <Button layoutX="75.0" layoutY="196.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="123.0" text="Eliminar Jugador" />
    </children>
 </AnchorPane>

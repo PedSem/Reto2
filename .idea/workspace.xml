@@ -4,18 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="be0f0c1d-6403-44e9-9eed-91d92bd7b058" name="Changes" comment="añadidos archivos vista">
+    <list default="true" id="be0f0c1d-6403-44e9-9eed-91d92bd7b058" name="Changes" comment="arreglado archivos">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/torneotabla/BenidormChessMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/torneotabla/BenidormChessMain.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/torneotabla/ControlOpenA.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/torneotabla/ControlOpenA.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/torneotabla/ControladorMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/torneotabla/ControladorMenu.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/torneotabla/MenuView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/torneotabla/MenuView.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/torneotabla/OpenAView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/torneotabla/OpenAView.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/torneotabla/hello-view.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/torneotabla/HelloApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/torneotabla/HelloController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/torneotabla/LecturaCSV.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/torneotabla/LecturaCSV.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/torneotabla/hello-view.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/torneotabla/OpenBView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/torneotabla/OpenBView.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/torneotabla/OpenBView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/torneotabla/OpenBView.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -180,7 +175,15 @@
       <option name="project" value="LOCAL" />
       <updated>1715928684852</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="arreglado archivos">
+      <option name="closed" value="true" />
+      <created>1715929799471</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1715929799471</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -216,6 +219,7 @@
     <MESSAGE value="fxml" />
     <MESSAGE value="añadidos archivos vistaq" />
     <MESSAGE value="añadidos archivos vista" />
-    <option name="LAST_COMMIT_MESSAGE" value="añadidos archivos vista" />
+    <MESSAGE value="arreglado archivos" />
+    <option name="LAST_COMMIT_MESSAGE" value="arreglado archivos" />
   </component>
 </project>

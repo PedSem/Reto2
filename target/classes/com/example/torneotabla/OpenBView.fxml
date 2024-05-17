@@ -6,7 +6,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="561.0" prefWidth="938.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="561.0" prefWidth="938.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" >
    <children>
       <Button layoutX="40.0" layoutY="356.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="186.0" text="Jugadores-Premios Optan" />
       <Button layoutX="72.0" layoutY="55.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="123.0" text="Importar Datos" />
