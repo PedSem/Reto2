@@ -1,7 +1,82 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dataSource name="torneo@localhost">
   <database-model serializer="dbm" dbms="MARIADB" family-id="MARIADB" format-version="4.52">
-    <root id="1"/>
+    <root id="1">
+      <DefaultCasing>exact</DefaultCasing>
+      <DefaultEngine>InnoDB</DefaultEngine>
+      <Grants>|root||root|localhost|ALTER|G
+|root||root|localhost|ALTER ROUTINE|G
+|root||root|localhost|CREATE|G
+|root||root|localhost|CREATE ROUTINE|G
+|root||root|localhost|CREATE TABLESPACE|G
+|root||root|localhost|CREATE TEMPORARY TABLES|G
+|root||root|localhost|CREATE USER|G
+|root||root|localhost|CREATE VIEW|G
+|root||root|localhost|DELETE|G
+|root||root|localhost|DELETE HISTORY|G
+|root||root|localhost|DROP|G
+|root||root|localhost|EVENT|G
+|root||root|localhost|EXECUTE|G
+|root||root|localhost|FILE|G
+|root||root|localhost|INDEX|G
+|root||root|localhost|INSERT|G
+|root||root|localhost|LOCK TABLES|G
+|root||root|localhost|PROCESS|G
+|root||root|localhost|REFERENCES|G
+|root||root|localhost|RELOAD|G
+|root||root|localhost|REPLICATION CLIENT|G
+|root||root|localhost|REPLICATION SLAVE|G
+|root||root|localhost|SELECT|G
+|root||root|localhost|SHOW DATABASES|G
+|root||root|localhost|SHOW VIEW|G
+|root||root|localhost|SHUTDOWN|G
+|root||root|localhost|SUPER|G
+|root||root|localhost|TRIGGER|G
+|root||root|localhost|UPDATE|G
+|root||root|localhost|grant option|G
+jardineria|schema||jardineria_admin|localhost|ALTER|G
+jardineria|schema||jardineria_admin|localhost|ALTER ROUTINE|G
+jardineria|schema||jardineria_admin|localhost|CREATE|G
+jardineria|schema||jardineria_admin|localhost|CREATE ROUTINE|G
+jardineria|schema||jardineria_admin|localhost|CREATE TEMPORARY TABLES|G
+jardineria|schema||jardineria_admin|localhost|CREATE VIEW|G
+jardineria|schema||jardineria_admin|localhost|DELETE|G
+jardineria|schema||jardineria_admin|localhost|DELETE HISTORY|G
+jardineria|schema||jardineria_admin|localhost|DROP|G
+jardineria|schema||jardineria_admin|localhost|EVENT|G
+jardineria|schema||jardineria_admin|localhost|EXECUTE|G
+jardineria|schema||jardineria_admin|localhost|INDEX|G
+jardineria|schema||jardineria_admin|localhost|INSERT|G
+jardineria|schema||jardineria_admin|localhost|LOCK TABLES|G
+jardineria|schema||jardineria_admin|localhost|REFERENCES|G
+jardineria|schema||jardineria_admin|localhost|SELECT|G
+jardineria|schema||jardineria_jardinero2|local|SELECT|G
+jardineria|schema||jardineria_admin|localhost|SHOW VIEW|G
+jardineria|schema||jardineria_admin|localhost|TRIGGER|G
+jardineria|schema||jardineria_admin|localhost|UPDATE|G
+jardineria|schema||jardineria_jardinero2|local|UPDATE|G
+noticias|schema||noticias_Gestor|localhost|SELECT|G
+phpmyadmin|schema||phpmyadmin|localhost|ALTER|G
+phpmyadmin|schema||phpmyadmin|localhost|ALTER ROUTINE|G
+phpmyadmin|schema||phpmyadmin|localhost|CREATE|G
+phpmyadmin|schema||phpmyadmin|localhost|CREATE ROUTINE|G
+phpmyadmin|schema||phpmyadmin|localhost|CREATE TEMPORARY TABLES|G
+phpmyadmin|schema||phpmyadmin|localhost|CREATE VIEW|G
+phpmyadmin|schema||phpmyadmin|localhost|DELETE|G
+phpmyadmin|schema||phpmyadmin|localhost|DELETE HISTORY|G
+phpmyadmin|schema||phpmyadmin|localhost|DROP|G
+phpmyadmin|schema||phpmyadmin|localhost|EVENT|G
+phpmyadmin|schema||phpmyadmin|localhost|EXECUTE|G
+phpmyadmin|schema||phpmyadmin|localhost|INDEX|G
+phpmyadmin|schema||phpmyadmin|localhost|INSERT|G
+phpmyadmin|schema||phpmyadmin|localhost|LOCK TABLES|G
+phpmyadmin|schema||phpmyadmin|localhost|REFERENCES|G
+phpmyadmin|schema||phpmyadmin|localhost|SELECT|G
+phpmyadmin|schema||phpmyadmin|localhost|SHOW VIEW|G
+phpmyadmin|schema||phpmyadmin|localhost|TRIGGER|G
+phpmyadmin|schema||phpmyadmin|localhost|UPDATE|G</Grants>
+      <ServerVersion>10.3.38</ServerVersion>
+    </root>
     <collation id="2" parent="1" name="armscii8_bin">
       <Charset>armscii8</Charset>
     </collation>
