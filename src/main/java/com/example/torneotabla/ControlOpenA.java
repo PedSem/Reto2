@@ -2,6 +2,7 @@ package com.example.torneotabla;
 
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
@@ -79,7 +80,12 @@ public class ControlOpenA implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-
+        btnImportarDatos.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent actionEvent) {
+                LecturaCSV.introducirJugadores("OPEN A");
+            }
+        });
     }
 
 
