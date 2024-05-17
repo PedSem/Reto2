@@ -84,15 +84,14 @@ public class ControlOpenA implements Initializable {
     public void initialize(URL url, ResourceBundle rb) {
         ObservableList<Jugador> jugadores = getJugador();
         this.tablaRanking.setItems(jugadores);
-        this.RankingFinal.setCellValueFactory(new PropertyValueFactory<>("rankingFinal"));
-        this.RankingInicial.setCellValueFactory(new PropertyValueFactory<>("rankingInicial"));
-        this.fideid.setCellValueFactory(new PropertyValueFactory<>("fideid"));
+        this.RankingInicial.setCellValueFactory(new PropertyValueFactory<>("RangoInicial"));
+        this.fideid.setCellValueFactory(new PropertyValueFactory<>("FIDEID"));
         this.nombre.setCellValueFactory(new PropertyValueFactory<>("nombre"));
-        this.elo.setCellValueFactory(new PropertyValueFactory<>("elo"));
-        this.pais.setCellValueFactory(new PropertyValueFactory<>("pais"));
-        this.cv.setCellValueFactory(new PropertyValueFactory<>("cv"));
-        this.hotel.setCellValueFactory(new PropertyValueFactory<>("hotel"));
-        this.torneo.setCellValueFactory(new PropertyValueFactory<>("torneo"));
+        this.elo.setCellValueFactory(new PropertyValueFactory<>("ELO"));
+        this.pais.setCellValueFactory(new PropertyValueFactory<>("Pais"));
+        this.cv.setCellValueFactory(new PropertyValueFactory<>("CV"));
+        this.hotel.setCellValueFactory(new PropertyValueFactory<>("Hotel"));
+        this.torneo.setCellValueFactory(new PropertyValueFactory<>("NomTorneo"));
 
 
         btnImportarDatos.setOnAction(new EventHandler<ActionEvent>() {
