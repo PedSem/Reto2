@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="be0f0c1d-6403-44e9-9eed-91d92bd7b058" name="Changes" comment="Insertar jugadores OPEN A">
-      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+    <list default="true" id="be0f0c1d-6403-44e9-9eed-91d92bd7b058" name="Changes" comment=" LecturaCSV">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/torneotabla/BenidormChessMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/torneotabla/BenidormChessMain.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/torneotabla/ControlOpenA.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/torneotabla/ControlOpenA.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/torneotabla/LecturaCSV.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/torneotabla/LecturaCSV.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/torneotabla/ControlOpenA$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/torneotabla/ControlOpenA$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/example/torneotabla/ControlOpenA.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/torneotabla/ControlOpenA.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -263,7 +263,23 @@
       <option name="project" value="LOCAL" />
       <updated>1715942726152</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary=" LecturaCSV">
+      <option name="closed" value="true" />
+      <created>1715943518535</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1715943518535</updated>
+    </task>
+    <task id="LOCAL-00015" summary=" LecturaCSV">
+      <option name="closed" value="true" />
+      <created>1715943532142</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1715943532142</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -305,6 +321,7 @@
     <MESSAGE value="Agregado Boton Insertar en OpenA" />
     <MESSAGE value="Agregado: &#10;Boton Insertar en OpenB&#10;Boton Modificar en OpenA&#10;Boton Modificar en OpenB" />
     <MESSAGE value="Insertar jugadores OPEN A" />
-    <option name="LAST_COMMIT_MESSAGE" value="Insertar jugadores OPEN A" />
+    <MESSAGE value=" LecturaCSV" />
+    <option name="LAST_COMMIT_MESSAGE" value=" LecturaCSV" />
   </component>
 </project>

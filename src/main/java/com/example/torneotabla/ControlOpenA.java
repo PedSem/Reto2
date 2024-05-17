@@ -13,6 +13,7 @@ import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
+import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 
@@ -50,31 +51,31 @@ public class ControlOpenA implements Initializable {
     private TableView<Jugador> tablaRanking;
 
     @FXML
-    private TableColumn RankingFinal;
+    private TableColumn<Jugador,Integer> RankingFinal;
 
     @FXML
-    private TableColumn RankingInicial;
+    private TableColumn<Jugador,Integer> RankingInicial;
 
     @FXML
-    private TableColumn fideid;
+    private TableColumn<Jugador,String> fideid;
 
     @FXML
-    private TableColumn nombre;
+    private TableColumn<Jugador,String>  nombre;
 
     @FXML
-    private TableColumn elo;
+    private TableColumn<Jugador,Integer> elo;
 
     @FXML
-    private TableColumn pais;
+    private TableColumn<Jugador,String>  pais;
 
     @FXML
-    private TableColumn cv;
+    private TableColumn<Jugador,Boolean>  cv;
 
     @FXML
-    private TableColumn hotel;
+    private TableColumn<Jugador,Boolean>  hotel;
 
     @FXML
-    private TableColumn torneo;
+    private TableColumn<Jugador,String>  torneo;
 
     @FXML
     private ObservableList<Jugador> listaJugadores;
@@ -82,7 +83,17 @@ public class ControlOpenA implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         ObservableList<Jugador> jugadores = getJugador();
-        tablaRanking.setItems(jugadores);
+        this.tablaRanking.setItems(jugadores);
+        this.RankingFinal.setCellValueFactory(new PropertyValueFactory<>("rankingFinal"));
+        this.RankingInicial.setCellValueFactory(new PropertyValueFactory<>("rankingInicial"));
+        this.fideid.setCellValueFactory(new PropertyValueFactory<>("fideid"));
+        this.nombre.setCellValueFactory(new PropertyValueFactory<>("nombre"));
+        this.elo.setCellValueFactory(new PropertyValueFactory<>("elo"));
+        this.pais.setCellValueFactory(new PropertyValueFactory<>("pais"));
+        this.cv.setCellValueFactory(new PropertyValueFactory<>("cv"));
+        this.hotel.setCellValueFactory(new PropertyValueFactory<>("hotel"));
+        this.torneo.setCellValueFactory(new PropertyValueFactory<>("torneo"));
+
 
         btnImportarDatos.setOnAction(new EventHandler<ActionEvent>() {
             @Override
