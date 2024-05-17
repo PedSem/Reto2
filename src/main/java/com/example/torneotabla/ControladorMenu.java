@@ -77,7 +77,7 @@ public class ControladorMenu implements Initializable {
             Parent root = loader.load();
 
             // Obtengo el controlador
-            ControlOpenA controlador = loader.getController();
+            ControlOpenB controlador = loader.getController();
 
             // Creo la scene y el stage
             Scene scene = new Scene(root);
