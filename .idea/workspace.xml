@@ -4,18 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="be0f0c1d-6403-44e9-9eed-91d92bd7b058" name="Changes" comment="2">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/torneotabla/ControlInsertarOpenA.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/a1117222-0223-4b82-a455-afc03450de1c.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/a1117222-0223-4b82-a455-afc03450de1c.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/a1117222-0223-4b82-a455-afc03450de1c/storage_v2/_src_/schema/torneo.4dRDzA.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/a1117222-0223-4b82-a455-afc03450de1c/storage_v2/_src_/schema/torneo.4dRDzA.zip" beforeDir="false" />
+    <list default="true" id="be0f0c1d-6403-44e9-9eed-91d92bd7b058" name="Changes" comment="Agregado Boton Insertar en OpenA">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/torneotabla/ControlInsertarOpenB.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/torneotabla/ControlModificarOpenA.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/torneotabla/ControlModificarOpenB.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/torneotabla/btnInsertarJugadorB.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/torneotabla/btnModificarJugadorA.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/torneotabla/btnModificarJugadorB.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/torneotabla/ControlOpenA.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/torneotabla/ControlOpenA.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/torneotabla/ControlOpenB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/torneotabla/ControlOpenB.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/torneotabla/OpenAView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/torneotabla/OpenAView.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/torneotabla/ControlOpenA.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/torneotabla/ControlOpenA.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/torneotabla/OpenAView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/torneotabla/OpenAView.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/torneotabla/OpenBView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/torneotabla/OpenBView.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +74,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/IntelliJ/IdeaProjects/Reto2",
+    "last_opened_file_path": "D:/IntelliJ/IdeaProjects/Reto2/src/main/resources/com/example/torneotabla",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -96,6 +96,9 @@
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.example.torneotabla" />
     </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\IntelliJ\IdeaProjects\Reto2\src\main\resources\com\example\torneotabla" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\IntelliJ\IdeaProjects\Reto2\src\main\resources\com\example\torneotabla" />
     </key>
@@ -103,6 +106,7 @@
       <recent name="com.example.torneotabla" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.example.torneotabla" />
       <recent name="com.example.torneotabla.ControlesOpenA" />
     </key>
   </component>
@@ -159,7 +163,7 @@
       <workItem from="1715670602437" duration="7000" />
       <workItem from="1715672135347" duration="342000" />
       <workItem from="1715672613424" duration="3822000" />
-      <workItem from="1715933551208" duration="2606000" />
+      <workItem from="1715933551208" duration="4634000" />
     </task>
     <task id="LOCAL-00001" summary="clase lecturacsv">
       <option name="closed" value="true" />
@@ -241,7 +245,15 @@
       <option name="project" value="LOCAL" />
       <updated>1715932102018</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Agregado Boton Insertar en OpenA">
+      <option name="closed" value="true" />
+      <created>1715939852309</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1715939852309</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -280,6 +292,7 @@
     <MESSAGE value="sarrentsaezt" />
     <MESSAGE value="1" />
     <MESSAGE value="2" />
-    <option name="LAST_COMMIT_MESSAGE" value="2" />
+    <MESSAGE value="Agregado Boton Insertar en OpenA" />
+    <option name="LAST_COMMIT_MESSAGE" value="Agregado Boton Insertar en OpenA" />
   </component>
 </project>
