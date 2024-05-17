@@ -4,10 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="be0f0c1d-6403-44e9-9eed-91d92bd7b058" name="Changes" comment="Commit OpenAView">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/a1117222-0223-4b82-a455-afc03450de1c.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/a1117222-0223-4b82-a455-afc03450de1c.xml" afterDir="false" />
+    <list default="true" id="be0f0c1d-6403-44e9-9eed-91d92bd7b058" name="Changes" comment=" AAAAAAAAAAAAAAAAAAAA">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/torneotabla/ControlOpenA.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/torneotabla/ControlOpenA.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/torneotabla/OpenAView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/torneotabla/OpenAView.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/torneotabla/BenidormChessMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/torneotabla/BenidormChessMain.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/torneotabla/ControlOpenA$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/torneotabla/ControlOpenA$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/torneotabla/ControlOpenA.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/torneotabla/ControlOpenA.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/torneotabla/OpenAView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/torneotabla/OpenAView.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,12 +40,12 @@
     &quot;assignee&quot;: &quot;Personita123&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/PedSem/Reto2.git&quot;,
-    &quot;accountId&quot;: &quot;c7e0519d-e1af-4792-a139-04505c2cdfde&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/PedSem/Reto2.git",
+    "accountId": "c7e0519d-e1af-4792-a139-04505c2cdfde"
   }
-}</component>
+}]]></component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
   </component>
@@ -261,15 +265,31 @@
       <option name="project" value="LOCAL" />
       <updated>1715942726152</updated>
     </task>
-    <task id="LOCAL-00014" summary="Commit OpenAView">
+    <task id="LOCAL-00014" summary=" LecturaCSV">
       <option name="closed" value="true" />
-      <created>1715944233784</created>
+      <created>1715943518535</created>
       <option name="number" value="00014" />
       <option name="presentableId" value="LOCAL-00014" />
       <option name="project" value="LOCAL" />
-      <updated>1715944233784</updated>
+      <updated>1715943518535</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary=" LecturaCSV">
+      <option name="closed" value="true" />
+      <created>1715943532142</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1715943532142</updated>
+    </task>
+    <task id="LOCAL-00016" summary=" AAAAAAAAAAAAAAAAAAAA">
+      <option name="closed" value="true" />
+      <created>1715944286168</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1715944286168</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -311,8 +331,8 @@
     <MESSAGE value="Agregado Boton Insertar en OpenA" />
     <MESSAGE value="Agregado: &#10;Boton Insertar en OpenB&#10;Boton Modificar en OpenA&#10;Boton Modificar en OpenB" />
     <MESSAGE value="Insertar jugadores OPEN A" />
-    <MESSAGE value="Commit" />
-    <MESSAGE value="Commit OpenAView" />
-    <option name="LAST_COMMIT_MESSAGE" value="Commit OpenAView" />
+    <MESSAGE value=" LecturaCSV" />
+    <MESSAGE value=" AAAAAAAAAAAAAAAAAAAA" />
+    <option name="LAST_COMMIT_MESSAGE" value=" AAAAAAAAAAAAAAAAAAAA" />
   </component>
 </project>

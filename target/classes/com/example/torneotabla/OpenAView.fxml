@@ -14,15 +14,15 @@
       <Button fx:id="btnModificarJugador" layoutX="74.0" layoutY="154.0" mnemonicParsing="false" onAction="#modificarJugador" prefHeight="34.0" prefWidth="123.0" text="Modificar Jugador" />
       <TableView fx:id="tablaRanking" layoutX="237.0" layoutY="21.0" prefHeight="506.0" prefWidth="678.0">
         <columns>
-            <TableColumn prefWidth="75.0" text="RankingFinal" />
-          <TableColumn prefWidth="75.0" text="Ranking Inicial" />
-          <TableColumn prefWidth="75.0" text="FIDEID" />
-            <TableColumn prefWidth="75.0" text="Nombre" />
-            <TableColumn prefWidth="75.0" text="ELO" />
-            <TableColumn prefWidth="75.0" text="Pais" />
-            <TableColumn prefWidth="75.0" text="CV" />
-            <TableColumn prefWidth="75.0" text="Hotel" />
-            <TableColumn prefWidth="75.0" text="Torneo" />
+            <TableColumn fx:id="RankingFinal" prefWidth="75.0" text="RankingFinal" />
+          <TableColumn fx:id="RankingInicial" prefWidth="75.0" text="RankingInicial" />
+          <TableColumn fx:id="fideid" prefWidth="75.0" text="FIDEID" />
+            <TableColumn fx:id="nombre" prefWidth="75.0" text="Nombre" />
+            <TableColumn fx:id="elo" prefWidth="75.0" text="ELO" />
+            <TableColumn fx:id="pais" prefWidth="75.0" text="Pais" />
+            <TableColumn fx:id="cv" prefWidth="75.0" text="CV" />
+            <TableColumn fx:id="hotel" prefWidth="75.0" text="Hotel" />
+            <TableColumn fx:id="torneo" prefWidth="75.0" text="Torneo" />
         </columns>
       </TableView>
       <Button fx:id="btnImportarGanadores" layoutX="42.0" layoutY="247.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="186.0" text="Importación Ganadores" />

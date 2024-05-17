@@ -15,7 +15,7 @@
       <TableView fx:id="tablaRanking" layoutX="237.0" layoutY="21.0" prefHeight="506.0" prefWidth="678.0">
         <columns>
             <TableColumn fx:id="RankingFinal" prefWidth="75.0" text="RankingFinal" />
-          <TableColumn fx:id="RankingInicial" prefWidth="75.0" text="Ranking Inicial" />
+          <TableColumn fx:id="RankingInicial" prefWidth="75.0" text="RankingInicial" />
           <TableColumn fx:id="fideid" prefWidth="75.0" text="FIDEID" />
             <TableColumn fx:id="nombre" prefWidth="75.0" text="Nombre" />
             <TableColumn fx:id="elo" prefWidth="75.0" text="ELO" />
