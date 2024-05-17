@@ -93,13 +93,27 @@ public class ControlOpenA implements Initializable {
         this.hotel.setCellValueFactory(new PropertyValueFactory<>("Hotel"));
         this.torneo.setCellValueFactory(new PropertyValueFactory<>("NomTorneo"));
 
-
         btnImportarDatos.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent actionEvent) {
                 LecturaCSV.introducirJugadores("OPEN A");
+                cargar();
             }
         });
+    }
+
+    public void cargar(){
+        ObservableList<Jugador> jugadores = getJugador();
+        this.tablaRanking.setItems(jugadores);
+        this.RankingInicial.setCellValueFactory(new PropertyValueFactory<>("RangoInicial"));
+        this.fideid.setCellValueFactory(new PropertyValueFactory<>("FIDEID"));
+        this.nombre.setCellValueFactory(new PropertyValueFactory<>("nombre"));
+        this.elo.setCellValueFactory(new PropertyValueFactory<>("ELO"));
+        this.pais.setCellValueFactory(new PropertyValueFactory<>("Pais"));
+        this.cv.setCellValueFactory(new PropertyValueFactory<>("CV"));
+        this.hotel.setCellValueFactory(new PropertyValueFactory<>("Hotel"));
+        this.torneo.setCellValueFactory(new PropertyValueFactory<>("NomTorneo"));
+
     }
 
     public ObservableList<Jugador> getJugador(){
