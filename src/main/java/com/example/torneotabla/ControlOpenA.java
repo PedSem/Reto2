@@ -1,21 +1,20 @@
 package com.example.torneotabla;
 
-import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
-import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.stage.Modality;
 import javafx.stage.Stage;
 
 import java.io.IOException;
 import java.net.URL;
-import java.sql.PreparedStatement;
 import java.util.ResourceBundle;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -80,6 +79,46 @@ public class ControlOpenA implements Initializable {
     public void initialize(URL url, ResourceBundle rb) {
 
     }
+
+
+    @FXML
+    private void insertarJugador(javafx.event.ActionEvent actionEvent) {
+
+        try {
+
+            // Cargo la vista
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("btnInsertarJugadorA.fxml"));
+
+            // Cargo la ventana
+            Parent root = loader.load();
+
+            // Asigno el controlador
+            ControlInsertarOpenA controlador = loader.getController();
+
+            // Creo el Scene
+            Scene scene = new Scene(root);
+            Stage stage = new Stage();
+
+            stage.initModality(Modality.APPLICATION_MODAL);
+            stage.setScene(scene);
+            stage.setTitle("Insertar Nuevo Jugador");
+            stage.showAndWait();
+
+        } catch (IOException e) {
+            Alert alert = new Alert(Alert.AlertType.ERROR);
+            alert.setHeaderText(null);
+            alert.setTitle("Error");
+            alert.setContentText(e.getMessage());
+            alert.showAndWait();
+        }
+
+    }
+
+
+
+
+
+
 
    public void closeWindows() {
 
