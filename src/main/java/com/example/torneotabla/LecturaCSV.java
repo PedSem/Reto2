@@ -1,6 +1,9 @@
 package com.example.torneotabla;
 
+import javafx.stage.FileChooser;
+
 import java.io.BufferedReader;
+import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 import java.sql.SQLException;
@@ -10,8 +13,10 @@ public class LecturaCSV {
     }
     public static void introducirJugadores(String torneo){
         try {
+            FileChooser d = new FileChooser();
+            File file = d.showOpenDialog(null);
             String line;
-            BufferedReader br = new BufferedReader(new FileReader("/home/ALU1J/Documentos/data.csv")); //Esto se cambia por el seleccionador
+            BufferedReader br = new BufferedReader(new FileReader(file)); //Esto se cambia por el seleccionador
             int cont = 0;
             while ((line = br.readLine()) != null){
                 String[] data = line.split(";");
@@ -48,6 +53,8 @@ public class LecturaCSV {
             System.out.println("Se acabaron los jugadores");
         } catch (SQLException e) {
             System.out.println("Ya están los usuarios en la base de datos");
+        } catch (NullPointerException e){
+            System.out.println("Ningun archivo seleccionado");
         }
     }
 }

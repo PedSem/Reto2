@@ -4,12 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="be0f0c1d-6403-44e9-9eed-91d92bd7b058" name="Changes" comment="Agregado: &#10;Boton Insertar en OpenB&#10;Boton Modificar en OpenA&#10;Boton Modificar en OpenB">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/a1117222-0223-4b82-a455-afc03450de1c.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/a1117222-0223-4b82-a455-afc03450de1c.xml" afterDir="false" />
+    <list default="true" id="be0f0c1d-6403-44e9-9eed-91d92bd7b058" name="Changes" comment="Insertar jugadores OPEN A">
+      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/torneotabla/ControlOpenA.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/torneotabla/ControlOpenA.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/torneotabla/btnInsertarJugadorA.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/torneotabla/btnInsertarJugadorA.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/torneotabla/LecturaCSV.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/torneotabla/LecturaCSV.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/torneotabla/ControlOpenA.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/torneotabla/ControlOpenA.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -255,7 +255,15 @@
       <option name="project" value="LOCAL" />
       <updated>1715941718155</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Insertar jugadores OPEN A">
+      <option name="closed" value="true" />
+      <created>1715942726152</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1715942726152</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -296,6 +304,7 @@
     <MESSAGE value="2" />
     <MESSAGE value="Agregado Boton Insertar en OpenA" />
     <MESSAGE value="Agregado: &#10;Boton Insertar en OpenB&#10;Boton Modificar en OpenA&#10;Boton Modificar en OpenB" />
-    <option name="LAST_COMMIT_MESSAGE" value="Agregado: &#10;Boton Insertar en OpenB&#10;Boton Modificar en OpenA&#10;Boton Modificar en OpenB" />
+    <MESSAGE value="Insertar jugadores OPEN A" />
+    <option name="LAST_COMMIT_MESSAGE" value="Insertar jugadores OPEN A" />
   </component>
 </project>
