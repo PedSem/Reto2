@@ -1,4 +1,4 @@
-package org.example.reto2benidormchess;
+package com.example.torneotabla;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;

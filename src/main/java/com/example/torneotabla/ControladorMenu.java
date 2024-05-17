@@ -1,4 +1,4 @@
-package org.example.reto2benidormchess;
+package com.example.torneotabla;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -107,5 +107,6 @@ public class ControladorMenu implements Initializable {
 
 
     }
+
 
 }
