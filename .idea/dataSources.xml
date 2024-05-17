@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="torneo@localhost" uuid="a1117222-0223-4b82-a455-afc03450de1c">
+    <data-source source="LOCAL" name="torneo@localhost" uuid="a7f6eb73-9f38-4a6e-8e54-8338a9f309af">
       <driver-ref>mariadb</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>org.mariadb.jdbc.Driver</jdbc-driver>

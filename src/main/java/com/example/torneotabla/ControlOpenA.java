@@ -77,8 +77,6 @@ public class ControlOpenA implements Initializable {
     @FXML
     private TableColumn<Jugador,String>  torneo;
 
-    @FXML
-    private ObservableList<Jugador> listaJugadores;
 
     @Override
     public void initialize(URL url, ResourceBundle rb) {
@@ -122,7 +120,7 @@ public class ControlOpenA implements Initializable {
         try {
             cnx = getConexion();
             Statement stm = cnx.createStatement();
-            ResultSet rs = stm.executeQuery("SELECT * FROM jugador");
+            ResultSet rs = stm.executeQuery("SELECT * FROM jugador where NomTorneo = 'OPEN A'");
 
             while (rs.next()) {
                 int rinicial = rs.getInt("RangoInicial");

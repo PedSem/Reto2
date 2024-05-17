@@ -1,7 +1,9 @@
 package com.example.torneotabla;
 
+import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
@@ -11,11 +13,13 @@ import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
+import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 
 import java.io.IOException;
 import java.net.URL;
+import java.sql.*;
 import java.util.ResourceBundle;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -47,41 +51,69 @@ public class ControlOpenB implements Initializable {
     private TableView<Jugador> tablaRanking;
 
     @FXML
-    private TableColumn RankingFinal;
+    private TableColumn<Jugador,Integer> RankingFinal;
 
     @FXML
-    private TableColumn RankingInicial;
+    private TableColumn<Jugador,Integer> RankingInicial;
 
     @FXML
-    private TableColumn fideid;
+    private TableColumn<Jugador,String> fideid;
 
     @FXML
-    private TableColumn nombre;
+    private TableColumn<Jugador,String>  nombre;
 
     @FXML
-    private TableColumn elo;
+    private TableColumn<Jugador,Integer> elo;
 
     @FXML
-    private TableColumn pais;
+    private TableColumn<Jugador,String>  pais;
 
     @FXML
-    private TableColumn cv;
+    private TableColumn<Jugador,Boolean>  cv;
 
     @FXML
-    private TableColumn hotel;
+    private TableColumn<Jugador,Boolean>  hotel;
 
     @FXML
-    private TableColumn torneo;
+    private TableColumn<Jugador,String>  torneo;
 
-    @FXML
-    private ObservableList<Jugador> listaJugadores;
 
     @Override
     public void initialize(URL url, ResourceBundle rb) {
+        ObservableList<Jugador> jugadores = getJugador();
+        this.tablaRanking.setItems(jugadores);
+        this.RankingInicial.setCellValueFactory(new PropertyValueFactory<>("RangoInicial"));
+        this.fideid.setCellValueFactory(new PropertyValueFactory<>("FIDEID"));
+        this.nombre.setCellValueFactory(new PropertyValueFactory<>("nombre"));
+        this.elo.setCellValueFactory(new PropertyValueFactory<>("ELO"));
+        this.pais.setCellValueFactory(new PropertyValueFactory<>("Pais"));
+        this.cv.setCellValueFactory(new PropertyValueFactory<>("CV"));
+        this.hotel.setCellValueFactory(new PropertyValueFactory<>("Hotel"));
+        this.torneo.setCellValueFactory(new PropertyValueFactory<>("NomTorneo"));
 
+        btnImportarDatosB.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent actionEvent) {
+                LecturaCSV.introducirJugadores("OPEN B");
+                cargar();
+            }
+        });
 
     }
 
+    public void cargar(){
+        ObservableList<Jugador> jugadores = getJugador();
+        this.tablaRanking.setItems(jugadores);
+        this.RankingInicial.setCellValueFactory(new PropertyValueFactory<>("RangoInicial"));
+        this.fideid.setCellValueFactory(new PropertyValueFactory<>("FIDEID"));
+        this.nombre.setCellValueFactory(new PropertyValueFactory<>("nombre"));
+        this.elo.setCellValueFactory(new PropertyValueFactory<>("ELO"));
+        this.pais.setCellValueFactory(new PropertyValueFactory<>("Pais"));
+        this.cv.setCellValueFactory(new PropertyValueFactory<>("CV"));
+        this.hotel.setCellValueFactory(new PropertyValueFactory<>("Hotel"));
+        this.torneo.setCellValueFactory(new PropertyValueFactory<>("NomTorneo"));
+
+    }
 
     @FXML
     private void insertarJugador(javafx.event.ActionEvent actionEvent) {
@@ -115,7 +147,40 @@ public class ControlOpenB implements Initializable {
         }
 
     }
+    public ObservableList<Jugador> getJugador(){
+        ObservableList<Jugador> obs = FXCollections.observableArrayList();
+        Connection cnx;
+        try {
+            cnx = getConexion();
+            Statement stm = cnx.createStatement();
+            ResultSet rs = stm.executeQuery("SELECT * FROM jugador where NomTorneo = 'OPEN B'");
 
+            while (rs.next()) {
+                int rinicial = rs.getInt("RangoInicial");
+                String fideid = rs.getString("FIDEID");
+                String nom = rs.getString("Nombre");
+                int elo = rs.getInt("ELO");
+                String pais = rs.getString("Pais");
+                boolean cv = rs.getBoolean("CV");
+                boolean hot = rs.getBoolean("Hotel");
+                int rfinal = rs.getInt("RangoFinal");
+                String nomtorneo = rs.getString("NomTorneo");
+
+                Jugador j = new Jugador(rinicial,fideid,nom,elo,pais,cv,hot,rfinal,nomtorneo);
+                obs.add(j);
+            }
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+        return obs;
+    }
+
+    private static Connection getConexion() throws SQLException {
+        String url="jdbc:mysql://localhost:3306/torneo";
+        String user="root";
+        String password="root";
+        return DriverManager.getConnection(url,user,password);
+    }
 
     @FXML
     void modificarJugador(ActionEvent event) {
