@@ -30,7 +30,7 @@ public class DatosJugador {
     }
 
     private static Connection getConexion() throws SQLException {
-        String url="jdbc:mariadb://localhost:3306/torneo";
+        String url="jdbc:mysql://localhost:3306/torneo";
         String user="root";
         String password="root";
         return DriverManager.getConnection(url,user,password);
