@@ -1,7 +1,9 @@
 package com.example.torneotabla;
 
+import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
@@ -16,7 +18,7 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 import java.net.URL;
-import java.util.Iterator;
+import java.sql.*;
 import java.util.ResourceBundle;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -79,9 +81,51 @@ public class ControlOpenA implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle rb) {
+        ObservableList<Jugador> jugadores = getJugador();
+        tablaRanking.setItems(jugadores);
 
+        btnImportarDatos.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent actionEvent) {
+                LecturaCSV.introducirJugadores("OPEN A");
+            }
+        });
     }
 
+    public ObservableList<Jugador> getJugador(){
+        ObservableList<Jugador> obs = FXCollections.observableArrayList();
+        Connection cnx;
+        try {
+            cnx = getConexion();
+            Statement stm = cnx.createStatement();
+            ResultSet rs = stm.executeQuery("SELECT * FROM jugador");
+
+            while (rs.next()) {
+                int rinicial = rs.getInt("RangoInicial");
+                String fideid = rs.getString("FIDEID");
+                String nom = rs.getString("Nombre");
+                int elo = rs.getInt("ELO");
+                String pais = rs.getString("Pais");
+                boolean cv = rs.getBoolean("CV");
+                boolean hot = rs.getBoolean("Hotel");
+                int rfinal = rs.getInt("RangoFinal");
+                String nomtorneo = rs.getString("NomTorneo");
+
+                Jugador j = new Jugador(rinicial,fideid,nom,elo,pais,cv,hot,rfinal,nomtorneo);
+                obs.add(j);
+            }
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+        return obs;
+    }
+
+    private static Connection getConexion() throws SQLException {
+        String url="jdbc:mysql://localhost:3306/torneo";
+        String user="root";
+        String password="root";
+        return DriverManager.getConnection(url,user,password);
+    }
 
     @FXML
     private void insertarJugador(javafx.event.ActionEvent actionEvent) {
