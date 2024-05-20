@@ -145,7 +145,7 @@ public class ControlOpenA implements Initializable {
     private static Connection getConexion() throws SQLException {
         String url="jdbc:mysql://localhost:3306/torneo";
         String user="root";
-        String password="root";
+        String password="Debian";
         return DriverManager.getConnection(url,user,password);
     }
 
