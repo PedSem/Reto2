@@ -1,5 +1,7 @@
 package com.example.torneotabla;
 
+import javafx.scene.control.TextField;
+
 public class Jugador {
     private int RangoInicial;
     private String FIDEID;
@@ -22,6 +24,11 @@ public class Jugador {
         this.rangofinal = rangofinal;
         this.NomTorneo = nomTorneo;
     }
+
+
+    public Jugador(String nombre, String fIDEID, String pais, Boolean cv, Boolean hotel) {
+    }
+
     public int getRangoInicial() {
         return RangoInicial;
     }
