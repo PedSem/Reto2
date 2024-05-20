@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="561.0" prefWidth="775.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.torneotabla.ControlJugadorOptaPremioOpenA">
+   <children>
+      <TableView fx:id="tablaRanking" layoutX="52.0" layoutY="27.0" prefHeight="506.0" prefWidth="678.0">
+        <columns>
+          <TableColumn fx:id="RankingInicial" prefWidth="141.59997177124023" text="RankingInicial" />
+            <TableColumn fx:id="nombre" prefWidth="172.80003356933594" text="Nombre" />
+            <TableColumn fx:id="categoria" prefWidth="154.39996337890625" text="Categoría" />
+            <TableColumn fx:id="torneo" prefWidth="210.39990234375" text="Torneo" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

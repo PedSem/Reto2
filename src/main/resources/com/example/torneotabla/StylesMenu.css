@@ -5,7 +5,18 @@
 
 .button{
     -fx-background-color: white;
-    -fx-colortext: black;
+    -fx-text-fill: black;
     -fx-font-weight: bold;
     -fx-font-size: larger;
+    -fx-border-radius: 5px;
+}
+
+.button:hover{
+    -fx-background-color: black;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: larger;
+    -fx-border-color: white;
+    -fx-border-width: 3px;
+    -fx-border-radius: 5px;
 }

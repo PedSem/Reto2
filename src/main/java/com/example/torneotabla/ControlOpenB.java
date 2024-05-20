@@ -217,7 +217,38 @@ public class ControlOpenB implements Initializable {
 
 
 
+    @FXML
+    private void jugadorOpaPremio(javafx.event.ActionEvent actionEvent) {
 
+        try {
+
+            // Cargo la vista
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("JugadorOptaPremioOpenB.fxml"));
+
+            // Cargo la ventana
+            Parent root = loader.load();
+
+            // Asigno el controlador
+            ControlJugadorOptaPremioOpenB controlador = loader.getController();
+
+            // Creo el Scene
+            Scene scene = new Scene(root);
+            Stage stage = new Stage();
+
+            stage.initModality(Modality.APPLICATION_MODAL);
+            stage.setScene(scene);
+            stage.setTitle("Lista de jugadores y premios a los que optan");
+            stage.showAndWait();
+
+        } catch (IOException e) {
+            Alert alert = new Alert(Alert.AlertType.ERROR);
+            alert.setHeaderText(null);
+            alert.setTitle("Error");
+            alert.setContentText(e.getMessage());
+            alert.showAndWait();
+        }
+
+    }
 
 
 
