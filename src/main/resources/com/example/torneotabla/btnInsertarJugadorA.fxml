@@ -20,8 +20,8 @@
       <TextField fx:id="txtELO" layoutX="218.0" layoutY="124.0" />
       <Label layoutX="37.0" layoutY="166.0" text="País" />
       <TextField fx:id="txtNombre" layoutX="218.0" layoutY="55.0" prefHeight="25.0" prefWidth="149.0" />
-      <Label layoutX="208.0" layoutY="174.0" text="Comunidad Valenciana" />
-      <Label layoutX="225.0" layoutY="209.0" prefHeight="17.0" prefWidth="122.0" text="Alojado en el Hotel" />
+      <Label layoutX="198.0" layoutY="174.0" text="Comunidad Valenciana" />
+      <Label layoutX="218.0" layoutY="209.0" prefHeight="17.0" prefWidth="122.0" text="Alojado en el Hotel" />
       <CheckBox fx:id="cbCV" layoutX="346.0" layoutY="174.0" mnemonicParsing="false" />
       <CheckBox fx:id="cbHotel" layoutX="346.0" layoutY="209.0" mnemonicParsing="false" />
    </children>
