@@ -42,7 +42,7 @@ public class LecturaCSV {
                         cv = false;
                         hotel = false;
                     }
-                    int rFinal = cont;
+                    int rFinal = 1;
                     DatosJugador.TablaJugador(rInicial,fideID,nombre,elo,pais,cv,hotel,rFinal,torneo);
                     cont++;
                 }else cont++;
