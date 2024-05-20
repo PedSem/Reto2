@@ -147,7 +147,7 @@ public class ControlOpenA implements Initializable {
     private static Connection getConexion() throws SQLException {
         String url="jdbc:mysql://localhost:3306/torneo";
         String user="root";
-        String password="root";
+        String password="Debian";
         return DriverManager.getConnection(url,user,password);
     }
 
@@ -225,6 +225,83 @@ public class ControlOpenA implements Initializable {
             alert.setContentText(e.getMessage());
             alert.showAndWait();
         }
+    }
+
+
+    @FXML
+    private void jugadorOpaPremio(javafx.event.ActionEvent actionEvent) {
+
+        try {
+
+            // Cargo la vista
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("JugadorOptaPremioOpenA.fxml"));
+
+            // Cargo la ventana
+            Parent root = loader.load();
+
+            // Asigno el controlador
+            ControlJugadorOptaPremioOpenA controlador = loader.getController();
+
+            // Creo el Scene
+            Scene scene = new Scene(root);
+
+            //Cargo la hoja de estilos
+            scene.getStylesheets().add(getClass().getResource("StylesTableViews.css").toExternalForm());
+
+            //Cargo el Stage
+            Stage stage = new Stage();
+
+            stage.initModality(Modality.APPLICATION_MODAL);
+            stage.setScene(scene);
+            stage.setTitle("Lista de jugadores y premios a los que optan");
+            stage.showAndWait();
+
+        } catch (IOException e) {
+            Alert alert = new Alert(Alert.AlertType.ERROR);
+            alert.setHeaderText(null);
+            alert.setTitle("Error");
+            alert.setContentText(e.getMessage());
+            alert.showAndWait();
+        }
+
+    }
+
+    @FXML
+    private void listaGanadores(javafx.event.ActionEvent actionEvent) {
+
+        try {
+
+            // Cargo la vista
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("GanadoresOpenA.fxml"));
+
+            // Cargo la ventana
+            Parent root = loader.load();
+
+            // Asigno el controlador
+            ControlGanadoresOpenA controlador = loader.getController();
+
+            // Creo el Scene
+            Scene scene = new Scene(root);
+
+            //Cargo la hoja de estilos
+            scene.getStylesheets().add(getClass().getResource("StylesTableViews.css").toExternalForm());
+
+            //Cargo el Stage
+            Stage stage = new Stage();
+
+            stage.initModality(Modality.APPLICATION_MODAL);
+            stage.setScene(scene);
+            stage.setTitle("Lista de jugadores y premios a los que optan");
+            stage.showAndWait();
+
+        } catch (IOException e) {
+            Alert alert = new Alert(Alert.AlertType.ERROR);
+            alert.setHeaderText(null);
+            alert.setTitle("Error");
+            alert.setContentText(e.getMessage());
+            alert.showAndWait();
+        }
+
     }
 
 

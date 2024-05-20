@@ -50,7 +50,8 @@ public class LecturaCSV {
         }catch (IOException e){
             e.printStackTrace();
         }catch (ArrayIndexOutOfBoundsException e){
-            System.out.println("Se acabaron los jugadores");
+            //System.out.println("Se acabaron los jugadores");
+            e.printStackTrace();
         } catch (SQLException e) {
             System.out.println("Ya están los usuarios en la base de datos");
         } catch (NullPointerException e){
