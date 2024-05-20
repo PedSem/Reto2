@@ -1,0 +1,11 @@
+.root{
+    -fx-background-color: black;
+    -fx-background-image: url("Ajedrez.jpg");
+}
+
+.button{
+    -fx-background-color: white;
+    -fx-colortext: black;
+    -fx-font-weight: bold;
+    -fx-font-size: larger;
+}

@@ -1,0 +1,8 @@
+.root{
+    -fx-background-image: url("Ajedrez.jpg");
+}
+
+.table-view{
+    /*-fx-background-color: transparent;*/
+    -fx-border-radius: 5px;
+}

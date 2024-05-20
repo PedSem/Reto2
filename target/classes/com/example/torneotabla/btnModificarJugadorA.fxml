@@ -11,7 +11,7 @@
       <TextField fx:id="txtPais" layoutX="53.0" layoutY="168.0" />
       <TextField fx:id="txtFIDEID" layoutX="53.0" layoutY="106.0" />
       <Label layoutX="63.0" layoutY="83.0" text="FIDE ID" />
-      <Button fx:id="btnGuardar" layoutX="61.0" layoutY="265.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="149.0" text="Guardar" />
+      <Button fx:id="btnGuardar" layoutX="61.0" layoutY="265.0" mnemonicParsing="false" onAction="#guardar" prefHeight="25.0" prefWidth="149.0" text="Guardar" />
       <Button fx:id="btnSalir" layoutX="61.0" layoutY="303.0" mnemonicParsing="false" onAction="#salir" prefHeight="25.0" prefWidth="149.0" text="Salir" />
       <Label layoutX="61.0" layoutY="23.0" text="Nombre" />
       <Label layoutX="65.0" layoutY="145.0" text="País" />
