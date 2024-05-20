@@ -45,7 +45,7 @@ public class DatosJugador {
         ps.setString(5, Pais);
         ps.setBoolean(6, CV);
         ps.setBoolean(7, Hotel);
-        ps.setInt(8, rangofinal);
+        ps.setNull(8, rangofinal);
         ps.setString(9, nomtorneo);
         ps.executeUpdate();
         ps.close();
