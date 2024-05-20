@@ -4,17 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="be0f0c1d-6403-44e9-9eed-91d92bd7b058" name="Changes" comment="Actualizacion Vistas 5">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/torneotabla/ControlGanadoresOpenA.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/torneotabla/ControlGanadoresOpenB.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/torneotabla/GanadoresOpenA.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/torneotabla/GanadoresOpenB.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/torneotabla/StylesTableViews.css" afterDir="false" />
+    <list default="true" id="be0f0c1d-6403-44e9-9eed-91d92bd7b058" name="Changes" comment="Actualizacion Vistas lista ganadores y jugador opta premio">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/torneotabla/ControlOpenA.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/torneotabla/ControlOpenA.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/torneotabla/ControlOpenB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/torneotabla/ControlOpenB.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/torneotabla/OpenAView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/torneotabla/OpenAView.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/torneotabla/OpenBView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/torneotabla/OpenBView.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/torneotabla/StylesOpen.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/torneotabla/StylesOpen.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/torneotabla/StylesTableViews.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/torneotabla/StylesTableViews.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -316,7 +309,15 @@
       <option name="project" value="LOCAL" />
       <updated>1716199986976</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Actualizacion Vistas lista ganadores y jugador opta premio">
+      <option name="closed" value="true" />
+      <created>1716201349694</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1716201349694</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -364,7 +365,8 @@
     <MESSAGE value="Tableview Open A bien" />
     <MESSAGE value="Actualizacion Estilos 2" />
     <MESSAGE value="Actualizacion Vistas 5" />
-    <option name="LAST_COMMIT_MESSAGE" value="Actualizacion Vistas 5" />
+    <MESSAGE value="Actualizacion Vistas lista ganadores y jugador opta premio" />
+    <option name="LAST_COMMIT_MESSAGE" value="Actualizacion Vistas lista ganadores y jugador opta premio" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -36,8 +36,14 @@
     -fx-padding: 0.0em; /* 0 */
 }
 
+.table-row-cell:hover{
+    -fx-background-color: -fx-table-cell-border-color, #cfcfcf;
+    -fx-background-insets: 0, 0 0 1 0;
+    -fx-padding: 0.0em; /* 0 */
+}
+
 .table-row-cell:selected {
-    -fx-background-color: #00f0fa;
+    -fx-background-color: #8ffbff;
     -fx-background-insets: 0;
     -fx-background-radius: 1;
 }
