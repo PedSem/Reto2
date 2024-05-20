@@ -16,7 +16,7 @@
       <Label layoutX="61.0" layoutY="23.0" text="Nombre" />
       <Label layoutX="65.0" layoutY="145.0" text="País" />
       <TextField fx:id="txtNombre" layoutX="53.0" layoutY="40.0" prefHeight="25.0" prefWidth="149.0" />
-      <Label layoutX="57.0" layoutY="208.0" text="Comunidad Valenciana" />
+      <Label layoutX="53.0" layoutY="208.0" text="Comunidad Valenciana" />
       <Label layoutX="57.0" layoutY="232.0" prefHeight="17.0" prefWidth="122.0" text="Alojado en el Hotel" />
       <CheckBox fx:id="cbCV" layoutX="184.0" layoutY="208.0" mnemonicParsing="false" />
       <CheckBox fx:id="cbHotel" layoutX="184.0" layoutY="232.0" mnemonicParsing="false" />

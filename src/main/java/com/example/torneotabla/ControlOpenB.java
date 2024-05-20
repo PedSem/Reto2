@@ -131,6 +131,11 @@ public class ControlOpenB implements Initializable {
 
             // Creo el Scene
             Scene scene = new Scene(root);
+
+            //Cargo la hoja de estilos
+            scene.getStylesheets().add(getClass().getResource("StylesInsertarModificar.css").toExternalForm());
+
+            //Cargo el Stage
             Stage stage = new Stage();
 
             stage.initModality(Modality.APPLICATION_MODAL);
@@ -199,6 +204,11 @@ public class ControlOpenB implements Initializable {
 
             // Creo el Scene
             Scene scene = new Scene(root);
+
+            //Cargo la hoja de estilos
+            scene.getStylesheets().add(getClass().getResource("StylesInsertarModificar.css").toExternalForm());
+
+            //Cargo el Stage
             Stage stage = new Stage();
 
             stage.initModality(Modality.APPLICATION_MODAL);
