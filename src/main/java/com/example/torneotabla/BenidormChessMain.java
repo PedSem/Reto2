@@ -27,6 +27,9 @@ public class BenidormChessMain extends Application {
             // Cargo el scene
             Scene scene = new Scene(ventana);
 
+            //Cargo la hoja de estilos
+            scene.getStylesheets().add(getClass().getResource("StylesMenu.css").toExternalForm());
+
             // Seteo la scene y la muestro
             primaryStage.setScene(scene);
             primaryStage.setTitle("Benidorm Chess 2023");

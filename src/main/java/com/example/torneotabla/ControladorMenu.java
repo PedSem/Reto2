@@ -45,8 +45,13 @@ public class ControladorMenu implements Initializable {
             // Obtengo el controlador
             ControlOpenA controlador = loader.getController();
 
-            // Creo la scene y el stage
+            // Creo la scene
             Scene scene = new Scene(root);
+
+            //Cargo la hoja de estilos del Menu
+            scene.getStylesheets().add(getClass().getResource("StylesOpen.css").toExternalForm());
+
+            //Creo el Stage
             Stage stage = new Stage();
 
             // Asocio el stage con el scene
@@ -79,8 +84,13 @@ public class ControladorMenu implements Initializable {
             // Obtengo el controlador
             ControlOpenB controlador = loader.getController();
 
-            // Creo la scene y el stage
+            // Creo la Scene
             Scene scene = new Scene(root);
+
+            //Cargo la hoja de estilos del Menu
+            scene.getStylesheets().add(getClass().getResource("StylesOpen.css").toExternalForm());
+
+            // Creo el Stage
             Stage stage = new Stage();
 
             // Asocio el stage con el scene

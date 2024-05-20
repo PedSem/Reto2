@@ -145,7 +145,7 @@ public class ControlOpenA implements Initializable {
     private static Connection getConexion() throws SQLException {
         String url="jdbc:mysql://localhost:3306/torneo";
         String user="root";
-        String password="root";
+        String password="Debian";
         return DriverManager.getConnection(url,user,password);
     }
 
@@ -232,8 +232,11 @@ public class ControlOpenA implements Initializable {
             Scene scene = new Scene(root);
             Stage stage = new Stage();
 
+            //Cargo la hoja de estilos del Menu
+            scene.getStylesheets().add(getClass().getResource("StylesMenu.css").toExternalForm());
+
             stage.setScene(scene);
-            //stage.setTitle("Benidorm Chess 2023");
+            stage.setTitle("Benidorm Chess 2023");
             stage.show();
 
             // Indico que debe hacer al cerrar
