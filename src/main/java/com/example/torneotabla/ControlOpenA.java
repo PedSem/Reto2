@@ -227,41 +227,33 @@ public class ControlOpenA implements Initializable {
             alert.showAndWait();
         }
     }
-/*
+
     @FXML
-    private void eliminar(ActionEvent event) {
+    private void eliminar(ActionEvent event) throws SQLException {
 
         Jugador j = this.tablaRanking.getSelectionModel().getSelectedItem();
 
-        if (j == null) {
-            Alert alert = new Alert(Alert.AlertType.ERROR);
-            alert.setHeaderText(null);
-            alert.setTitle("Error");
-            alert.setContentText("Debes seleccionar una Jugador");
-            alert.showAndWait();
-        } else {
+        Connection cnx = getConexion();
+        Statement stm = cnx.createStatement();
 
-            // Elimino la persona
-            // aquí va también una llamada al metodo de eliminar de la BDA
-            // que debería estar implementada en la clase Persona
+        PreparedStatement ps = cnx.prepareStatement("DELETE FROM jugador where NomTorneo = ?  and RangoInicial = ?");
 
-            this.personas.remove(p);
-            this.filtroPersonas.remove(p);
-            this.tblPersonas.refresh();
+        ps.setString(1,j.getNomTorneo());
+        ps.setInt(2,j.getRangoInicial());
+
+        ps.execute();
+        ps.close();
 
 
+        Alert alert = new Alert(Alert.AlertType.INFORMATION);
+        alert.setHeaderText(null);
+        alert.setTitle("Informacion");
+        alert.setContentText("Se ha eliminado correctamente");
+        alert.showAndWait();
 
-            Alert alert = new Alert(Alert.AlertType.INFORMATION);
-            alert.setHeaderText(null);
-            alert.setTitle("Info");
-            alert.setContentText("Persona eliminada");
-            alert.showAndWait();
-
-        }
-
+        cargar();
     }
 
- */
 
     @FXML
     private void jugadorOpaPremio(javafx.event.ActionEvent actionEvent) {

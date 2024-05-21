@@ -24,12 +24,6 @@
     -fx-text-fill: white;
 }
 
-.table-row-cell:hover{
-    -fx-background-color: -fx-table-cell-border-color, #cfcfcf;
-    -fx-background-insets: 0, 0 0 1 0;
-    -fx-padding: 0.0em; /* 0 */
-}
-
 .table-row-cell:even{
     -fx-background-color: -fx-table-cell-border-color, #616161;
     -fx-background-insets: 0, 0 0 1 0;
@@ -42,25 +36,14 @@
     -fx-padding: 0.0em; /* 0 */
 }
 
+.table-row-cell:hover{
+    -fx-background-color: -fx-table-cell-border-color, #cfcfcf;
+    -fx-background-insets: 0, 0 0 1 0;
+    -fx-padding: 0.0em; /* 0 */
+}
+
 .table-row-cell:selected {
-    -fx-background-color: #00f0fa;
+    -fx-background-color: #8ffbff;
     -fx-background-insets: 0;
     -fx-background-radius: 1;
-}
-
-.button{
-    -fx-background-color: white;
-    -fx-text-fill: black;
-    -fx-font-size: larger;
-    -fx-font-weight: bold;
-}
-
-.button:hover{
-    -fx-background-color: black;
-    -fx-text-fill: white;
-    -fx-font-weight: bold;
-    -fx-font-size: larger;
-    -fx-border-color: white;
-    -fx-border-width: 3px;
-    -fx-border-radius: 5px;
 }
