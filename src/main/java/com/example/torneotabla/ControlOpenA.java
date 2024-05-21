@@ -155,7 +155,7 @@ public class ControlOpenA implements Initializable {
     private void insertarJugador(javafx.event.ActionEvent actionEvent) {
 
         try {
-
+            jugadores = getJugador();
             // Cargo la vista
             FXMLLoader loader = new FXMLLoader(getClass().getResource("btnInsertarJugadorA.fxml"));
 
@@ -164,6 +164,7 @@ public class ControlOpenA implements Initializable {
 
             // Asigno el controlador
             ControlInsertarOpenA controlador = loader.getController();
+            controlador.initAtributtes(jugadores);
 
             // Creo el Scene
             Scene scene = new Scene(root);
@@ -174,6 +175,7 @@ public class ControlOpenA implements Initializable {
             stage.setTitle("Insertar Nuevo Jugador");
             stage.showAndWait();
 
+            cargar();
         } catch (IOException e) {
             Alert alert = new Alert(Alert.AlertType.ERROR);
             alert.setHeaderText(null);
