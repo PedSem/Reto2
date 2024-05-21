@@ -77,11 +77,12 @@ public class ControlOpenA implements Initializable {
     @FXML
     private TableColumn<Jugador,String>  torneo;
 
+    private ObservableList<Jugador> jugadores;
 
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         ObservableList<Jugador> jugadores = getJugador();
-        this.tablaRanking.setItems(jugadores);
+        tablaRanking.setItems(jugadores);
         this.RankingInicial.setCellValueFactory(new PropertyValueFactory<>("RangoInicial"));
         this.fideid.setCellValueFactory(new PropertyValueFactory<>("FIDEID"));
         this.nombre.setCellValueFactory(new PropertyValueFactory<>("nombre"));
@@ -114,7 +115,8 @@ public class ControlOpenA implements Initializable {
 
     }
 
-    public ObservableList<Jugador> getJugador(){
+
+    public static ObservableList<Jugador> getJugador(){
         ObservableList<Jugador> obs = FXCollections.observableArrayList();
         Connection cnx;
         try {
@@ -192,6 +194,7 @@ public class ControlOpenA implements Initializable {
     void modificarJugador(ActionEvent event) {
 
         /** La idea aquí es primero seleccionar un jugador en la TableView y después ya darle a modificar para hacer los cambios**/
+        Jugador j = this.tablaRanking.getSelectionModel().getSelectedItem();
 
         try {
             // Cargo la vista
@@ -202,6 +205,7 @@ public class ControlOpenA implements Initializable {
 
             // Asigno el controlador
             ControlModificarOpenA controlador = loader.getController();
+            controlador.initAtributtes(jugadores,j);
 
             // Creo el Scene
             Scene scene = new Scene(root);
@@ -216,6 +220,13 @@ public class ControlOpenA implements Initializable {
             stage.setScene(scene);
             stage.setTitle("Modificar Jugador");
             stage.showAndWait();
+
+            // Se asigna la persona devuelta
+            Jugador jSeleccionado = controlador.getJugador();
+
+            if (jSeleccionado != null) {
+                tablaRanking.refresh();
+            }
 
         } catch (IOException e) {
             Alert alert = new Alert(Alert.AlertType.ERROR);
