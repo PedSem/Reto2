@@ -6,7 +6,7 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="561.0" prefWidth="775.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.torneotabla.ControlGanadoresOpenA">
    <children>
-       <TableView fx:id="tablaRanking" prefHeight="561.0" prefWidth="775.0">
+       <TableView fx:id="tablaRanking" layoutX="17.0" layoutY="16.0" prefHeight="526.0" prefWidth="743.0">
            <columns>
                <TableColumn fx:id="RankingFinal" prefWidth="75.0" text="RankingFinal" />
                <TableColumn fx:id="RankingInicial" prefWidth="75.0" text="RankingInicial" />
@@ -14,8 +14,8 @@
                <TableColumn fx:id="elo" prefWidth="82.39996337890625" text="ELO" />
                <TableColumn fx:id="torneo" prefWidth="97.60003662109375" text="Torneo" />
             <TableColumn fx:id="torneo1" prefWidth="128.0" text="Categoría" />
-            <TableColumn fx:id="torneo11" prefWidth="83.99993896484375" text="Puesto" />
-            <TableColumn fx:id="torneo111" prefWidth="84.8000366210938" text="Premio" />
+            <TableColumn fx:id="torneo11" prefWidth="78.39996337890625" text="Puesto" />
+            <TableColumn fx:id="torneo111" prefWidth="91.2000732421875" text="Premio" />
            </columns>
        </TableView>
    </children>

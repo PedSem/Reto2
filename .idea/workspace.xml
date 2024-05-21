@@ -4,16 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="be0f0c1d-6403-44e9-9eed-91d92bd7b058" name="Changes" comment="Actualizacion vista tablas 2">
+    <list default="true" id="be0f0c1d-6403-44e9-9eed-91d92bd7b058" name="Changes" comment="Creacion vista para modificar e insertar jugador 2">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/torneotabla/btnInsertarJugadorA.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/torneotabla/btnInsertarJugadorA.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/torneotabla/btnInsertarJugadorB.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/torneotabla/btnInsertarJugadorB.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/torneotabla/btnModificarJugadorA.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/torneotabla/btnModificarJugadorA.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/torneotabla/btnModificarJugadorB.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/torneotabla/btnModificarJugadorB.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/torneotabla/btnInsertarJugadorA.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/torneotabla/btnInsertarJugadorA.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/torneotabla/btnInsertarJugadorB.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/torneotabla/btnInsertarJugadorB.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/torneotabla/btnModificarJugadorA.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/torneotabla/btnModificarJugadorA.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/torneotabla/btnModificarJugadorB.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/torneotabla/btnModificarJugadorB.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/torneotabla/GanadoresOpenA.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/torneotabla/GanadoresOpenA.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -165,6 +158,9 @@
       <workItem from="1716207945576" duration="101000" />
       <workItem from="1716213277408" duration="62000" />
       <workItem from="1716213367714" duration="497000" />
+      <workItem from="1716215243073" duration="474000" />
+      <workItem from="1716229725133" duration="96000" />
+      <workItem from="1716229850695" duration="79000" />
     </task>
     <task id="LOCAL-00001" summary="clase lecturacsv">
       <option name="closed" value="true" />
@@ -342,7 +338,15 @@
       <option name="project" value="LOCAL" />
       <updated>1716201946621</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Creacion vista para modificar e insertar jugador 2">
+      <option name="closed" value="true" />
+      <created>1716214334598</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1716214334598</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -393,7 +397,8 @@
     <MESSAGE value="Actualizacion Vistas lista ganadores y jugador opta premio" />
     <MESSAGE value="Actualizacion vista tablas" />
     <MESSAGE value="Actualizacion vista tablas 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="Actualizacion vista tablas 2" />
+    <MESSAGE value="Creacion vista para modificar e insertar jugador 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="Creacion vista para modificar e insertar jugador 2" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
