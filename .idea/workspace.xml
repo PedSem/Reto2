@@ -4,15 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="be0f0c1d-6403-44e9-9eed-91d92bd7b058" name="Changes" comment="guardado temporal">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/torneotabla/ControlModificarOpenA.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/torneotabla/ControlModificarOpenA.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/torneotabla/ControlOpenA.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/torneotabla/ControlOpenA.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/torneotabla/Jugador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/torneotabla/Jugador.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/torneotabla/ControlOpenA$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/torneotabla/ControlOpenA$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/torneotabla/ControlOpenA.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/torneotabla/ControlOpenA.class" afterDir="false" />
-    </list>
+    <list default="true" id="be0f0c1d-6403-44e9-9eed-91d92bd7b058" name="Changes" comment="Modificar a medias" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -305,7 +297,23 @@
       <option name="project" value="LOCAL" />
       <updated>1715944900303</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Modificar a medias">
+      <option name="closed" value="true" />
+      <created>1716202129066</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1716202129066</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Modificar a medias">
+      <option name="closed" value="true" />
+      <created>1716202165985</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1716202165985</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -351,6 +359,7 @@
     <MESSAGE value=" AAAAAAAAAAAAAAAAAAAA" />
     <MESSAGE value="Tableview Open A funcional" />
     <MESSAGE value="Tableview Open A bien" />
-    <option name="LAST_COMMIT_MESSAGE" value="Tableview Open A bien" />
+    <MESSAGE value="Modificar a medias" />
+    <option name="LAST_COMMIT_MESSAGE" value="Modificar a medias" />
   </component>
 </project>
