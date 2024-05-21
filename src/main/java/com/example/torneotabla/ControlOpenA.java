@@ -147,7 +147,7 @@ public class ControlOpenA implements Initializable {
     private static Connection getConexion() throws SQLException {
         String url="jdbc:mysql://localhost:3306/torneo";
         String user="root";
-        String password="Debian";
+        String password="root";
         return DriverManager.getConnection(url,user,password);
     }
 
@@ -188,10 +188,11 @@ public class ControlOpenA implements Initializable {
     @FXML
     void modificarJugador(ActionEvent event) {
 
-        /** La idea aquí es primero seleccionar un jugador en la TableView y después ya darle a modificar para hacer los cambios**/
+        /* La idea aquí es primero seleccionar un jugador en la TableView y después ya darle a modificar para hacer los cambios*/
         Jugador j = this.tablaRanking.getSelectionModel().getSelectedItem();
 
         try {
+            jugadores = getJugador();
             // Cargo la vista
             FXMLLoader loader = new FXMLLoader(getClass().getResource("btnModificarJugadorA.fxml"));
 
@@ -226,7 +227,41 @@ public class ControlOpenA implements Initializable {
             alert.showAndWait();
         }
     }
+/*
+    @FXML
+    private void eliminar(ActionEvent event) {
 
+        Jugador j = this.tablaRanking.getSelectionModel().getSelectedItem();
+
+        if (j == null) {
+            Alert alert = new Alert(Alert.AlertType.ERROR);
+            alert.setHeaderText(null);
+            alert.setTitle("Error");
+            alert.setContentText("Debes seleccionar una Jugador");
+            alert.showAndWait();
+        } else {
+
+            // Elimino la persona
+            // aquí va también una llamada al metodo de eliminar de la BDA
+            // que debería estar implementada en la clase Persona
+
+            this.personas.remove(p);
+            this.filtroPersonas.remove(p);
+            this.tblPersonas.refresh();
+
+
+
+            Alert alert = new Alert(Alert.AlertType.INFORMATION);
+            alert.setHeaderText(null);
+            alert.setTitle("Info");
+            alert.setContentText("Persona eliminada");
+            alert.showAndWait();
+
+        }
+
+    }
+
+ */
 
     @FXML
     private void jugadorOpaPremio(javafx.event.ActionEvent actionEvent) {

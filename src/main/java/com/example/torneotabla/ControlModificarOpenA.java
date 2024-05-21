@@ -41,10 +41,6 @@ public class ControlModificarOpenA implements Initializable {
 
     }
 
-    public void initAtributtes(ObservableList<Jugador> jugadores) {
-        this.jugadores = jugadores;
-    }
-
     public void initAtributtes(ObservableList<Jugador> jugadores, Jugador jugador) {
         this.jugadores = jugadores;
         this.jugador = jugador;
