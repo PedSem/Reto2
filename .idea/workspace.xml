@@ -4,18 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="be0f0c1d-6403-44e9-9eed-91d92bd7b058" name="Changes" comment="Modificar A funcional">
+    <list default="true" id="be0f0c1d-6403-44e9-9eed-91d92bd7b058" name="Changes" comment="Eliminar A funcional">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/torneotabla/ControlModificarOpenA.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/torneotabla/ControlModificarOpenA.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/torneotabla/ControlInsertarOpenA.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/torneotabla/ControlInsertarOpenA.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/torneotabla/ControlOpenA.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/torneotabla/ControlOpenA.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/torneotabla/OpenAView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/torneotabla/OpenAView.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/torneotabla/ControlModificarOpenA.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/torneotabla/ControlModificarOpenA.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/torneotabla/btnInsertarJugadorA.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/torneotabla/btnInsertarJugadorA.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/example/torneotabla/ControlOpenA.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/torneotabla/ControlOpenA.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/torneotabla/ControlOpenB.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/torneotabla/ControlOpenB.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/torneotabla/OpenAView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/torneotabla/OpenAView.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/torneotabla/OpenBView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/torneotabla/OpenBView.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/torneotabla/StylesMenu.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/torneotabla/StylesMenu.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/torneotabla/StylesOpen.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/torneotabla/StylesOpen.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/module-info.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/module-info.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -84,7 +79,7 @@
     "project.structure.last.edited": "Libraries",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices",
+    "settings.editor.selected.configurable": "preferences.editor",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -165,7 +160,7 @@
       <workItem from="1715672135347" duration="342000" />
       <workItem from="1715672613424" duration="3822000" />
       <workItem from="1715933551208" duration="5441000" />
-      <workItem from="1716271839035" duration="2399000" />
+      <workItem from="1716271839035" duration="6768000" />
     </task>
     <task id="LOCAL-00001" summary="clase lecturacsv">
       <option name="closed" value="true" />
@@ -343,7 +338,15 @@
       <option name="project" value="LOCAL" />
       <updated>1716272698421</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Eliminar A funcional">
+      <option name="closed" value="true" />
+      <created>1716274326981</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1716274326981</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -392,6 +395,7 @@
     <MESSAGE value="Modificar a medias" />
     <MESSAGE value="Guardado" />
     <MESSAGE value="Modificar A funcional" />
-    <option name="LAST_COMMIT_MESSAGE" value="Modificar A funcional" />
+    <MESSAGE value="Eliminar A funcional" />
+    <option name="LAST_COMMIT_MESSAGE" value="Eliminar A funcional" />
   </component>
 </project>
