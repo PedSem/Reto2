@@ -147,7 +147,7 @@ public class ControlOpenA implements Initializable {
     private static Connection getConexion() throws SQLException {
         String url="jdbc:mysql://localhost:3306/torneo";
         String user="root";
-        String password="Debian";
+        String password="root";
         return DriverManager.getConnection(url,user,password);
     }
 
@@ -193,10 +193,11 @@ public class ControlOpenA implements Initializable {
     @FXML
     void modificarJugador(ActionEvent event) {
 
-        /** La idea aquí es primero seleccionar un jugador en la TableView y después ya darle a modificar para hacer los cambios**/
+        /* La idea aquí es primero seleccionar un jugador en la TableView y después ya darle a modificar para hacer los cambios*/
         Jugador j = this.tablaRanking.getSelectionModel().getSelectedItem();
 
         try {
+            jugadores = getJugador();
             // Cargo la vista
             FXMLLoader loader = new FXMLLoader(getClass().getResource("btnModificarJugadorA.fxml"));
 
@@ -235,6 +236,32 @@ public class ControlOpenA implements Initializable {
             alert.setContentText(e.getMessage());
             alert.showAndWait();
         }
+    }
+
+    @FXML
+    private void eliminar(ActionEvent event) throws SQLException {
+
+        Jugador j = this.tablaRanking.getSelectionModel().getSelectedItem();
+
+        Connection cnx = getConexion();
+        Statement stm = cnx.createStatement();
+
+        PreparedStatement ps = cnx.prepareStatement("DELETE FROM jugador where NomTorneo = ?  and RangoInicial = ?");
+
+        ps.setString(1,j.getNomTorneo());
+        ps.setInt(2,j.getRangoInicial());
+
+        ps.execute();
+        ps.close();
+
+
+        Alert alert = new Alert(Alert.AlertType.INFORMATION);
+        alert.setHeaderText(null);
+        alert.setTitle("Informacion");
+        alert.setContentText("Se ha eliminado correctamente");
+        alert.showAndWait();
+
+        cargar();
     }
 
 
