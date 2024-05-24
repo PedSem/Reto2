@@ -19,7 +19,11 @@ public class BenidormChessMain extends Application {
         try {
             //Cargo la vista
             FXMLLoader loader = new FXMLLoader();
-            loader.setLocation(BenidormChessMain.class.getResource("MenuView.fxml"));
+            loader.setLocation(BenidormChessMain.class.getResource("LoginView.fxml"));
+
+            // Obtengo el controlador
+
+            //ControladorLogin controlador = loader.getController();
 
             // Cargo la ventana
             Pane ventana = (Pane) loader.load();
@@ -28,7 +32,7 @@ public class BenidormChessMain extends Application {
             Scene scene = new Scene(ventana);
 
             //Cargo la hoja de estilos
-            scene.getStylesheets().add(getClass().getResource("StylesMenu.css").toExternalForm());
+            //scene.getStylesheets().add(getClass().getResource("StylesMenu.css").toExternalForm());
 
             // Seteo la scene y la muestro
             primaryStage.setScene(scene);

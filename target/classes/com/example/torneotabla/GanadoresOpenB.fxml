@@ -6,7 +6,7 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="561.0" prefWidth="775.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.torneotabla.ControlGanadoresOpenB">
    <children>
-       <TableView fx:id="tablaRanking" layoutX="10.0" layoutY="11.0" prefHeight="530.0" prefWidth="755.0">
+       <TableView fx:id="tablaRanking" prefHeight="561.0" prefWidth="775.0">
            <columns>
                <TableColumn fx:id="RankingFinal" prefWidth="75.0" text="RankingFinal" />
                <TableColumn fx:id="RankingInicial" prefWidth="75.0" text="RankingInicial" />
@@ -15,7 +15,7 @@
                <TableColumn fx:id="torneo" prefWidth="97.60003662109375" text="Torneo" />
             <TableColumn fx:id="torneo1" prefWidth="128.0" text="Categoría" />
             <TableColumn fx:id="torneo11" prefWidth="83.99993896484375" text="Puesto" />
-            <TableColumn fx:id="torneo111" prefWidth="88.0" text="Premio" />
+            <TableColumn fx:id="torneo111" prefWidth="103.2000732421875" text="Premio" />
            </columns>
        </TableView>
    </children>
