@@ -14,7 +14,7 @@ public class DatosJugador {
     static Scanner sc;
     static{
         try{
-            cnx=getConexion();
+            cnx=Conection.getConection();
         }catch(SQLException e){
             e.printStackTrace();
         }
@@ -29,12 +29,6 @@ public class DatosJugador {
 
     }
 
-    private static Connection getConexion() throws SQLException {
-        String url="jdbc:mariadb://localhost:3306/torneo";
-        String user="root";
-        String password="Debian";
-        return DriverManager.getConnection(url,user,password);
-    }
 
     public static void TablaJugador(String Rangoinicial,String FIDEID,String nombre,int ELO,String Pais,boolean CV,boolean Hotel,int rangofinal,String nomtorneo) throws SQLException, IOException {
         PreparedStatement ps = cnx.prepareStatement("INSERT INTO jugador(RangoInicial,FIDEID,Nombre,ELO,Pais,CV,Hotel,rangofinal,NomTorneo) VALUES(?,?,?,?,?,?,?,?,?)");

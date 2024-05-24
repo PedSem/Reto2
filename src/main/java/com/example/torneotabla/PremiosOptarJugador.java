@@ -3,9 +3,7 @@ package com.example.torneotabla;
 import java.sql.*;
 
 public class PremiosOptarJugador {
-    private static final String url = "jdbc:mysql://localhost:3306/torneo";
-    private static final String user = "root";
-    private static final String password = "root";
+
 
     private int rangoInicial;
     private String nombre;
@@ -50,7 +48,7 @@ public class PremiosOptarJugador {
         try {
             // DriverManager.registerDriver(new org.mariadb.jdbc.Driver());
 
-            conn = DriverManager.getConnection(url, user, password);
+            conn = Conection.getConection();
             // Preparar la llamada al procedimiento almacenado
             String sql = "{? = CALL PremiosQueOpta(?)}";
             stmt = conn.prepareCall(sql);

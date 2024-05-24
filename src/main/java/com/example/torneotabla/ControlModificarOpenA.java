@@ -11,6 +11,9 @@ import javafx.stage.Stage;
 import javafx.scene.control.Alert;
 
 import java.net.URL;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
 import java.util.ResourceBundle;
 
 public class ControlModificarOpenA implements Initializable {
@@ -59,7 +62,7 @@ public class ControlModificarOpenA implements Initializable {
 
 
     @FXML
-    private void guardar(ActionEvent event) {
+    private void guardar(ActionEvent event) throws SQLException {
 
         // Cojo los datos
         String nombre = this.txtNombre.getText();
@@ -67,6 +70,9 @@ public class ControlModificarOpenA implements Initializable {
         String pais = this.txtPais.getText();
         boolean cv = this.cbCV.isSelected();
         boolean hotel = this.cbHotel.isSelected();
+
+        Connection cnx;
+        cnx = Conection.getConection();
 
         // Creo la persona
         Jugador j = new Jugador(nombre,fIDEID,pais,cv,hotel);
@@ -76,6 +82,15 @@ public class ControlModificarOpenA implements Initializable {
 
             // Modificar
             if (this.jugador != null) {
+                PreparedStatement ps = cnx.prepareStatement("update jugador set nombre = ?, FIDEID = ?, Pais = ?, CV = ?, Hotel = ? where FIDEID = ? and NomTorneo = 'OPEN A'");
+                ps.setString(1, nombre);
+                ps.setString(2, fIDEID);
+                ps.setString(3, pais);
+                ps.setBoolean(4, cv);
+                ps.setBoolean(5, hotel);
+                ps.setString(6, this.jugador.getFIDEID());
+                ps.executeUpdate();
+                ps.close();
 
                 // Modifico el objeto
                 this.jugador.setNombre(nombre);
