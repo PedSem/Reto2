@@ -7,6 +7,27 @@ public class PremiosOptarJugador {
     private static final String user = "root";
     private static final String password = "root";
 
+    private int rangoInicial;
+    private String nombre;
+    private String tipo;
+    private String puesto;
+    private String tipoTorneo;
+
+    public PremiosOptarJugador(int rangoInicial, String nombre, String tipo, String tipoTorneo) {
+        this.rangoInicial = rangoInicial;
+        this.nombre = nombre;
+        this.tipo = tipo;
+        this.tipoTorneo = tipoTorneo;
+    }
+
+    public PremiosOptarJugador(int rangoInicial, String nombre, String tipo, String puesto, String tipoTorneo) {
+        this.rangoInicial = rangoInicial;
+        this.nombre = nombre;
+        this.tipo = tipo;
+        this.puesto = puesto;
+        this.tipoTorneo = tipoTorneo;
+    }
+
     public static void main(String[] args) {
         /*
         int rangoInicial = 2;

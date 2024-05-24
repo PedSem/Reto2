@@ -269,8 +269,8 @@ public class ControlOpenA implements Initializable {
 
 
         try {
-            ObservableList<Premios> jugadoresOptanPremio= FXCollections.observableArrayList();
-            jugadoresOptanPremio = getJugadoresOptanPremio();
+            //ObservableList<Premios> jugadoresOptanPremio= FXCollections.observableArrayList();
+            //jugadoresOptanPremio = getJugadoresOptanPremio();
             // Cargo la vista
             FXMLLoader loader = new FXMLLoader(getClass().getResource("JugadorOptaPremioOpenA.fxml"));
 
