@@ -157,7 +157,7 @@ public class ControlOpenA implements Initializable {
     private void insertarJugador(javafx.event.ActionEvent actionEvent) {
 
         try {
-
+            jugadores = getJugador();
             // Cargo la vista
             FXMLLoader loader = new FXMLLoader(getClass().getResource("btnInsertarJugadorA.fxml"));
 
@@ -166,6 +166,7 @@ public class ControlOpenA implements Initializable {
 
             // Asigno el controlador
             ControlInsertarOpenA controlador = loader.getController();
+            controlador.initAtributtes(jugadores);
 
             // Creo el Scene
             Scene scene = new Scene(root);
@@ -176,6 +177,7 @@ public class ControlOpenA implements Initializable {
             stage.setTitle("Insertar Nuevo Jugador");
             stage.showAndWait();
 
+            cargar();
         } catch (IOException e) {
             Alert alert = new Alert(Alert.AlertType.ERROR);
             alert.setHeaderText(null);
@@ -190,10 +192,11 @@ public class ControlOpenA implements Initializable {
     @FXML
     void modificarJugador(ActionEvent event) {
 
-        /** La idea aquí es primero seleccionar un jugador en la TableView y después ya darle a modificar para hacer los cambios**/
+        /* La idea aquí es primero seleccionar un jugador en la TableView y después ya darle a modificar para hacer los cambios*/
         Jugador j = this.tablaRanking.getSelectionModel().getSelectedItem();
 
         try {
+            jugadores = getJugador();
             // Cargo la vista
             FXMLLoader loader = new FXMLLoader(getClass().getResource("btnModificarJugadorA.fxml"));
 
@@ -227,6 +230,32 @@ public class ControlOpenA implements Initializable {
             alert.setContentText(e.getMessage());
             alert.showAndWait();
         }
+    }
+
+    @FXML
+    private void eliminar(ActionEvent event) throws SQLException {
+
+        Jugador j = this.tablaRanking.getSelectionModel().getSelectedItem();
+
+        Connection cnx = getConexion();
+        Statement stm = cnx.createStatement();
+
+        PreparedStatement ps = cnx.prepareStatement("DELETE FROM jugador where NomTorneo = ?  and RangoInicial = ?");
+
+        ps.setString(1,j.getNomTorneo());
+        ps.setInt(2,j.getRangoInicial());
+
+        ps.execute();
+        ps.close();
+
+
+        Alert alert = new Alert(Alert.AlertType.INFORMATION);
+        alert.setHeaderText(null);
+        alert.setTitle("Informacion");
+        alert.setContentText("Se ha eliminado correctamente");
+        alert.showAndWait();
+
+        cargar();
     }
 
 

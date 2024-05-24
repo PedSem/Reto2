@@ -41,10 +41,6 @@ public class ControlModificarOpenA implements Initializable {
 
     }
 
-    public void initAtributtes(ObservableList<Jugador> jugadores) {
-        this.jugadores = jugadores;
-    }
-
     public void initAtributtes(ObservableList<Jugador> jugadores, Jugador jugador) {
         this.jugadores = jugadores;
         this.jugador = jugador;
@@ -69,8 +65,8 @@ public class ControlModificarOpenA implements Initializable {
         String nombre = this.txtNombre.getText();
         String fIDEID = this.txtFIDEID.getText();
         String pais = this.txtPais.getText();
-        Boolean cv = this.cbCV.isSelected();
-        Boolean hotel = this.cbHotel.isSelected();
+        boolean cv = this.cbCV.isSelected();
+        boolean hotel = this.cbHotel.isSelected();
 
         // Creo la persona
         Jugador j = new Jugador(nombre,fIDEID,pais,cv,hotel);
@@ -92,16 +88,6 @@ public class ControlModificarOpenA implements Initializable {
                 alert.setHeaderText(null);
                 alert.setTitle("Informacion");
                 alert.setContentText("Se ha modificado correctamente");
-                alert.showAndWait();
-
-            } else {
-                // insertando
-
-                this.jugador = j;
-                Alert alert = new Alert(Alert.AlertType.INFORMATION);
-                alert.setHeaderText(null);
-                alert.setTitle("Informacion");
-                alert.setContentText("Se ha añadido correctamente");
                 alert.showAndWait();
 
             }
