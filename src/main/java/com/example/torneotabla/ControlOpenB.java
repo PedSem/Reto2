@@ -156,7 +156,7 @@ public class ControlOpenB implements Initializable {
         ObservableList<Jugador> obs = FXCollections.observableArrayList();
         Connection cnx;
         try {
-            cnx = getConexion();
+            cnx = Conection.getConection();
             Statement stm = cnx.createStatement();
             ResultSet rs = stm.executeQuery("SELECT * FROM jugador where NomTorneo = 'OPEN B'");
 
@@ -180,12 +180,6 @@ public class ControlOpenB implements Initializable {
         return obs;
     }
 
-    private static Connection getConexion() throws SQLException {
-        String url="jdbc:mariadb://localhost:3306/torneo";
-        String user="root";
-        String password="Debian";
-        return DriverManager.getConnection(url,user,password);
-    }
 
     @FXML
     void modificarJugador(ActionEvent event) {

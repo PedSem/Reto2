@@ -63,8 +63,6 @@ public class ControlInsertarOpenA implements Initializable {
 
         Jugador j = new Jugador(ranking,fideID,nombre,elo,pais,cv,hotel,rangofinal,nomtorneo);
 
-
-
         if (!jugadores.contains(j)) {
             DatosJugador.TablaJugador(String.valueOf(ranking), fideID, nombre, elo, pais, cv, hotel, rangofinal, nomtorneo);
         }

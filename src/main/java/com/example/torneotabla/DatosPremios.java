@@ -9,7 +9,7 @@ public class DatosPremios {
     static Connection cnx;
     static {
         try {
-            cnx = getConexion();
+            cnx = Conection.getConection();
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
@@ -19,12 +19,7 @@ public class DatosPremios {
 
 
     }
-    private static Connection getConexion() throws SQLException{
-        String url="jdbc:mysql://localhost:3306/torneo";
-        String user="root";
-        String password="root";
-        return DriverManager.getConnection(url,user,password);
-    }
+
     private static void MostrarPremio() throws SQLException{
         try{
             Statement st= cnx.createStatement();
