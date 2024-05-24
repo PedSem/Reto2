@@ -20,6 +20,7 @@ import javafx.stage.Stage;
 import java.io.IOException;
 import java.net.URL;
 import java.sql.*;
+import java.util.Objects;
 import java.util.ResourceBundle;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -122,7 +123,7 @@ public class ControlOpenA implements Initializable {
         ObservableList<Jugador> obs = FXCollections.observableArrayList();
         Connection cnx;
         try {
-            cnx = getConexion();
+            cnx = Conection.getConection();
             Statement stm = cnx.createStatement();
             ResultSet rs = stm.executeQuery("SELECT * FROM jugador where NomTorneo = 'OPEN A'");
 
@@ -146,12 +147,6 @@ public class ControlOpenA implements Initializable {
         return obs;
     }
 
-    private static Connection getConexion() throws SQLException {
-        String url="jdbc:mariadb://localhost:3306/torneo";
-        String user="root";
-        String password="Debian";
-        return DriverManager.getConnection(url,user,password);
-    }
 
     @FXML
     private void insertarJugador(javafx.event.ActionEvent actionEvent) {
@@ -247,7 +242,7 @@ public class ControlOpenA implements Initializable {
 
         Jugador j = this.tablaRanking.getSelectionModel().getSelectedItem();
 
-        Connection cnx = getConexion();
+        Connection cnx = Conection.getConection();
         Statement stm = cnx.createStatement();
 
         PreparedStatement ps = cnx.prepareStatement("DELETE FROM jugador where NomTorneo = ?  and RangoInicial = ?");
@@ -272,8 +267,10 @@ public class ControlOpenA implements Initializable {
     @FXML
     private void jugadorOpaPremio(javafx.event.ActionEvent actionEvent) {
 
-        try {
 
+        try {
+            ObservableList<Premios> jugadoresOptanPremio= FXCollections.observableArrayList();
+            jugadoresOptanPremio = getJugadoresOptanPremio();
             // Cargo la vista
             FXMLLoader loader = new FXMLLoader(getClass().getResource("JugadorOptaPremioOpenA.fxml"));
 
@@ -282,15 +279,13 @@ public class ControlOpenA implements Initializable {
 
             // Asigno el controlador
             ControlJugadorOptaPremioOpenA controlador = loader.getController();
-
-
-
+            //controlador.initAtributtes(jugadoresOptanPremio);
 
             // Creo el Scene
             Scene scene = new Scene(root);
 
             //Cargo la hoja de estilos
-            scene.getStylesheets().add(getClass().getResource("StylesTableViews.css").toExternalForm());
+            scene.getStylesheets().add(Objects.requireNonNull(getClass().getResource("StylesTableViews.css")).toExternalForm());
 
             //Cargo el Stage
             Stage stage = new Stage();
@@ -302,11 +297,7 @@ public class ControlOpenA implements Initializable {
 
 
         } catch (IOException e) {
-            Alert alert = new Alert(Alert.AlertType.ERROR);
-            alert.setHeaderText(null);
-            alert.setTitle("Error");
-            alert.setContentText(e.getMessage());
-            alert.showAndWait();
+            e.printStackTrace();
         }
 
     }
@@ -316,15 +307,16 @@ public class ControlOpenA implements Initializable {
         ObservableList<Premios> jugadoresOptanPremio= FXCollections.observableArrayList();
         Connection cnx;
         try {
-            cnx = getConexion();
+            cnx = Conection.getConection();
             Statement stm = cnx.createStatement();
-            ResultSet rs = stm.executeQuery("SELECT j.NomTorneo, j.Tipo, j.Puesto, j.RangoInicial, PremiosQueOpta(j.RangoInicial) AS premios " +
+            ResultSet rs = stm.executeQuery("SELECT j.NomTorneo, j.Tipo, j.Puesto, j.RangoInicial, PremiosQueOpta(j.RangoInicial) " +
                     "FROM jugadoroptapremio j " +
                     "WHERE j.NomTorneo = 'OPEN A'");
             while(rs.next()){
                 String NomTorneo = rs.getString("NomTorneo");
                 String Tipo=rs.getString("Tipo");
                 int puesto=rs.getInt("Puesto");
+                int cantidad = rs.getInt("Cantidad");
                 int rangoinicial=rs.getInt("RangoInicial");
                 Premios opt=new Premios(NomTorneo,Tipo,puesto,rangoinicial);
                 jugadoresOptanPremio.add(opt);

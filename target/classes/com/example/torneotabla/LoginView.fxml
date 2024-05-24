@@ -19,10 +19,5 @@
          </image>
       </ImageView>
       <Button fx:id="btnAcceder" layoutX="242.0" layoutY="314.0" mnemonicParsing="false" onAction="#loguearse" style="-fx-background-color: black; -fx-text-fill: white; -fx-font-weight: bold;" text="Acceder" />
-      <ImageView fitHeight="68.0" fitWidth="250.0" layoutX="146.0" layoutY="46.0">
-         <image>
-            <Image url="@Logo-BCO_page-0001.jpg" />
-         </image>
-      </ImageView>
    </children>
 </AnchorPane>
