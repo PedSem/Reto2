@@ -8,6 +8,7 @@ public class PremiosOptarJugador {
     private static final String password = "root";
 
     public static void main(String[] args) {
+        /*
         int rangoInicial = 2;
         try {
             String premios = obtenerPremios(rangoInicial);
@@ -15,7 +16,10 @@ public class PremiosOptarJugador {
         } catch (SQLException e) {
             e.printStackTrace();
         }
+
+         */
     }
+
 
     public static String obtenerPremios(int rangoInicial) throws SQLException {
         Connection conn = null;
@@ -26,7 +30,6 @@ public class PremiosOptarJugador {
             // DriverManager.registerDriver(new org.mariadb.jdbc.Driver());
 
             conn = DriverManager.getConnection(url, user, password);
-
             // Preparar la llamada al procedimiento almacenado
             String sql = "{? = CALL PremiosQueOpta(?)}";
             stmt = conn.prepareCall(sql);
