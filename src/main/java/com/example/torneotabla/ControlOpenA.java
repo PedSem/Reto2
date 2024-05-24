@@ -123,7 +123,7 @@ public class ControlOpenA implements Initializable {
         ObservableList<Jugador> obs = FXCollections.observableArrayList();
         Connection cnx;
         try {
-            cnx = getConexion();
+            cnx = Conection.getConection();
             Statement stm = cnx.createStatement();
             ResultSet rs = stm.executeQuery("SELECT * FROM jugador where NomTorneo = 'OPEN A'");
 
@@ -147,12 +147,6 @@ public class ControlOpenA implements Initializable {
         return obs;
     }
 
-    private static Connection getConexion() throws SQLException {
-        String url="jdbc:mariadb://localhost:3306/torneo";
-        String user="root";
-        String password="root";
-        return DriverManager.getConnection(url,user,password);
-    }
 
     @FXML
     private void insertarJugador(javafx.event.ActionEvent actionEvent) {
@@ -248,7 +242,7 @@ public class ControlOpenA implements Initializable {
 
         Jugador j = this.tablaRanking.getSelectionModel().getSelectedItem();
 
-        Connection cnx = getConexion();
+        Connection cnx = Conection.getConection();
         Statement stm = cnx.createStatement();
 
         PreparedStatement ps = cnx.prepareStatement("DELETE FROM jugador where NomTorneo = ?  and RangoInicial = ?");
@@ -313,7 +307,7 @@ public class ControlOpenA implements Initializable {
         ObservableList<Premios> jugadoresOptanPremio= FXCollections.observableArrayList();
         Connection cnx;
         try {
-            cnx = getConexion();
+            cnx = Conection.getConection();
             Statement stm = cnx.createStatement();
             ResultSet rs = stm.executeQuery("SELECT j.NomTorneo, j.Tipo, j.Puesto, j.RangoInicial, PremiosQueOpta(j.RangoInicial) " +
                     "FROM jugadoroptapremio j " +

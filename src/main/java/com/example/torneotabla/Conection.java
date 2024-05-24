@@ -6,9 +6,9 @@ import java.sql.SQLException;
 
 public class Conection {
 
-    private String url = "jdbc:mariadb://localhost:3306/torneo";
-    private String nombre;
-    private String password;
+    private static String url = "jdbc:mariadb://localhost:3306/torneo";
+    private static String nombre;
+    private static String password;
 
     //Constructor
 
@@ -19,8 +19,8 @@ public class Conection {
 
     //Métodos
 
-    public Connection getConection() throws SQLException {
-        return DriverManager.getConnection(this.url, this.nombre, this.password);
+    public static Connection getConection() throws SQLException {
+        return DriverManager.getConnection(url, nombre, password);
     }
 
 
