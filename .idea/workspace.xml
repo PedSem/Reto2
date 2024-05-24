@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="be0f0c1d-6403-44e9-9eed-91d92bd7b058" name="Changes" comment="Cambios conexion">
-      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+    <list default="true" id="be0f0c1d-6403-44e9-9eed-91d92bd7b058" name="Changes" comment="Modificar en base de datos">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/torneotabla/ControlModificarOpenA.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/torneotabla/ControlModificarOpenA.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/torneotabla/ControlModificarOpenA.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/torneotabla/ControlModificarOpenA.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -159,7 +159,7 @@
       <workItem from="1716271839035" duration="7974000" />
       <workItem from="1716541301938" duration="2178000" />
       <workItem from="1716543557631" duration="311000" />
-      <workItem from="1716544305808" duration="3104000" />
+      <workItem from="1716544305808" duration="3566000" />
     </task>
     <task id="LOCAL-00001" summary="clase lecturacsv">
       <option name="closed" value="true" />
@@ -401,7 +401,23 @@
       <option name="project" value="LOCAL" />
       <updated>1716542649770</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="Modificar en base de datos">
+      <option name="closed" value="true" />
+      <created>1716547533920</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1716547533920</updated>
+    </task>
+    <task id="LOCAL-00032" summary="Modificar en base de datos">
+      <option name="closed" value="true" />
+      <created>1716547543130</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1716547543130</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -432,7 +448,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="clase lecturacsv" />
     <MESSAGE value="vuelta" />
     <MESSAGE value="fxml" />
     <MESSAGE value="añadidos archivos vistaq" />
@@ -457,6 +472,7 @@
     <MESSAGE value="Cambio conexion Main OPENA" />
     <MESSAGE value="a" />
     <MESSAGE value="Cambios conexion" />
-    <option name="LAST_COMMIT_MESSAGE" value="Cambios conexion" />
+    <MESSAGE value="Modificar en base de datos" />
+    <option name="LAST_COMMIT_MESSAGE" value="Modificar en base de datos" />
   </component>
 </project>

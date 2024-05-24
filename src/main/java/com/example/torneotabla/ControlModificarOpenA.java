@@ -82,7 +82,7 @@ public class ControlModificarOpenA implements Initializable {
 
             // Modificar
             if (this.jugador != null) {
-                PreparedStatement ps = cnx.prepareStatement("update jugador set nombre = ?, FIDEID = ?, Pais = ?, CV = ?, Hotel = ? where FIDEID = ? and   = 'OPEN A'");
+                PreparedStatement ps = cnx.prepareStatement("update jugador set nombre = ?, FIDEID = ?, Pais = ?, CV = ?, Hotel = ? where FIDEID = ? and NomTorneo = 'OPEN A'");
                 ps.setString(1, nombre);
                 ps.setString(2, fIDEID);
                 ps.setString(3, pais);
