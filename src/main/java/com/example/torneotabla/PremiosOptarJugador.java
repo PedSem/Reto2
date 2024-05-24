@@ -5,25 +5,65 @@ import java.sql.*;
 public class PremiosOptarJugador {
 
 
-    private int rangoInicial;
-    private String nombre;
-    private String tipo;
-    private String puesto;
-    private String tipoTorneo;
+    public int rangoInicial;
+    public String nombre;
+    public String tipo;
+    public String puesto;
+    public String Torneo;
 
-    public PremiosOptarJugador(int rangoInicial, String nombre, String tipo, String tipoTorneo) {
+    public PremiosOptarJugador(int rangoInicial, String nombre, String tipo, String Torneo) {
         this.rangoInicial = rangoInicial;
         this.nombre = nombre;
         this.tipo = tipo;
-        this.tipoTorneo = tipoTorneo;
+        this.Torneo = Torneo;
     }
 
-    public PremiosOptarJugador(int rangoInicial, String nombre, String tipo, String puesto, String tipoTorneo) {
+    public PremiosOptarJugador(int rangoInicial, String nombre, String tipo, String puesto, String Torneo) {
         this.rangoInicial = rangoInicial;
         this.nombre = nombre;
         this.tipo = tipo;
         this.puesto = puesto;
-        this.tipoTorneo = tipoTorneo;
+        this.Torneo = Torneo;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public String getTipo() {
+        return tipo;
+    }
+
+    public void setTipo(String tipo) {
+        this.tipo = tipo;
+    }
+
+    public String getTorneo() {
+        return Torneo;
+    }
+
+    public void setTorneo(String torneo) {
+        Torneo = torneo;
+    }
+
+    public String getPuesto() {
+        return puesto;
+    }
+
+    public void setPuesto(String puesto) {
+        this.puesto = puesto;
+    }
+
+    public int getRangoInicial() {
+        return rangoInicial;
+    }
+
+    public void setRangoInicial(int rangoInicial) {
+        this.rangoInicial = rangoInicial;
     }
 
     public static void main(String[] args) {

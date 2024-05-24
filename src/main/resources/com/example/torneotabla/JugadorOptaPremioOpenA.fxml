@@ -10,8 +10,8 @@
         <columns>
           <TableColumn fx:id="RankingInicial" prefWidth="163.19997787475586" text="RankingInicial" />
             <TableColumn fx:id="nombre" prefWidth="196.00001525878906" text="Nombre" />
-            <TableColumn fx:id="categoria" prefWidth="195.2000732421875" text="Categoría" />
-            <TableColumn fx:id="torneo" prefWidth="222.39996337890625" text="Torneo" />
+            <TableColumn fx:id="tipo" prefWidth="195.2000732421875" text="tipo" />
+            <TableColumn fx:id="Torneo" prefWidth="222.39996337890625" text="Torneo" />
         </columns>
       </TableView>
    </children>

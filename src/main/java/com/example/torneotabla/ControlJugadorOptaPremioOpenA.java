@@ -16,19 +16,22 @@ import java.util.ResourceBundle;
 public class ControlJugadorOptaPremioOpenA implements Initializable {
     //Mirar
     @FXML
-    private static TableView<PremiosOptarJugador> tablaRanking;
+    private TableView<PremiosOptarJugador> tablaRanking;
 
     @FXML
-    private TableColumn<Premios,Integer> RankingInicial;
+    private TableColumn<PremiosOptarJugador,Integer> RankingInicial;
 
     @FXML
-    private TableColumn<Premios,Integer> nombre;
+    private TableColumn<PremiosOptarJugador,Integer> nombre;
 
     @FXML
-    private TableColumn<Premios,String> categoria;
+    private TableColumn<PremiosOptarJugador,String> tipo;
 
     @FXML
-    private TableColumn<Premios,String>  torneo;
+    private TableColumn<PremiosOptarJugador,String>  Torneo;
+
+    @FXML
+    ObservableList<PremiosOptarJugador> obs;
 
     private Jugador jugador;
 
@@ -41,8 +44,8 @@ public class ControlJugadorOptaPremioOpenA implements Initializable {
         this.tablaRanking.setItems(jugadoresPremiosOptan);
         this.RankingInicial.setCellValueFactory(new PropertyValueFactory<>("RangoInicial"));
         this.nombre.setCellValueFactory(new PropertyValueFactory<>("nombre"));
-        this.categoria.setCellValueFactory(new PropertyValueFactory<>("categoria"));
-        this.torneo.setCellValueFactory(new PropertyValueFactory<>("torneo"));
+        this.tipo.setCellValueFactory(new PropertyValueFactory<>("tipo"));
+        this.Torneo.setCellValueFactory(new PropertyValueFactory<>("Torneo"));
 
         cargar();
     }
@@ -54,20 +57,17 @@ public class ControlJugadorOptaPremioOpenA implements Initializable {
             cnx = Conection.getConection();
             Statement stm = cnx.createStatement();
 
-            ResultSet rsAlojados = stm.executeQuery("SELECT j.RangoInicial, j.Nombre, p.Tipo, p.NomTorneo\n" +
-                    "FROM jugador j JOIN premio p ON j.NomTorneo = p.NomTorneo \n" +
-                    "WHERE (p.NomTorneo = 'OPEN A' AND j.NomTorneo = 'OPEN A') AND (j.Hotel = true AND p.Tipo = \"Alojados\")\n" +
-                    "GROUP BY p.Tipo, j.Nombre\n" +
-                    "ORDER BY j.RangoInicial;");
+            ResultSet rsAlojados = stm.executeQuery("SELECT j.RangoInicial, j.Nombre, p.Tipo, p.NomTorneo FROM jugador j JOIN Premio p ON j.NomTorneo = p.NomTorneo WHERE (p.NomTorneo = 'OPEN A' AND j.NomTorneo = 'OPEN A') AND (j.Hotel = true AND p.Tipo = 'Alojados') GROUP BY p.Tipo, j.Nombre ORDER BY j.RangoInicial");
 
             while (rsAlojados.next()) {
 
                 int rinicial = rsAlojados.getInt("RangoInicial");
                 String nom = rsAlojados.getString("Nombre");
-                String tipo = rsAlojados.getString("Tipo");
+                String tipo = rsAlojados.getString("tipo");
                 String nomtorneo = rsAlojados.getString("NomTorneo");
                 PremiosOptarJugador premiosOpta = new PremiosOptarJugador(rinicial, nom, tipo, nomtorneo);
                 obs.add(premiosOpta);
+                System.out.println(premiosOpta.nombre);
             }
 
             /*ResultSet rsSUB2400 = stm.executeQuery("SELECT j.RangoInicial, j.Nombre, p.Tipo, p.NomTorneo\n" +
@@ -129,8 +129,8 @@ public class ControlJugadorOptaPremioOpenA implements Initializable {
         this.tablaRanking.setItems(obs);
         this.RankingInicial.setCellValueFactory(new PropertyValueFactory<>("RangoInicial"));
         this.nombre.setCellValueFactory(new PropertyValueFactory<>("nombre"));
-        this.categoria.setCellValueFactory(new PropertyValueFactory<>("categoria"));
-        this.torneo.setCellValueFactory(new PropertyValueFactory<>("torneo"));
+        this.tipo.setCellValueFactory(new PropertyValueFactory<>("tipo"));
+        this.Torneo.setCellValueFactory(new PropertyValueFactory<>("Torneo"));
 
     }
 

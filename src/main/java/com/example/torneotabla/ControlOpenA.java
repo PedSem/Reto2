@@ -279,7 +279,8 @@ public class ControlOpenA implements Initializable {
 
             // Asigno el controlador
             ControlJugadorOptaPremioOpenA controlador = loader.getController();
-            //controlador.initAtributtes(jugadoresOptanPremio);
+            //controlador.initAtributtes(jugadoresOptanPremio)
+
 
             // Creo el Scene
             Scene scene = new Scene(root);
@@ -301,7 +302,7 @@ public class ControlOpenA implements Initializable {
         }
 
     }
-
+/*
     //Mirar
     private ObservableList<Premios> getJugadoresOptanPremio() {
         ObservableList<Premios> jugadoresOptanPremio= FXCollections.observableArrayList();
@@ -326,6 +327,8 @@ public class ControlOpenA implements Initializable {
         }
         return jugadoresOptanPremio;
     }
+
+ */
 
     @FXML
     private void listaGanadores(javafx.event.ActionEvent actionEvent) {
