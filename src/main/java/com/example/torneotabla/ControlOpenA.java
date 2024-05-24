@@ -25,6 +25,8 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 public class ControlOpenA implements Initializable {
+    @FXML
+    private TableView<JugadoroptaPremio> tablaJugadores;
 
     @FXML
     private Button btnImportarDatos;
@@ -147,7 +149,7 @@ public class ControlOpenA implements Initializable {
     private static Connection getConexion() throws SQLException {
         String url="jdbc:mysql://localhost:3306/torneo";
         String user="root";
-        String password="Debian";
+        String password="root";
         return DriverManager.getConnection(url,user,password);
     }
 
@@ -242,6 +244,9 @@ public class ControlOpenA implements Initializable {
             // Asigno el controlador
             ControlJugadorOptaPremioOpenA controlador = loader.getController();
 
+
+
+
             // Creo el Scene
             Scene scene = new Scene(root);
 
@@ -256,6 +261,7 @@ public class ControlOpenA implements Initializable {
             stage.setTitle("Lista de jugadores y premios a los que optan");
             stage.showAndWait();
 
+
         } catch (IOException e) {
             Alert alert = new Alert(Alert.AlertType.ERROR);
             alert.setHeaderText(null);
@@ -264,6 +270,62 @@ public class ControlOpenA implements Initializable {
             alert.showAndWait();
         }
 
+    }
+    // Mirar
+    @FXML
+    public void jugadoroptapremio(javafx.event.ActionEvent event) {
+        try {
+            // Cargo la vista
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("OpenAView.fxml"));
+            Parent root = loader.load();
+
+            // Asigno el controlador
+            ControlJugadorOptaPremioOpenA controlador = loader.getController();
+
+            // Paso la lista de jugadores que optan a premios al controlador
+            ObservableList<JugadoroptaPremio> jugadoresOptanPremio = controlador.obtenerDatosDeTabla();
+            tablaJugadores.setItems(jugadoresOptanPremio);
+            tablaJugadores.refresh();
+
+            // Creo el Scene
+            Scene scene = new Scene(root);
+            scene.getStylesheets().add(getClass().getResource("StylesViewTables.css").toExternalForm());
+            Stage stage = new Stage();
+
+            stage.initModality(Modality.APPLICATION_MODAL);
+            stage.setScene(scene);
+            stage.setTitle("Lista de jugadores y premios a los que optan");
+            stage.showAndWait();
+        } catch (IOException e) {
+            Alert alert = new Alert(Alert.AlertType.ERROR);
+            alert.setHeaderText(null);
+            alert.setTitle("Error");
+            alert.setContentText(e.getMessage());
+            alert.showAndWait();
+        }
+    }
+    //Mirar
+    private ObservableList<JugadoroptaPremio> getJugadoresOptanPremio() {
+        ObservableList<JugadoroptaPremio> jugadoresOptanPremio= FXCollections.observableArrayList();
+        Connection cnx;
+        try {
+            cnx = getConexion();
+            Statement stm = cnx.createStatement();
+            ResultSet rs = stm.executeQuery("SELECT j.NomTorneo, j.Tipo, j.Puesto, j.RangoInicial, PremiosQueOpta(j.RangoInicial) AS premios " +
+                    "FROM jugadoroptapremio j " +
+                    "WHERE j.NomTorneo = 'OPEN A'");
+            while(rs.next()){
+                String NomTorneo = rs.getString("NomTorneo");
+                String Tipo=rs.getString("Tipo");
+                int puesto=rs.getInt("Puesto");
+                int rangoinicial=rs.getInt("RangoInicial");
+                JugadoroptaPremio opt=new JugadoroptaPremio(NomTorneo,Tipo,puesto,rangoinicial);
+                jugadoresOptanPremio.add(opt);
+            }
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+        return jugadoresOptanPremio;
     }
 
     @FXML
@@ -280,6 +342,7 @@ public class ControlOpenA implements Initializable {
             // Asigno el controlador
             ControlGanadoresOpenA controlador = loader.getController();
 
+
             // Creo el Scene
             Scene scene = new Scene(root);
 
@@ -293,6 +356,9 @@ public class ControlOpenA implements Initializable {
             stage.setScene(scene);
             stage.setTitle("Lista de jugadores y premios a los que optan");
             stage.showAndWait();
+
+
+
 
         } catch (IOException e) {
             Alert alert = new Alert(Alert.AlertType.ERROR);
