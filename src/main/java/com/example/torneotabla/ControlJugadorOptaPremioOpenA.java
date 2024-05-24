@@ -67,7 +67,6 @@ public class ControlJugadorOptaPremioOpenA implements Initializable {
                 String nomtorneo = rsAlojados.getString("NomTorneo");
                 PremiosOptarJugador premiosOpta = new PremiosOptarJugador(rinicial, nom, tipo, nomtorneo);
                 obs.add(premiosOpta);
-                System.out.println(premiosOpta.nombre);
             }
 
             /*ResultSet rsSUB2400 = stm.executeQuery("SELECT j.RangoInicial, j.Nombre, p.Tipo, p.NomTorneo\n" +
