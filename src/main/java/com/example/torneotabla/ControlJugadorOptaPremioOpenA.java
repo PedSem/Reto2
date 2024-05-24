@@ -20,7 +20,7 @@ import java.util.ResourceBundle;
 public class ControlJugadorOptaPremioOpenA implements Initializable {
     //Mirar
     @FXML
-    private TableView<JugadoroptaPremio> tablaJugadores;
+    private TableView<Premios> tablaJugadores;
 
     @FXML
     private TextField txtNombre;
@@ -49,7 +49,14 @@ public class ControlJugadorOptaPremioOpenA implements Initializable {
 
     }
     //Mirar
-    public ObservableList<JugadoroptaPremio> obtenerDatosDeTabla() {
+
+    /*
+    public void initAtributtes(ObservableList<Jugador> premios) {
+        this.tablaJugadores = premios;
+    }
+    */
+
+    public ObservableList<Premios> obtenerDatosDeTabla() {
         return tablaJugadores.getItems();
     }
 

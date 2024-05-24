@@ -24,6 +24,10 @@ public class Premios {
         this.rangoinicial = 0;
 
     }
+
+    public Premios(String nomTorneo, String tipo, int puesto, int rangoinicial) {
+    }
+
     public String getNomtorneo() {
         return nomtorneo;
     }

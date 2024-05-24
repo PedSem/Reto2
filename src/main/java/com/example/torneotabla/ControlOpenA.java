@@ -26,7 +26,7 @@ import java.util.logging.Logger;
 
 public class ControlOpenA implements Initializable {
     @FXML
-    private TableView<JugadoroptaPremio> tablaJugadores;
+    private TableView<Premios> tablaJugadores;
 
     @FXML
     private Button btnImportarDatos;
@@ -300,42 +300,10 @@ public class ControlOpenA implements Initializable {
         }
 
     }
-    // Mirar
-    @FXML
-    public void jugadoroptapremio(javafx.event.ActionEvent event) {
-        try {
-            // Cargo la vista
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("OpenAView.fxml"));
-            Parent root = loader.load();
 
-            // Asigno el controlador
-            ControlJugadorOptaPremioOpenA controlador = loader.getController();
-
-            // Paso la lista de jugadores que optan a premios al controlador
-            ObservableList<JugadoroptaPremio> jugadoresOptanPremio = controlador.obtenerDatosDeTabla();
-            tablaJugadores.setItems(jugadoresOptanPremio);
-            tablaJugadores.refresh();
-
-            // Creo el Scene
-            Scene scene = new Scene(root);
-            scene.getStylesheets().add(getClass().getResource("StylesViewTables.css").toExternalForm());
-            Stage stage = new Stage();
-
-            stage.initModality(Modality.APPLICATION_MODAL);
-            stage.setScene(scene);
-            stage.setTitle("Lista de jugadores y premios a los que optan");
-            stage.showAndWait();
-        } catch (IOException e) {
-            Alert alert = new Alert(Alert.AlertType.ERROR);
-            alert.setHeaderText(null);
-            alert.setTitle("Error");
-            alert.setContentText(e.getMessage());
-            alert.showAndWait();
-        }
-    }
     //Mirar
-    private ObservableList<JugadoroptaPremio> getJugadoresOptanPremio() {
-        ObservableList<JugadoroptaPremio> jugadoresOptanPremio= FXCollections.observableArrayList();
+    private ObservableList<Premios> getJugadoresOptanPremio() {
+        ObservableList<Premios> jugadoresOptanPremio= FXCollections.observableArrayList();
         Connection cnx;
         try {
             cnx = getConexion();
@@ -348,7 +316,7 @@ public class ControlOpenA implements Initializable {
                 String Tipo=rs.getString("Tipo");
                 int puesto=rs.getInt("Puesto");
                 int rangoinicial=rs.getInt("RangoInicial");
-                JugadoroptaPremio opt=new JugadoroptaPremio(NomTorneo,Tipo,puesto,rangoinicial);
+                Premios opt=new Premios(NomTorneo,Tipo,puesto,rangoinicial);
                 jugadoresOptanPremio.add(opt);
             }
         } catch (SQLException e) {

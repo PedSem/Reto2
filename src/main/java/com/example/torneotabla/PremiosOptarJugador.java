@@ -20,6 +20,7 @@ public class PremiosOptarJugador {
          */
     }
 
+
     public static String obtenerPremios(int rangoInicial) throws SQLException {
         Connection conn = null;
         CallableStatement stmt = null;

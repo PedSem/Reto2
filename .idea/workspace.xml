@@ -4,32 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="be0f0c1d-6403-44e9-9eed-91d92bd7b058" name="Changes" comment="guardado temporal">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/torneotabla/JugadoroptaPremio.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/torneotabla/TablaController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+    <list default="true" id="be0f0c1d-6403-44e9-9eed-91d92bd7b058" name="Changes" comment="Open A añadir">
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_14_5_24_10_30_[Changes]/DatosPremios.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_14_5_24_10_30_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_14_5_24_10_30__Changes_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/DatosPremios.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase__Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/torneotabla/BenidormChessMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/torneotabla/BenidormChessMain.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/torneotabla/ControlJugadorOptaPremioOpenA.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/torneotabla/ControlJugadorOptaPremioOpenA.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/torneotabla/ControlOpenA.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/torneotabla/ControlOpenA.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/torneotabla/ControlOpenB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/torneotabla/ControlOpenB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/torneotabla/JugadoroptaPremio.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/torneotabla/Premios.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/torneotabla/Premios.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/torneotabla/PremiosOptarJugador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/torneotabla/PremiosOptarJugador.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/torneotabla/BenidormChessMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/torneotabla/BenidormChessMain.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/torneotabla/ControlJugadorOptaPremioOpenA.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/torneotabla/ControlJugadorOptaPremioOpenA.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/torneotabla/ControlModificarOpenA.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/torneotabla/ControlModificarOpenA.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/example/torneotabla/ControlOpenA$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/torneotabla/ControlOpenA$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/example/torneotabla/ControlOpenA.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/torneotabla/ControlOpenA.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/torneotabla/ControlOpenB.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/torneotabla/ControlOpenB.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/torneotabla/OpenAView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/torneotabla/OpenAView.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/torneotabla/OpenBView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/torneotabla/OpenBView.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/torneotabla/PremiosOptarJugador.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/torneotabla/PremiosOptarJugador.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/torneotabla/StylesMenu.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/torneotabla/StylesMenu.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/torneotabla/StylesOpen.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/torneotabla/StylesOpen.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,8 +25,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="AnnotationType" />
         <option value="Class" />
+        <option value="AnnotationType" />
       </list>
     </option>
   </component>
@@ -61,7 +47,7 @@
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/PedSem/Reto2.git&quot;,
-    &quot;accountId&quot;: &quot;f1ba898d-8483-4b88-b725-d7fd12a60eea&quot;
+    &quot;accountId&quot;: &quot;c7e0519d-e1af-4792-a139-04505c2cdfde&quot;
   }
 }</component>
   <component name="ProblemsViewState">
@@ -84,7 +70,6 @@
     &quot;Application.BenidormChessMain.executor&quot;: &quot;Run&quot;,
     &quot;Application.DatosJugador.executor&quot;: &quot;Run&quot;,
     &quot;Application.LecturaCSV.executor&quot;: &quot;Run&quot;,
-    &quot;Application.PremiosOptarJugador.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
@@ -98,7 +83,7 @@
     &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.editor&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
   &quot;keyToStringList&quot;: {
@@ -179,13 +164,7 @@
       <workItem from="1715672135347" duration="342000" />
       <workItem from="1715672613424" duration="3822000" />
       <workItem from="1715933551208" duration="5441000" />
-      <workItem from="1716271215926" duration="9323000" />
-      <workItem from="1716358120034" duration="23000" />
-      <workItem from="1716366433315" duration="438000" />
-      <workItem from="1716366911769" duration="22000" />
-      <workItem from="1716366976203" duration="15000" />
-      <workItem from="1716367001294" duration="15000" />
-      <workItem from="1716530019684" duration="1664000" />
+      <workItem from="1716271839035" duration="7974000" />
     </task>
     <task id="LOCAL-00001" summary="clase lecturacsv">
       <option name="closed" value="true" />
@@ -331,7 +310,63 @@
       <option name="project" value="LOCAL" />
       <updated>1715944900303</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Modificar a medias">
+      <option name="closed" value="true" />
+      <created>1716202129066</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1716202129066</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Modificar a medias">
+      <option name="closed" value="true" />
+      <created>1716202165985</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1716202165985</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Guardado">
+      <option name="closed" value="true" />
+      <created>1716271852048</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1716271852048</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Modificar A funcional">
+      <option name="closed" value="true" />
+      <created>1716272698421</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1716272698421</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Eliminar A funcional">
+      <option name="closed" value="true" />
+      <created>1716274326981</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1716274326981</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Open A añadir">
+      <option name="closed" value="true" />
+      <created>1716278636857</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1716278636857</updated>
+    </task>
+    <task id="LOCAL-00025" summary="Open A añadir">
+      <option name="closed" value="true" />
+      <created>1716278646909</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1716278646909</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -377,6 +412,11 @@
     <MESSAGE value=" AAAAAAAAAAAAAAAAAAAA" />
     <MESSAGE value="Tableview Open A funcional" />
     <MESSAGE value="Tableview Open A bien" />
-    <option name="LAST_COMMIT_MESSAGE" value="Tableview Open A bien" />
+    <MESSAGE value="Modificar a medias" />
+    <MESSAGE value="Guardado" />
+    <MESSAGE value="Modificar A funcional" />
+    <MESSAGE value="Eliminar A funcional" />
+    <MESSAGE value="Open A añadir" />
+    <option name="LAST_COMMIT_MESSAGE" value="Open A añadir" />
   </component>
 </project>
