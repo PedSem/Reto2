@@ -41,9 +41,8 @@ public class ControlJugadorOptaPremioOpenA implements Initializable {
 
 
     public void imprimir (ActionEvent event) throws IOException {
-
         try {
-            writeToTextFile("JugadorOptaPremio.txt", getJugadorOptaPremio());
+            writeToTextFile("JugadorOptaPremio.txt");
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -107,7 +106,6 @@ public class ControlJugadorOptaPremioOpenA implements Initializable {
             ResultSet rsCV = stm.executeQuery("SELECT j.RangoInicial, j.Nombre, p.Tipo, p.NomTorneo FROM jugador j JOIN premio p ON j.NomTorneo = p.NomTorneo WHERE (p.NomTorneo = 'OPEN A' AND j.NomTorneo = 'OPEN A') AND (j.CV = true AND p.Tipo = 'Com.Valenciana') GROUP BY p.Tipo, j.Nombre ORDER BY j.RangoInicial;");
 
             while (rsCV.next()) {
-
                 int rinicial = rsCV.getInt("RangoInicial");
                 String nom = rsCV.getString("Nombre");
                 String tipo = rsCV.getString("Tipo");
@@ -117,10 +115,10 @@ public class ControlJugadorOptaPremioOpenA implements Initializable {
             }
 
 
-            PreparedStatement ps = cnx.prepareStatement("INSERT INTO jugadoroptapremio VALUES (?, ?, ?)");
+
             //stm.executeQuery("SET FOREIGN_KEY_CHECKS = 0");
             for (PremiosOptarJugador premiosoptar: obs){
-
+                PreparedStatement ps = cnx.prepareStatement("INSERT INTO jugadoroptapremio VALUES (?, ?, ?)");
                 String nomTorneo = premiosoptar.getTorneo();
                 String tipo = premiosoptar.getTipo();
                 int rangoInicial = premiosoptar.getRangoInicial();
@@ -131,24 +129,42 @@ public class ControlJugadorOptaPremioOpenA implements Initializable {
                 ps.setString(2, tipo);
                 ps.setInt(3, rangoInicial);
                 ps.executeUpdate();
+                ps.close();
             }
 
-            ps.close();
+
+
 
         } catch (SQLException e) {
-            throw new RuntimeException(e);
+            e.printStackTrace();
         }
 
 
         return obs;
     }
 
-    private static void writeToTextFile(String filename, ObservableList<PremiosOptarJugador> premiosopta) throws IOException {
-        FileWriter writer = new FileWriter(filename);
-        for (PremiosOptarJugador premioopt : premiosopta) {
-            writer.write(premioopt.getRangoInicial() + "," + premioopt.getNombre() + "," + premioopt.getTipo() + "," + premioopt.getTorneo() + "\n");
+    private static void writeToTextFile(String filename) throws IOException {
+        //select jugador.nombre,jugadoroptapremio.RangoInicial,group_concat(distinct Tipo) as Tipo , jugadoroptapremio.NomTorneo from jugadoroptapremio join jugador on jugador.RangoInicial = jugadoroptapremio.RangoInicial group by jugadoroptapremio.RangoInicial;
+        try {
+            Connection cnx = Conection.getConection();
+            Statement stm = cnx.createStatement();
+            FileWriter writer = new FileWriter(filename);
+            ResultSet wJOPA = stm.executeQuery("select jugador.nombre,jugadoroptapremio.RangoInicial,group_concat(distinct Tipo) as Tipo , jugadoroptapremio.NomTorneo from jugadoroptapremio join jugador on jugador.RangoInicial = jugadoroptapremio.RangoInicial group by jugadoroptapremio.RangoInicial");
+
+            while (wJOPA.next()) {
+                writer.write(wJOPA.getString(1) + " ");
+                writer.write(wJOPA.getString(2) + " ");
+                writer.write(wJOPA.getString(3) + " ");
+                writer.write(wJOPA.getString(4));
+                writer.write("\n --------------------------------------------------------------- \n");
+            }
+            writer.close();
+
+        }catch (SQLException e){
+            e.printStackTrace();
         }
-        writer.close();
+
+
     }
 
     public void cargar(){
