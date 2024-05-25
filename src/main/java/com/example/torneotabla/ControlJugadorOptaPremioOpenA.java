@@ -69,53 +69,41 @@ public class ControlJugadorOptaPremioOpenA implements Initializable {
                 obs.add(premiosOpta);
             }
 
-            /*ResultSet rsSUB2400 = stm.executeQuery("SELECT j.RangoInicial, j.Nombre, p.Tipo, p.NomTorneo\n" +
-                    "FROM jugador j JOIN premio p ON j.NomTorneo = p.NomTorneo \n" +
-                    "WHERE (p.NomTorneo = 'OPEN A' AND j.NomTorneo = 'OPEN A') AND (j.ELO < 2400 AND p.Tipo = \"SUB 2400\")\n" +
-                    "GROUP BY p.Tipo, j.Nombre\n" +
-                    "ORDER BY j.RangoInicial;");
+            ResultSet rsSUB2400 = stm.executeQuery("SELECT j.RangoInicial, j.Nombre, p.Tipo, p.NomTorneo FROM jugador j JOIN premio p ON j.NomTorneo = p.NomTorneo WHERE (p.NomTorneo = 'OPEN A' AND j.NomTorneo = 'OPEN A') AND (j.ELO < 2400 AND p.Tipo = 'SUB 2400') GROUP BY p.Tipo, j.Nombre ORDER BY j.RangoInicial");
 
             while (rsSUB2400.next()) {
 
-                int rinicial = rsAlojados.getInt("RangoInicial");
-                String nom = rsAlojados.getString("Nombre");
-                String tipo = rsAlojados.getString("Tipo");
-                String nomtorneo = rsAlojados.getString("NomTorneo");
+                int rinicial = rsSUB2400.getInt("RangoInicial");
+                String nom = rsSUB2400.getString("Nombre");
+                String tipo = rsSUB2400.getString("tipo");
+                String nomtorneo = rsSUB2400.getString("NomTorneo");
                 PremiosOptarJugador premiosOpta = new PremiosOptarJugador(rinicial, nom, tipo, nomtorneo);
                 obs.add(premiosOpta);
             }
 
-            ResultSet rsSUB2200 = stm.executeQuery("SELECT j.RangoInicial, j.Nombre, p.Tipo, p.NomTorneo\n" +
-                    "FROM jugador j JOIN premio p ON j.NomTorneo = p.NomTorneo \n" +
-                    "WHERE (p.NomTorneo = 'OPEN A' AND j.NomTorneo = 'OPEN A') AND (j.ELO < 2200 AND p.Tipo = \"SUB 2200\")\n" +
-                    "GROUP BY p.Tipo, j.Nombre\n" +
-                    "ORDER BY j.RangoInicial;");
+            ResultSet rsSUB2200 = stm.executeQuery("SELECT j.RangoInicial, j.Nombre, p.Tipo, p.NomTorneo FROM jugador j JOIN premio p ON j.NomTorneo = p.NomTorneo WHERE (p.NomTorneo = 'OPEN A' AND j.NomTorneo = 'OPEN A') AND (j.ELO < 2200 AND p.Tipo = 'SUB 2200') GROUP BY p.Tipo, j.Nombre ORDER BY j.RangoInicial;");
 
             while (rsSUB2200.next()) {
 
-                int rinicial = rsAlojados.getInt("RangoInicial");
-                String nom = rsAlojados.getString("Nombre");
-                String tipo = rsAlojados.getString("Tipo");
-                String nomtorneo = rsAlojados.getString("NomTorneo");
+                int rinicial = rsSUB2200.getInt("RangoInicial");
+                String nom = rsSUB2200.getString("Nombre");
+                String tipo = rsSUB2200.getString("Tipo");
+                String nomtorneo = rsSUB2200.getString("NomTorneo");
                 PremiosOptarJugador premiosOpta = new PremiosOptarJugador(rinicial, nom, tipo, nomtorneo);
                 obs.add(premiosOpta);
             }
 
-            /*ResultSet rsCV = stm.executeQuery("SELECT j.RangoInicial, j.Nombre, p.Tipo, p.NomTorneo\n" +
-                    "FROM jugador j JOIN premio p ON j.NomTorneo = p.NomTorneo \n" +
-                    "WHERE (p.NomTorneo = 'OPEN A' AND j.NomTorneo = 'OPEN A') AND (j.CV = true AND p.Tipo = \"Com.Valenciana\")\n" +
-                    "GROUP BY p.Tipo, j.Nombre\n" +
-                    "ORDER BY j.RangoInicial;");
+            ResultSet rsCV = stm.executeQuery("SELECT j.RangoInicial, j.Nombre, p.Tipo, p.NomTorneo FROM jugador j JOIN premio p ON j.NomTorneo = p.NomTorneo WHERE (p.NomTorneo = 'OPEN A' AND j.NomTorneo = 'OPEN A') AND (j.CV = true AND p.Tipo = 'Com.Valenciana') GROUP BY p.Tipo, j.Nombre ORDER BY j.RangoInicial;");
 
             while (rsCV.next()) {
 
-                int rinicial = rsAlojados.getInt("RangoInicial");
-                String nom = rsAlojados.getString("Nombre");
-                String tipo = rsAlojados.getString("Tipo");
-                String nomtorneo = rsAlojados.getString("NomTorneo");
+                int rinicial = rsCV.getInt("RangoInicial");
+                String nom = rsCV.getString("Nombre");
+                String tipo = rsCV.getString("Tipo");
+                String nomtorneo = rsCV.getString("NomTorneo");
                 PremiosOptarJugador premiosOpta = new PremiosOptarJugador(rinicial, nom, tipo, nomtorneo);
                 obs.add(premiosOpta);
-            }*/
+            }
 
         } catch (SQLException e) {
             throw new RuntimeException(e);

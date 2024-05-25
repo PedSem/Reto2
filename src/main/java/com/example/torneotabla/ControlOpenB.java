@@ -239,7 +239,7 @@ public class ControlOpenB implements Initializable {
             Scene scene = new Scene(root);
 
             //Cargo la hoja de estilos
-            scene.getStylesheets().add(getClass().getResource("StylesTableViews.css").toExternalForm());
+            scene.getStylesheets().add(getClass().getResource("StylesJugadorOptaPremio.css").toExternalForm());
 
             //Cargo el Stage
             Stage stage = new Stage();
