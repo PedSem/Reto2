@@ -105,6 +105,25 @@ public class ControlJugadorOptaPremioOpenA implements Initializable {
                 obs.add(premiosOpta);
             }
 
+
+            PreparedStatement ps = cnx.prepareStatement("INSERT INTO jugadoroptapremio VALUES (?, ?, ?)");
+            //stm.executeQuery("SET FOREIGN_KEY_CHECKS = 0");
+            for (PremiosOptarJugador premiosoptar: obs){
+
+                String nomTorneo = premiosoptar.getTorneo();
+                String tipo = premiosoptar.getTipo();
+                int rangoInicial = premiosoptar.getRangoInicial();
+
+                //PremiosOptarJugador premOpt = new PremiosOptarJugador(nomTorneo, tipo, rangoInicial);
+
+                ps.setString(1, nomTorneo);
+                ps.setString(2, tipo);
+                ps.setInt(3, rangoInicial);
+                ps.executeUpdate();
+            }
+
+            ps.close();
+
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }

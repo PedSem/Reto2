@@ -11,6 +11,12 @@ public class PremiosOptarJugador {
     public String puesto;
     public String Torneo;
 
+    public PremiosOptarJugador(String torneo, String tipo, int rangoInicial) {
+        this.rangoInicial = rangoInicial;
+        this.tipo = tipo;
+        Torneo = torneo;
+    }
+
     public PremiosOptarJugador(int rangoInicial, String nombre, String tipo, String Torneo) {
         this.rangoInicial = rangoInicial;
         this.nombre = nombre;
