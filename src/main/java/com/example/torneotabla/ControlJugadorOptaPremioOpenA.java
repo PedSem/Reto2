@@ -9,6 +9,8 @@ import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.stage.Stage;
 
+import java.io.FileWriter;
+import java.io.IOException;
 import java.net.URL;
 import java.sql.*;
 import java.util.ResourceBundle;
@@ -37,6 +39,15 @@ public class ControlJugadorOptaPremioOpenA implements Initializable {
 
     //private ObservableList<PremiosOptarJugador> jugadoresPremiosOptan;
 
+
+    public void imprimir (ActionEvent event) throws IOException {
+
+        try {
+            writeToTextFile("JugadorOptaPremio.txt", getJugadorOptaPremio());
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
 
     @Override
     public void initialize(URL url, ResourceBundle rb) {
@@ -108,7 +119,17 @@ public class ControlJugadorOptaPremioOpenA implements Initializable {
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
+
+
         return obs;
+    }
+
+    private static void writeToTextFile(String filename, ObservableList<PremiosOptarJugador> premiosopta) throws IOException {
+        FileWriter writer = new FileWriter(filename);
+        for (PremiosOptarJugador premioopt : premiosopta) {
+            writer.write(premioopt.getRangoInicial() + "," + premioopt.getNombre() + "," + premioopt.getTipo() + "," + premioopt.getTorneo() + "\n");
+        }
+        writer.close();
     }
 
     public void cargar(){
