@@ -1,0 +1,188 @@
+1,Franco ,Alojados,OPEN A
+3,Dauner, Benedikt,Alojados,OPEN A
+4,Olsson, William,Alojados,OPEN A
+5,Carlsson, Ludvig,Alojados,OPEN A
+6,Arkell, Keith C,Alojados,OPEN A
+7,Vestby-Ellingsen, Mads,Alojados,OPEN A
+8,Kanov, Nikola,Alojados,OPEN A
+9,Ilinca, Felix-Antonio,Alojados,OPEN A
+10,Ramoutar, Alan-Safar,Alojados,OPEN A
+12,Yordanov, Lachezar,Alojados,OPEN A
+13,Ezra Paul Chambers,Alojados,OPEN A
+14,Morchiashvili, Bachana,Alojados,OPEN A
+15,Chkhaidze, Nikoloz,Alojados,OPEN A
+16,Mingarro Carceller, Sergi,Alojados,OPEN A
+17,Jordan Martinez, Miguel,Alojados,OPEN A
+18,Rey Malde, Henrique,Alojados,OPEN A
+20,Webb, Laurence E,Alojados,OPEN A
+21,Ibanez Aullana, Ramon,Alojados,OPEN A
+22,Balabayeva, Xeniya,Alojados,OPEN A
+23,Torres Sanchez, Jose,Alojados,OPEN A
+24,Nava Pereda, Carlos,Alojados,OPEN A
+25,Mueller, Magnus,Alojados,OPEN A
+26,Mannion, Stephen R,Alojados,OPEN A
+27,Krishnan, Ritvik,Alojados,OPEN A
+29,Torres Rebolledo, Victor,Alojados,OPEN A
+30,Roulet-Dubonnet, Emerik Vapensta,Alojados,OPEN A
+31,Nied, Pascal,Alojados,OPEN A
+32,Castro Quijano, Eduardo,Alojados,OPEN A
+33,Jordan Martinez, David,Alojados,OPEN A
+34,Torres Rebolledo, Alvaro,Alojados,OPEN A
+35,Horcajada Reales, Guillermo,Alojados,OPEN A
+36,Palomo Teruel, Xavier,Alojados,OPEN A
+37,Uran Bermudez, Oliver Kevin,Alojados,OPEN A
+39,Floris, Federico,Alojados,OPEN A
+40,Holand, Per Fredrik,Alojados,OPEN A
+41,Pedersen, Max Moe,Alojados,OPEN A
+42,Sendra Tormo, Juan,Alojados,OPEN A
+45,Mompel Ferruz, Xavier,Alojados,OPEN A
+46,Gonzalez Aguirre, Luis,Alojados,OPEN A
+47,Nesse, David,Alojados,OPEN A
+48,Troffiguer, Olivier,Alojados,OPEN A
+49,Unhjem, Bjorn Robert Lovoll,Alojados,OPEN A
+50,Fernandez Vazquez, Jorge,Alojados,OPEN A
+51,Hernandez Tellez, Claudia,Alojados,OPEN A
+53,Amundsen, Ask,Alojados,OPEN A
+54,Draghici Flutur, Gavril,Alojados,OPEN A
+56,Wiesmann, Dominique,Alojados,OPEN A
+57,Kandic, Milan,Alojados,OPEN A
+58,Rutherford, William,Alojados,OPEN A
+59,Andrzejewska, Anna,Alojados,OPEN A
+60,Ghita, Vlad-Bogdan,Alojados,OPEN A
+61,Doll, Rebecca,Alojados,OPEN A
+62,Fox, Anthony,Alojados,OPEN A
+63,Gasland, Lukas Dominik,Alojados,OPEN A
+64,Lilliehook, Victor,Alojados,OPEN A
+65,Teply Koutsky, David,Alojados,OPEN A
+66,Szelag, Zuzanna,Alojados,OPEN A
+67,Halvorsen, Benjamin,Alojados,OPEN A
+68,Daksh Jain,Alojados,OPEN A
+2,bababooey,SUB 2400,OPEN A
+3,Dauner, Benedikt,SUB 2400,OPEN A
+4,Olsson, William,SUB 2400,OPEN A
+5,Carlsson, Ludvig,SUB 2400,OPEN A
+6,Arkell, Keith C,SUB 2400,OPEN A
+7,Vestby-Ellingsen, Mads,SUB 2400,OPEN A
+8,Kanov, Nikola,SUB 2400,OPEN A
+9,Ilinca, Felix-Antonio,SUB 2400,OPEN A
+10,Ramoutar, Alan-Safar,SUB 2400,OPEN A
+11,Cappelletto, Joshuaede,SUB 2400,OPEN A
+12,Yordanov, Lachezar,SUB 2400,OPEN A
+13,Ezra Paul Chambers,SUB 2400,OPEN A
+14,Morchiashvili, Bachana,SUB 2400,OPEN A
+15,Chkhaidze, Nikoloz,SUB 2400,OPEN A
+16,Mingarro Carceller, Sergi,SUB 2400,OPEN A
+17,Jordan Martinez, Miguel,SUB 2400,OPEN A
+18,Rey Malde, Henrique,SUB 2400,OPEN A
+19,Hercegovac, Neven,SUB 2400,OPEN A
+20,Webb, Laurence E,SUB 2400,OPEN A
+21,Ibanez Aullana, Ramon,SUB 2400,OPEN A
+22,Balabayeva, Xeniya,SUB 2400,OPEN A
+23,Torres Sanchez, Jose,SUB 2400,OPEN A
+24,Nava Pereda, Carlos,SUB 2400,OPEN A
+25,Mueller, Magnus,SUB 2400,OPEN A
+26,Mannion, Stephen R,SUB 2400,OPEN A
+27,Krishnan, Ritvik,SUB 2400,OPEN A
+28,Grabuzova, Tatiana,SUB 2400,OPEN A
+29,Torres Rebolledo, Victor,SUB 2400,OPEN A
+30,Roulet-Dubonnet, Emerik Vapensta,SUB 2400,OPEN A
+31,Nied, Pascal,SUB 2400,OPEN A
+32,Castro Quijano, Eduardo,SUB 2400,OPEN A
+33,Jordan Martinez, David,SUB 2400,OPEN A
+34,Torres Rebolledo, Alvaro,SUB 2400,OPEN A
+35,Horcajada Reales, Guillermo,SUB 2400,OPEN A
+36,Palomo Teruel, Xavier,SUB 2400,OPEN A
+37,Uran Bermudez, Oliver Kevin,SUB 2400,OPEN A
+38,Atienza Alvarez, Javier,SUB 2400,OPEN A
+39,Floris, Federico,SUB 2400,OPEN A
+40,Holand, Per Fredrik,SUB 2400,OPEN A
+41,Pedersen, Max Moe,SUB 2400,OPEN A
+42,Sendra Tormo, Juan,SUB 2400,OPEN A
+43,Bevia Martinez, Luis,SUB 2400,OPEN A
+44,Lopez Martinez, Jaime,SUB 2400,OPEN A
+45,Mompel Ferruz, Xavier,SUB 2400,OPEN A
+46,Gonzalez Aguirre, Luis,SUB 2400,OPEN A
+47,Nesse, David,SUB 2400,OPEN A
+48,Troffiguer, Olivier,SUB 2400,OPEN A
+49,Unhjem, Bjorn Robert Lovoll,SUB 2400,OPEN A
+50,Fernandez Vazquez, Jorge,SUB 2400,OPEN A
+51,Hernandez Tellez, Claudia,SUB 2400,OPEN A
+52,Bascunana Sanchez, Pablo,SUB 2400,OPEN A
+53,Amundsen, Ask,SUB 2400,OPEN A
+54,Draghici Flutur, Gavril,SUB 2400,OPEN A
+55,Blanco Sanchez, Jose Fernando,SUB 2400,OPEN A
+56,Wiesmann, Dominique,SUB 2400,OPEN A
+57,Kandic, Milan,SUB 2400,OPEN A
+58,Rutherford, William,SUB 2400,OPEN A
+59,Andrzejewska, Anna,SUB 2400,OPEN A
+60,Ghita, Vlad-Bogdan,SUB 2400,OPEN A
+61,Doll, Rebecca,SUB 2400,OPEN A
+62,Fox, Anthony,SUB 2400,OPEN A
+63,Gasland, Lukas Dominik,SUB 2400,OPEN A
+64,Lilliehook, Victor,SUB 2400,OPEN A
+65,Teply Koutsky, David,SUB 2400,OPEN A
+66,Szelag, Zuzanna,SUB 2400,OPEN A
+67,Halvorsen, Benjamin,SUB 2400,OPEN A
+68,Daksh Jain,SUB 2400,OPEN A
+21,Ibanez Aullana, Ramon,SUB 2200,OPEN A
+22,Balabayeva, Xeniya,SUB 2200,OPEN A
+23,Torres Sanchez, Jose,SUB 2200,OPEN A
+24,Nava Pereda, Carlos,SUB 2200,OPEN A
+25,Mueller, Magnus,SUB 2200,OPEN A
+26,Mannion, Stephen R,SUB 2200,OPEN A
+27,Krishnan, Ritvik,SUB 2200,OPEN A
+28,Grabuzova, Tatiana,SUB 2200,OPEN A
+29,Torres Rebolledo, Victor,SUB 2200,OPEN A
+30,Roulet-Dubonnet, Emerik Vapensta,SUB 2200,OPEN A
+31,Nied, Pascal,SUB 2200,OPEN A
+32,Castro Quijano, Eduardo,SUB 2200,OPEN A
+33,Jordan Martinez, David,SUB 2200,OPEN A
+34,Torres Rebolledo, Alvaro,SUB 2200,OPEN A
+35,Horcajada Reales, Guillermo,SUB 2200,OPEN A
+36,Palomo Teruel, Xavier,SUB 2200,OPEN A
+37,Uran Bermudez, Oliver Kevin,SUB 2200,OPEN A
+38,Atienza Alvarez, Javier,SUB 2200,OPEN A
+39,Floris, Federico,SUB 2200,OPEN A
+40,Holand, Per Fredrik,SUB 2200,OPEN A
+41,Pedersen, Max Moe,SUB 2200,OPEN A
+42,Sendra Tormo, Juan,SUB 2200,OPEN A
+43,Bevia Martinez, Luis,SUB 2200,OPEN A
+44,Lopez Martinez, Jaime,SUB 2200,OPEN A
+45,Mompel Ferruz, Xavier,SUB 2200,OPEN A
+46,Gonzalez Aguirre, Luis,SUB 2200,OPEN A
+47,Nesse, David,SUB 2200,OPEN A
+48,Troffiguer, Olivier,SUB 2200,OPEN A
+49,Unhjem, Bjorn Robert Lovoll,SUB 2200,OPEN A
+50,Fernandez Vazquez, Jorge,SUB 2200,OPEN A
+51,Hernandez Tellez, Claudia,SUB 2200,OPEN A
+52,Bascunana Sanchez, Pablo,SUB 2200,OPEN A
+53,Amundsen, Ask,SUB 2200,OPEN A
+54,Draghici Flutur, Gavril,SUB 2200,OPEN A
+55,Blanco Sanchez, Jose Fernando,SUB 2200,OPEN A
+56,Wiesmann, Dominique,SUB 2200,OPEN A
+57,Kandic, Milan,SUB 2200,OPEN A
+58,Rutherford, William,SUB 2200,OPEN A
+59,Andrzejewska, Anna,SUB 2200,OPEN A
+60,Ghita, Vlad-Bogdan,SUB 2200,OPEN A
+61,Doll, Rebecca,SUB 2200,OPEN A
+62,Fox, Anthony,SUB 2200,OPEN A
+63,Gasland, Lukas Dominik,SUB 2200,OPEN A
+64,Lilliehook, Victor,SUB 2200,OPEN A
+65,Teply Koutsky, David,SUB 2200,OPEN A
+66,Szelag, Zuzanna,SUB 2200,OPEN A
+67,Halvorsen, Benjamin,SUB 2200,OPEN A
+68,Daksh Jain,SUB 2200,OPEN A
+9,Ilinca, Felix-Antonio,Com.Valenciana,OPEN A
+16,Mingarro Carceller, Sergi,Com.Valenciana,OPEN A
+17,Jordan Martinez, Miguel,Com.Valenciana,OPEN A
+21,Ibanez Aullana, Ramon,Com.Valenciana,OPEN A
+23,Torres Sanchez, Jose,Com.Valenciana,OPEN A
+28,Grabuzova, Tatiana,Com.Valenciana,OPEN A
+33,Jordan Martinez, David,Com.Valenciana,OPEN A
+37,Uran Bermudez, Oliver Kevin,Com.Valenciana,OPEN A
+38,Atienza Alvarez, Javier,Com.Valenciana,OPEN A
+42,Sendra Tormo, Juan,Com.Valenciana,OPEN A
+43,Bevia Martinez, Luis,Com.Valenciana,OPEN A
+44,Lopez Martinez, Jaime,Com.Valenciana,OPEN A
+46,Gonzalez Aguirre, Luis,Com.Valenciana,OPEN A
+52,Bascunana Sanchez, Pablo,Com.Valenciana,OPEN A

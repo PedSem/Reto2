@@ -17,6 +17,6 @@
         </columns>
       </TableView>
       <ChoiceBox fx:id="choiceBox" layoutX="20.0" layoutY="125.0" prefHeight="26.0" prefWidth="113.0" />
-      <Button fx:id="imprimirOptan" layoutX="34.0" layoutY="272.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="85.0" text="Imprimir" />
+      <Button fx:id="imprimirOptan" layoutX="34.0" layoutY="272.0" mnemonicParsing="false" onAction="#imprimir" prefHeight="42.0" prefWidth="85.0" text="Imprimir" />
    </children>
 </AnchorPane>
