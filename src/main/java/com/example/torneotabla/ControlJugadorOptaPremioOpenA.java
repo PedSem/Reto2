@@ -32,8 +32,7 @@ public class ControlJugadorOptaPremioOpenA implements Initializable {
     @FXML
     private TableColumn<PremiosOptarJugador,String>  Torneo;
 
-    @FXML
-    ObservableList<PremiosOptarJugador> obs;
+
 
     private Jugador jugador;
 
@@ -151,6 +150,8 @@ public class ControlJugadorOptaPremioOpenA implements Initializable {
             FileWriter writer = new FileWriter(filename);
             ResultSet wJOPA = stm.executeQuery("select jugador.nombre,jugadoroptapremio.RangoInicial,group_concat(distinct Tipo) as Tipo , jugadoroptapremio.NomTorneo from jugadoroptapremio join jugador on jugador.RangoInicial = jugadoroptapremio.RangoInicial group by jugadoroptapremio.RangoInicial");
 
+            writer.write("BENIDORM CHESS OPEN A\n");
+            writer.write(".-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-. \n");
             while (wJOPA.next()) {
                 writer.write(wJOPA.getString(1) + " ");
                 writer.write(wJOPA.getString(2) + " ");
