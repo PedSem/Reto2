@@ -41,7 +41,7 @@ public class ControlJugadorOptaPremioOpenA implements Initializable {
 
     public void imprimir (ActionEvent event) throws IOException {
         try {
-            writeToTextFile("JugadorOptaPremio.txt");
+            writeToTextFile("JugadorOptaPremioA.txt");
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -148,7 +148,7 @@ public class ControlJugadorOptaPremioOpenA implements Initializable {
             Connection cnx = Conection.getConection();
             Statement stm = cnx.createStatement();
             FileWriter writer = new FileWriter(filename);
-            ResultSet wJOPA = stm.executeQuery("select jugador.nombre,jugadoroptapremio.RangoInicial,group_concat(distinct Tipo) as Tipo , jugadoroptapremio.NomTorneo from jugadoroptapremio join jugador on jugador.RangoInicial = jugadoroptapremio.RangoInicial group by jugadoroptapremio.RangoInicial");
+            ResultSet wJOPA = stm.executeQuery("select jugador.nombre,jugadoroptapremio.RangoInicial,group_concat(distinct Tipo) as Tipo , jugadoroptapremio.NomTorneo from jugadoroptapremio join jugador on jugador.RangoInicial = jugadoroptapremio.RangoInicial WHERE jugador.NomTorneo = 'OPEN A' group by jugadoroptapremio.RangoInicial");
 
             writer.write("BENIDORM CHESS OPEN A\n");
             writer.write(".-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-. \n");
@@ -177,33 +177,6 @@ public class ControlJugadorOptaPremioOpenA implements Initializable {
         this.Torneo.setCellValueFactory(new PropertyValueFactory<>("Torneo"));
 
     }
-
-    /*
-    public ControlJugadorOptaPremioOpenA(TableView<Premios> tablaJugadores) {
-        this.tablaRanking = tablaJugadores;
-    }
-
-
-
-
-    public void initAtributtes(ObservableList<Premios> premios) {
-    this.tablaRanking.setItems(premios);
-    }
-    */
-
-    //Mirar
-
-    /*
-    public void initAtributtes(ObservableList<Jugador> premios) {
-        this.tablaJugadores = premios;
-    }
-    */
-
-    /*
-    public ObservableList<Premios> obtenerDatosDeTabla() {
-        return tablaJugadores.getItems();
-    }
-     */
 
     @FXML
     private void salir(ActionEvent event) {

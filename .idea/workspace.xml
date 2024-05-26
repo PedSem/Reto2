@@ -4,11 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="be0f0c1d-6403-44e9-9eed-91d92bd7b058" name="Changes" comment="boton imprimir optados con consulta&#10;(Mejor)">
+    <list default="true" id="be0f0c1d-6403-44e9-9eed-91d92bd7b058" name="Changes" comment="boton imprimir optados">
+      <change afterPath="$PROJECT_DIR$/JugadorOptaPremioA.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JugadorOptaPremioB.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JugadorOptaPremio.txt" beforeDir="false" afterPath="$PROJECT_DIR$/JugadorOptaPremio.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JugadorOptaPremio.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/torneotabla/ControlJugadorOptaPremioOpenA.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/torneotabla/ControlJugadorOptaPremioOpenA.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/torneotabla/ControlJugadorOptaPremioOpenB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/torneotabla/ControlJugadorOptaPremioOpenB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/torneotabla/JugadorOptaPremioOpenB.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/torneotabla/JugadorOptaPremioOpenB.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/torneotabla/StylesJugadorOptaPremio.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/torneotabla/StylesJugadorOptaPremio.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/example/torneotabla/ControlJugadorOptaPremioOpenA.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/torneotabla/ControlJugadorOptaPremioOpenA.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/torneotabla/ControlJugadorOptaPremioOpenB.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/torneotabla/ControlJugadorOptaPremioOpenB.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/torneotabla/JugadorOptaPremioOpenB.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/torneotabla/JugadorOptaPremioOpenB.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -427,15 +436,7 @@
       <option name="project" value="LOCAL" />
       <updated>1716651336623</updated>
     </task>
-    <task id="LOCAL-00034" summary="boton imprimir optados con consulta&#10;(Mejor)">
-      <option name="closed" value="true" />
-      <created>1716659017994</created>
-      <option name="number" value="00034" />
-      <option name="presentableId" value="LOCAL-00034" />
-      <option name="project" value="LOCAL" />
-      <updated>1716659017994</updated>
-    </task>
-    <option name="localTasksCounter" value="35" />
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -466,6 +467,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="fxml" />
     <MESSAGE value="añadidos archivos vistaq" />
     <MESSAGE value="añadidos archivos vista" />
     <MESSAGE value="sarrentsaezt" />
@@ -490,7 +492,6 @@
     <MESSAGE value="Cambios conexion" />
     <MESSAGE value="Modificar en base de datos" />
     <MESSAGE value="boton imprimir optados" />
-    <MESSAGE value="boton imprimir optados con consulta&#10;(Mejor)" />
-    <option name="LAST_COMMIT_MESSAGE" value="boton imprimir optados con consulta&#10;(Mejor)" />
+    <option name="LAST_COMMIT_MESSAGE" value="boton imprimir optados" />
   </component>
 </project>

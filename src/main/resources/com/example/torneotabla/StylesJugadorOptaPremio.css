@@ -83,3 +83,7 @@
     -fx-border-width: 3px;
     -fx-border-radius: 5px;
 }
+
+.button:armed{
+    -fx-background-color: #8ffbff;
+}
