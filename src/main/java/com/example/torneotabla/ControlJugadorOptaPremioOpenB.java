@@ -79,7 +79,7 @@ public class ControlJugadorOptaPremioOpenB implements Initializable {
                 obs.add(premiosOpta);
             }
 
-            ResultSet rsSUB1800 = stm.executeQuery("SELECT j.RangoInicial, j.Nombre, p.Tipo, p.NomTorneo FROM jugador j JOIN premio p ON j.NomTorneo = p.NomTorneo WHERE (p.NomTorneo = 'OPEN B' AND j.NomTorneo = 'OPEN B') AND (j.ELO < 1800 AND p.Tipo = 'SUB 1800') GROUP BY p.Tipo, j.Nombre ORDER BY j.RangoInicial");
+            ResultSet rsSUB1800 = stm.executeQuery("SELECT j.RangoInicial, j.Nombre, p.Tipo, p.NomTorneo FROM jugador j JOIN Premio p ON j.NomTorneo = p.NomTorneo WHERE (p.NomTorneo = 'OPEN B' AND j.NomTorneo = 'OPEN B') AND (j.ELO < 1800 AND p.Tipo = 'SUB 1800') GROUP BY p.Tipo, j.Nombre ORDER BY j.RangoInicial");
 
             while (rsSUB1800.next()) {
 
@@ -91,7 +91,7 @@ public class ControlJugadorOptaPremioOpenB implements Initializable {
                 obs.add(premiosOpta);
             }
 
-            ResultSet rsSUB1600 = stm.executeQuery("SELECT j.RangoInicial, j.Nombre, p.Tipo, p.NomTorneo FROM jugador j JOIN premio p ON j.NomTorneo = p.NomTorneo WHERE (p.NomTorneo = 'OPEN B' AND j.NomTorneo = 'OPEN B') AND (j.ELO < 1600 AND p.Tipo = 'SUB 1600') GROUP BY p.Tipo, j.Nombre ORDER BY j.RangoInicial;");
+            ResultSet rsSUB1600 = stm.executeQuery("SELECT j.RangoInicial, j.Nombre, p.Tipo, p.NomTorneo FROM jugador j JOIN Premio p ON j.NomTorneo = p.NomTorneo WHERE (p.NomTorneo = 'OPEN B' AND j.NomTorneo = 'OPEN B') AND (j.ELO < 1600 AND p.Tipo = 'SUB 1600') GROUP BY p.Tipo, j.Nombre ORDER BY j.RangoInicial;");
 
             while (rsSUB1600.next()) {
 
@@ -103,7 +103,7 @@ public class ControlJugadorOptaPremioOpenB implements Initializable {
                 obs.add(premiosOpta);
             }
 
-            ResultSet rsSUB1400 = stm.executeQuery("SELECT j.RangoInicial, j.Nombre, p.Tipo, p.NomTorneo FROM jugador j JOIN premio p ON j.NomTorneo = p.NomTorneo WHERE (p.NomTorneo = 'OPEN B' AND j.NomTorneo = 'OPEN B') AND (j.ELO < 1400 AND p.Tipo = 'SUB 1400') GROUP BY p.Tipo, j.Nombre ORDER BY j.RangoInicial;");
+            ResultSet rsSUB1400 = stm.executeQuery("SELECT j.RangoInicial, j.Nombre, p.Tipo, p.NomTorneo FROM jugador j JOIN Premio p ON j.NomTorneo = p.NomTorneo WHERE (p.NomTorneo = 'OPEN B' AND j.NomTorneo = 'OPEN B') AND (j.ELO < 1400 AND p.Tipo = 'SUB 1400') GROUP BY p.Tipo, j.Nombre ORDER BY j.RangoInicial;");
 
             while (rsSUB1400.next()) {
 
@@ -115,7 +115,7 @@ public class ControlJugadorOptaPremioOpenB implements Initializable {
                 obs.add(premiosOpta);
             }
 
-            ResultSet rsCV = stm.executeQuery("SELECT j.RangoInicial, j.Nombre, p.Tipo, p.NomTorneo FROM jugador j JOIN premio p ON j.NomTorneo = p.NomTorneo WHERE (p.NomTorneo = 'OPEN B' AND j.NomTorneo = 'OPEN B') AND (j.CV = true AND p.Tipo = 'Com.Valenciana') GROUP BY p.Tipo, j.Nombre ORDER BY j.RangoInicial;");
+            ResultSet rsCV = stm.executeQuery("SELECT j.RangoInicial, j.Nombre, p.Tipo, p.NomTorneo FROM jugador j JOIN Premio p ON j.NomTorneo = p.NomTorneo WHERE (p.NomTorneo = 'OPEN B' AND j.NomTorneo = 'OPEN B') AND (j.CV = true AND p.Tipo = 'Com.Valenciana') GROUP BY p.Tipo, j.Nombre ORDER BY j.RangoInicial;");
 
             while (rsCV.next()) {
                 int rinicial = rsCV.getInt("RangoInicial");
