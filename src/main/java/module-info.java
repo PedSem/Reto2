@@ -5,6 +5,7 @@ module com.example.torneotabla {
     requires waffle.jna;
     requires org.checkerframework.checker.qual;
 
+
     opens com.example.torneotabla to javafx.fxml;
     exports com.example.torneotabla;
 }

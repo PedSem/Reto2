@@ -214,7 +214,7 @@ Razhnou, Lev 109 Alojados,SUB 1400,SUB 1600,SUB 1800 OPEN B
  --------------------------------------------------------------- 
 Fossaas, Oskar Erland 110 Alojados,SUB 1400,SUB 1600,SUB 1800 OPEN B
  --------------------------------------------------------------- 
-Guio Del Rio, Jos� Antonio 111 Com.Valenciana,SUB 1400,SUB 1600,SUB 1800 OPEN B
+Guio Del Rio, José Antonio 111 Com.Valenciana,SUB 1400,SUB 1600,SUB 1800 OPEN B
  --------------------------------------------------------------- 
 Razhnova, Aryna 112 Alojados,SUB 1400,SUB 1600,SUB 1800 OPEN B
  --------------------------------------------------------------- 

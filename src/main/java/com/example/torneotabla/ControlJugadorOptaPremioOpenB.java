@@ -145,7 +145,7 @@ public class ControlJugadorOptaPremioOpenB implements Initializable {
             }
 
         } catch (SQLException e) {
-            e.printStackTrace();
+            System.out.println("Finalizado carga jugador opta premios");
         }
 
         return obs;
