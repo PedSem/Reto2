@@ -1,140 +1,134 @@
 BENIDORM CHESS OPEN B
 .-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-. 
-Aguado Crespo, Antonio 1 Alojados,Com.Valenciana OPEN A
+Sonis, Francesco 1 Com.Valenciana OPEN B
  --------------------------------------------------------------- 
-Lloret Climent, Miguel 2 Com.Valenciana OPEN B
+Richter, Michael 2 Com.Valenciana OPEN B
  --------------------------------------------------------------- 
-Perez Garcia, Jose Miguel 3 Alojados,Com.Valenciana,SUB 2400 OPEN A
+Dauner, Benedikt 3 Alojados,Com.Valenciana OPEN B
  --------------------------------------------------------------- 
-Hassomal Daswani, Birjkumar 4 Alojados,Com.Valenciana,SUB 2400 OPEN B
+Olsson, William 4 Alojados,Com.Valenciana OPEN B
  --------------------------------------------------------------- 
-Navarro Rico, Lluis 5 Alojados,Com.Valenciana,SUB 2400 OPEN A
+Carlsson, Ludvig 5 Com.Valenciana OPEN B
  --------------------------------------------------------------- 
-Robledo Sanchez, Saul 6 Alojados,Com.Valenciana,SUB 2400 OPEN A
+Arkell, Keith C 6 Com.Valenciana OPEN B
  --------------------------------------------------------------- 
-Bote Kobolo, Benjamin E. 7 Alojados,SUB 2400 OPEN A
+Vestby-Ellingsen, Mads 7 Alojados OPEN B
  --------------------------------------------------------------- 
-Camison Zornoza, Cesar 8 Alojados,Com.Valenciana,SUB 2400 OPEN B
+Kanov, Nikola 8 Alojados,Com.Valenciana OPEN B
  --------------------------------------------------------------- 
-Oreshkin, Vladislav 9 Alojados,Com.Valenciana,SUB 2400 OPEN A
+Ilinca, Felix-Antonio 9 Com.Valenciana OPEN B
  --------------------------------------------------------------- 
-Machin Arbelo, Pedro Alexis 10 Alojados,SUB 2400 OPEN A
+Ramoutar, Alan-Safar 10 Alojados OPEN B
  --------------------------------------------------------------- 
-Perez Garcia, Juan Angel 11 Alojados,SUB 2400 OPEN B
+Cappelletto, Joshuaede 11 Alojados OPEN B
  --------------------------------------------------------------- 
-Zamora Soler, Raul 12 Alojados,Com.Valenciana,SUB 2400 OPEN B
+Yordanov, Lachezar 12 Com.Valenciana OPEN B
  --------------------------------------------------------------- 
-Vallbona Domingo, Joan 13 Alojados,SUB 2400 OPEN B
+Ezra Paul Chambers 13 Alojados OPEN B
  --------------------------------------------------------------- 
-Ruiz Ureta, Ernesto 14 Alojados,SUB 2400 OPEN A
+Morchiashvili, Bachana 14 Alojados OPEN B
  --------------------------------------------------------------- 
-Hushpit, Lukian .. 15 Alojados,SUB 2400 OPEN A
+Mingarro Carceller, Sergi 16 Alojados OPEN B
  --------------------------------------------------------------- 
-Stolp, Aleksander 16 Alojados,Com.Valenciana,SUB 2400 OPEN A
+Jordan Martinez, Miguel 17 Alojados,Com.Valenciana OPEN B
  --------------------------------------------------------------- 
-Reig Albero, Ferran 17 Alojados,Com.Valenciana,SUB 2400 OPEN A
+Rey Malde, Henrique 18 Alojados OPEN B
  --------------------------------------------------------------- 
-Cafolla, Peter 18 Alojados,SUB 2400 OPEN B
+Hercegovac, Neven 19 Alojados OPEN B
  --------------------------------------------------------------- 
-Hall, Rachid 19 Alojados,SUB 2400 OPEN B
+Webb, Laurence E 20 Alojados OPEN B
  --------------------------------------------------------------- 
-Nguyen, Khoi 20 Alojados,SUB 2400 OPEN A
+Balabayeva, Xeniya 22 Alojados,Com.Valenciana OPEN B
  --------------------------------------------------------------- 
-Rodriguez Lopez, Ruben 21 Alojados,Com.Valenciana,SUB 2200,SUB 2400 OPEN A
+Torres Sanchez, Jose 23 Alojados,Com.Valenciana OPEN B
  --------------------------------------------------------------- 
-Selva Salvador, Antonio 22 Alojados,Com.Valenciana,SUB 2200,SUB 2400 OPEN A
+Nava Pereda, Carlos 24 Alojados OPEN B
  --------------------------------------------------------------- 
-Viciano Barrachina, Aitor 23 Alojados,Com.Valenciana,SUB 2200,SUB 2400 OPEN B
+Mueller, Magnus 25 Alojados,Com.Valenciana OPEN B
  --------------------------------------------------------------- 
-Salter, David 24 Alojados,SUB 2200,SUB 2400 OPEN A
+Mannion, Stephen R 26 Alojados,Com.Valenciana OPEN B
  --------------------------------------------------------------- 
-Blasco Marques, Salvador 25 Alojados,Com.Valenciana,SUB 2200,SUB 2400 OPEN A
+Krishnan, Ritvik 27 Com.Valenciana OPEN B
  --------------------------------------------------------------- 
-Roca Cruz, Rafael 26 Alojados,Com.Valenciana,SUB 2200,SUB 2400 OPEN B
+Grabuzova, Tatiana 28 Alojados,Com.Valenciana OPEN B
  --------------------------------------------------------------- 
-Fernandez Lopez, Francisco J. 27 Alojados,Com.Valenciana,SUB 2200,SUB 2400 OPEN A
+Torres Rebolledo, Victor 29 Alojados OPEN B
  --------------------------------------------------------------- 
-Gimeno Simo, Sergio .. 28 Alojados,Com.Valenciana,SUB 2200,SUB 2400 OPEN A
+Roulet-Dubonnet, Emerik Vapensta 30 Alojados OPEN B
  --------------------------------------------------------------- 
-Codina Garcia, Jose 29 Alojados,SUB 2200,SUB 2400 OPEN A
+Nied, Pascal 31 Alojados OPEN B
  --------------------------------------------------------------- 
-Fernandez Perez, Josep 30 Alojados,SUB 2200,SUB 2400 OPEN B
+Castro Quijano, Eduardo 32 Alojados,Com.Valenciana OPEN B
  --------------------------------------------------------------- 
-Williams, Duncan 31 Alojados,SUB 2200,SUB 2400 OPEN A
+Jordan Martinez, David 33 Alojados OPEN B
  --------------------------------------------------------------- 
-Rios Garcia, Miguel 32 Alojados,Com.Valenciana,SUB 2200,SUB 2400 OPEN A
+Torres Rebolledo, Alvaro 34 Alojados,Com.Valenciana OPEN B
  --------------------------------------------------------------- 
-Rodriguez Perez, Mauro 33 Alojados,Com.Valenciana,SUB 2200,SUB 2400 OPEN A
+Horcajada Reales, Guillermo 35 Com.Valenciana OPEN B
  --------------------------------------------------------------- 
-Turner, Justin 34 Alojados,Com.Valenciana,SUB 2200,SUB 2400 OPEN A
+Palomo Teruel, Xavier 36 Alojados OPEN B
  --------------------------------------------------------------- 
-Munoz Osete, Marcos 35 Alojados,Com.Valenciana,SUB 2200,SUB 2400 OPEN A
+Atienza Alvarez, Javier 38 Alojados OPEN B
  --------------------------------------------------------------- 
-Dawson, Alastair 36 Alojados,SUB 2200,SUB 2400 OPEN A
+Floris, Federico 39 Alojados,SUB 1800 OPEN B
  --------------------------------------------------------------- 
-Lopez de Turiso Sanchez, Jose An 37 Alojados,Com.Valenciana,SUB 2200,SUB 2400 OPEN A
+Holand, Per Fredrik 40 Alojados,SUB 1800 OPEN B
  --------------------------------------------------------------- 
-Strand, Amund Pihl 38 Alojados,Com.Valenciana,SUB 2200,SUB 2400 OPEN B
+Pedersen, Max Moe 41 Com.Valenciana,SUB 1800 OPEN B
  --------------------------------------------------------------- 
-Fuentes Arjona, Antonio 39 Alojados,SUB 1800,SUB 2200,SUB 2400 OPEN B
+Sendra Tormo, Juan 42 Alojados,SUB 1800 OPEN B
  --------------------------------------------------------------- 
-Wernberg, Nikolai Olsen 40 Alojados,SUB 1800,SUB 2200,SUB 2400 OPEN B
+Bevia Martinez, Luis 43 Com.Valenciana,SUB 1800 OPEN B
  --------------------------------------------------------------- 
-Guillen Montiel, Jose Luis 41 Alojados,Com.Valenciana,SUB 1800,SUB 2200,SUB 2400 OPEN B
+Lopez Martinez, Jaime 44 Com.Valenciana,SUB 1800 OPEN B
  --------------------------------------------------------------- 
-Kane, Robert 42 Alojados,Com.Valenciana,SUB 1800,SUB 2200,SUB 2400 OPEN A
+Mompel Ferruz, Xavier 45 Alojados,SUB 1800 OPEN B
  --------------------------------------------------------------- 
-Viudes Serra, Aaron 43 Com.Valenciana,SUB 1800,SUB 2200,SUB 2400 OPEN A
+Gonzalez Aguirre, Luis 46 Alojados,Com.Valenciana,SUB 1800 OPEN B
  --------------------------------------------------------------- 
-Martinez Martin, Francisco 44 Com.Valenciana,SUB 1800,SUB 2200,SUB 2400 OPEN B
+Nesse, David 47 Alojados,SUB 1800 OPEN B
  --------------------------------------------------------------- 
-Lien, Sebastian 45 Alojados,SUB 1800,SUB 2200,SUB 2400 OPEN A
+Troffiguer, Olivier 48 Com.Valenciana,SUB 1800 OPEN B
  --------------------------------------------------------------- 
-Gerona Maura, Jesus 46 Alojados,Com.Valenciana,SUB 1800,SUB 2200,SUB 2400 OPEN A
+Unhjem, Bjorn Robert Lovoll 49 Alojados,SUB 1800 OPEN B
  --------------------------------------------------------------- 
-Nordgreen, Jan Thomas 47 Alojados,SUB 1800,SUB 2200,SUB 2400 OPEN A
+Fernandez Vazquez, Jorge 50 Alojados,SUB 1800 OPEN B
  --------------------------------------------------------------- 
-Pedraza Fernandez, Miguel Angel 48 Alojados,Com.Valenciana,SUB 1800,SUB 2200,SUB 2400 OPEN A
+Hernandez Tellez, Claudia 51 Com.Valenciana,SUB 1800 OPEN B
  --------------------------------------------------------------- 
-Torres Rebolledo, Marcos .. 49 Alojados,SUB 1800,SUB 2200,SUB 2400 OPEN B
+Bascunana Sanchez, Pablo 52 Alojados,SUB 1800 OPEN B
  --------------------------------------------------------------- 
-Nieto Lopez, Francisco Ramon 50 Alojados,SUB 1800,SUB 2200,SUB 2400 OPEN B
+Amundsen, Ask 53 Alojados,SUB 1800 OPEN B
  --------------------------------------------------------------- 
-Rodriguez Moya, David 51 Alojados,Com.Valenciana,SUB 1800,SUB 2200,SUB 2400 OPEN A
+Draghici Flutur, Gavril 54 Alojados,SUB 1800 OPEN B
  --------------------------------------------------------------- 
-Vicente Soriano, Josep 52 Alojados,Com.Valenciana,SUB 1800,SUB 2200,SUB 2400 OPEN A
+Blanco Sanchez, Jose Fernando 55 Alojados,SUB 1800 OPEN B
  --------------------------------------------------------------- 
-Espejo Montagut, Jose Maria 53 Alojados,SUB 1800,SUB 2200,SUB 2400 OPEN B
+Wiesmann, Dominique 56 Alojados,SUB 1800 OPEN B
  --------------------------------------------------------------- 
-Minguela Munoz, Bienvenido 54 Alojados,SUB 1800,SUB 2200,SUB 2400 OPEN A
+Kandic, Milan 57 Com.Valenciana,SUB 1800 OPEN B
  --------------------------------------------------------------- 
-Alberti, Milo 55 Alojados,SUB 1800,SUB 2200,SUB 2400 OPEN A
+Rutherford, William 58 Com.Valenciana,SUB 1800 OPEN B
  --------------------------------------------------------------- 
-Martinez Zazo, Jesus 56 Alojados,SUB 1800,SUB 2200,SUB 2400 OPEN A
+Andrzejewska, Anna 59 Alojados,SUB 1800 OPEN B
  --------------------------------------------------------------- 
-Oliva, Andrea 57 Alojados,Com.Valenciana,SUB 1800,SUB 2200,SUB 2400 OPEN A
+Ghita, Vlad-Bogdan 60 Com.Valenciana,SUB 1800 OPEN B
  --------------------------------------------------------------- 
-Planelles Ortega, Emilio 58 Alojados,Com.Valenciana,SUB 1800,SUB 2200,SUB 2400 OPEN B
+Doll, Rebecca 61 Com.Valenciana,SUB 1800 OPEN B
  --------------------------------------------------------------- 
-Winter, Kevin 59 Alojados,SUB 1800,SUB 2200,SUB 2400 OPEN A
+Fox, Anthony 62 Alojados,SUB 1600,SUB 1800 OPEN B
  --------------------------------------------------------------- 
-Nechifor, David 60 Alojados,Com.Valenciana,SUB 1800,SUB 2200,SUB 2400 OPEN B
+Gasland, Lukas Dominik 63 Alojados,SUB 1600,SUB 1800 OPEN B
  --------------------------------------------------------------- 
-Garcia Yepes, Miguel Angel 61 Alojados,Com.Valenciana,SUB 1800,SUB 2200,SUB 2400 OPEN A
+Lilliehook, Victor 64 Alojados,SUB 1600,SUB 1800 OPEN B
  --------------------------------------------------------------- 
-Del Riego Sanchez, Rafael 62 Alojados,SUB 1600,SUB 1800,SUB 2200,SUB 2400 OPEN A
+Teply Koutsky, David 65 Com.Valenciana,SUB 1600,SUB 1800 OPEN B
  --------------------------------------------------------------- 
-Medina Sanchez, Gines 63 Alojados,SUB 1600,SUB 1800,SUB 2200,SUB 2400 OPEN B
+Szelag, Zuzanna 66 Alojados,SUB 1600,SUB 1800 OPEN B
  --------------------------------------------------------------- 
-Garcia Santiago, Juan Carlos 64 Alojados,SUB 1600,SUB 1800,SUB 2200,SUB 2400 OPEN B
+Halvorsen, Benjamin 67 SUB 1600,SUB 1800 OPEN B
  --------------------------------------------------------------- 
-Lines, David 65 Alojados,Com.Valenciana,SUB 1600,SUB 1800,SUB 2200,SUB 2400 OPEN A
- --------------------------------------------------------------- 
-Zhu, Pengxiao 66 Alojados,SUB 1600,SUB 1800,SUB 2200,SUB 2400 OPEN A
- --------------------------------------------------------------- 
-Quesada Gomez, Norman 67 Alojados,SUB 1600,SUB 1800,SUB 2200,SUB 2400 OPEN A
- --------------------------------------------------------------- 
-Vegara Gallego, Pere 68 Alojados,SUB 1600,SUB 1800,SUB 2200,SUB 2400 OPEN B
+Daksh Jain 68 Alojados,SUB 1600,SUB 1800 OPEN B
  --------------------------------------------------------------- 
 Voronaya, Eva 69 Alojados,SUB 1600,SUB 1800 OPEN B
  --------------------------------------------------------------- 
