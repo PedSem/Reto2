@@ -1,5 +1,6 @@
 package com.example.torneotabla;
 
+import javafx.scene.control.Alert;
 import javafx.stage.FileChooser;
 
 import java.io.BufferedReader;
@@ -50,8 +51,11 @@ public class LecturaCSV {
         }catch (IOException e){
             e.printStackTrace();
         }catch (ArrayIndexOutOfBoundsException e){
-            //System.out.println("Se acabaron los jugadores");
-            e.printStackTrace();
+            Alert alert = new Alert(Alert.AlertType.INFORMATION);
+            alert.setHeaderText(null);
+            alert.setTitle(null);
+            alert.setContentText("Se han terminado de importar los jugadores");
+            alert.showAndWait();
         } catch (SQLException e) {
             System.out.println("Ya están los usuarios en la base de datos");
         } catch (NullPointerException e){

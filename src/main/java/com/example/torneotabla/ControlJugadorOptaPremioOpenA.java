@@ -9,6 +9,7 @@ import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.stage.Stage;
 
+
 import java.io.FileWriter;
 import java.io.IOException;
 import java.net.URL;
@@ -55,8 +56,6 @@ public class ControlJugadorOptaPremioOpenA implements Initializable {
         this.nombre.setCellValueFactory(new PropertyValueFactory<>("nombre"));
         this.tipo.setCellValueFactory(new PropertyValueFactory<>("tipo"));
         this.Torneo.setCellValueFactory(new PropertyValueFactory<>("Torneo"));
-
-        cargar();
     }
 
     public ObservableList<PremiosOptarJugador> getJugadorOptaPremio(){
@@ -135,7 +134,7 @@ public class ControlJugadorOptaPremioOpenA implements Initializable {
 
 
         } catch (SQLException e) {
-            e.printStackTrace();
+            System.out.println("Finalizado carga jugador opta premios");
         }
 
 
