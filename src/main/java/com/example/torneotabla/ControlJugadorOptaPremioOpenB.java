@@ -42,7 +42,7 @@ public class ControlJugadorOptaPremioOpenB implements Initializable {
 
     public void imprimir (ActionEvent event) throws IOException {
         try {
-            writeToTextFile("JugadorOptaPremioB.txt");
+            escribirOptaOpenB("JugadorOptaPremioB.txt");
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -151,13 +151,13 @@ public class ControlJugadorOptaPremioOpenB implements Initializable {
         return obs;
     }
 
-    private static void writeToTextFile(String filename) throws IOException {
+    private static void escribirOptaOpenB(String filename) throws IOException {
         //select jugador.nombre,jugadoroptapremio.RangoInicial,group_concat(distinct Tipo) as Tipo , jugadoroptapremio.NomTorneo from jugadoroptapremio join jugador on jugador.RangoInicial = jugadoroptapremio.RangoInicial group by jugadoroptapremio.RangoInicial;
         try {
             Connection cnx = Conection.getConection();
             Statement stm = cnx.createStatement();
             FileWriter writer = new FileWriter(filename);
-            ResultSet wJOPA = stm.executeQuery("select jugador.nombre,jugadoroptapremio.RangoInicial,group_concat(distinct Tipo) as Tipo , jugadoroptapremio.NomTorneo from jugadoroptapremio join jugador on jugador.RangoInicial = jugadoroptapremio.RangoInicial WHERE jugador.NomTorneo = 'OPEN B' group by jugadoroptapremio.RangoInicial");
+            ResultSet wJOPA = stm.executeQuery("select jugador.nombre,jugadoroptapremio.RangoInicial,group_concat(distinct Tipo) as Tipo , jugadoroptapremio.NomTorneo from jugadoroptapremio join jugador on jugador.RangoInicial = jugadoroptapremio.RangoInicial WHERE jugadoroptapremio.NomTorneo = 'OPEN B' group by jugadoroptapremio.RangoInicial");
 
             writer.write("BENIDORM CHESS OPEN B\n");
             writer.write(".-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-. \n");
