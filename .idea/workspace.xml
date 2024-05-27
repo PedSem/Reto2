@@ -4,15 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="be0f0c1d-6403-44e9-9eed-91d92bd7b058" name="Changes" comment="Añadido a OPEN B impresion txt de jugadorOptaPremioB 3">
+    <list default="true" id="be0f0c1d-6403-44e9-9eed-91d92bd7b058" name="Changes" comment="Arreglos">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JugadorOptaPremioB.txt" beforeDir="false" afterPath="$PROJECT_DIR$/JugadorOptaPremioB.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/torneotabla/ControlJugadorOptaPremioOpenA.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/torneotabla/ControlJugadorOptaPremioOpenA.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/torneotabla/ControlJugadorOptaPremioOpenB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/torneotabla/ControlJugadorOptaPremioOpenB.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/torneotabla/LecturaCSV.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/torneotabla/LecturaCSV.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/example/torneotabla/ControlJugadorOptaPremioOpenA.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/torneotabla/ControlJugadorOptaPremioOpenA.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/torneotabla/LecturaCSV.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/torneotabla/LecturaCSV.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/module-info.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/module-info.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -464,7 +461,15 @@
       <option name="project" value="LOCAL" />
       <updated>1716802314936</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="Arreglos">
+      <option name="closed" value="true" />
+      <created>1716803548540</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1716803548540</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -495,7 +500,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="sarrentsaezt" />
     <MESSAGE value="1" />
     <MESSAGE value="2" />
     <MESSAGE value="Agregado Boton Insertar en OpenA" />
@@ -520,64 +524,65 @@
     <MESSAGE value="Añadido a OPEN B impresion txt de jugadorOptaPremioB" />
     <MESSAGE value="Añadido a OPEN B impresion txt de jugadorOptaPremioB 2" />
     <MESSAGE value="Añadido a OPEN B impresion txt de jugadorOptaPremioB 3" />
-    <option name="LAST_COMMIT_MESSAGE" value="Añadido a OPEN B impresion txt de jugadorOptaPremioB 3" />
+    <MESSAGE value="Arreglos" />
+    <option name="LAST_COMMIT_MESSAGE" value="Arreglos" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/example/torneotabla/ControlJugadorOptaPremioOpenA.java</url>
-          <line>117</line>
+          <line>161</line>
           <option name="timeStamp" value="17" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/example/torneotabla/ControlJugadorOptaPremioOpenA.java</url>
-          <line>118</line>
+          <line>162</line>
           <option name="timeStamp" value="19" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/example/torneotabla/ControlJugadorOptaPremioOpenA.java</url>
-          <line>120</line>
+          <line>164</line>
           <option name="timeStamp" value="20" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/example/torneotabla/ControlJugadorOptaPremioOpenA.java</url>
-          <line>119</line>
+          <line>163</line>
           <option name="timeStamp" value="21" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/example/torneotabla/ControlJugadorOptaPremioOpenA.java</url>
-          <line>121</line>
+          <line>165</line>
           <option name="timeStamp" value="22" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/example/torneotabla/ControlJugadorOptaPremioOpenA.java</url>
-          <line>127</line>
+          <line>171</line>
           <option name="timeStamp" value="24" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/example/torneotabla/ControlJugadorOptaPremioOpenA.java</url>
-          <line>125</line>
+          <line>169</line>
           <option name="timeStamp" value="25" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/example/torneotabla/ControlJugadorOptaPremioOpenA.java</url>
-          <line>126</line>
+          <line>170</line>
           <option name="timeStamp" value="26" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/example/torneotabla/ControlJugadorOptaPremioOpenA.java</url>
-          <line>128</line>
+          <line>172</line>
           <option name="timeStamp" value="27" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/example/torneotabla/ControlJugadorOptaPremioOpenA.java</url>
-          <line>129</line>
+          <line>173</line>
           <option name="timeStamp" value="29" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/main/java/com/example/torneotabla/ControlJugadorOptaPremioOpenA.java</url>
-          <line>60</line>
+          <line>104</line>
           <properties class="com.example.torneotabla.ControlJugadorOptaPremioOpenA" method="getJugadorOptaPremio">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
