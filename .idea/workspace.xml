@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="be0f0c1d-6403-44e9-9eed-91d92bd7b058" name="Changes" comment="Añadido a OPEN B impresion txt de jugadorOptaPremioB 2">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/torneotabla/ControlJugadorOptaPremioOpenB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/torneotabla/ControlJugadorOptaPremioOpenB.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/torneotabla/ControlJugadorOptaPremioOpenB.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/torneotabla/ControlJugadorOptaPremioOpenB.class" afterDir="false" />
+    <list default="true" id="be0f0c1d-6403-44e9-9eed-91d92bd7b058" name="Changes" comment="Añadido a OPEN B impresion txt de jugadorOptaPremioB 3">
+      <change afterPath="$PROJECT_DIR$/JugadorOptaPremioA.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JugadorOptaPremioB.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/torneotabla/ControlJugadorOptaPremioOpenA.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/torneotabla/ControlJugadorOptaPremioOpenA.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -161,7 +161,7 @@
       <workItem from="1716543557631" duration="311000" />
       <workItem from="1716544305808" duration="3566000" />
       <workItem from="1716568615353" duration="1713000" />
-      <workItem from="1716800753695" duration="1422000" />
+      <workItem from="1716800753695" duration="1609000" />
     </task>
     <task id="LOCAL-00001" summary="clase lecturacsv">
       <option name="closed" value="true" />
@@ -451,7 +451,15 @@
       <option name="project" value="LOCAL" />
       <updated>1716801676829</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="Añadido a OPEN B impresion txt de jugadorOptaPremioB 3">
+      <option name="closed" value="true" />
+      <created>1716802314935</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1716802314936</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -482,7 +490,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="añadidos archivos vista" />
     <MESSAGE value="sarrentsaezt" />
     <MESSAGE value="1" />
     <MESSAGE value="2" />
@@ -507,6 +514,7 @@
     <MESSAGE value="boton imprimir optados" />
     <MESSAGE value="Añadido a OPEN B impresion txt de jugadorOptaPremioB" />
     <MESSAGE value="Añadido a OPEN B impresion txt de jugadorOptaPremioB 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="Añadido a OPEN B impresion txt de jugadorOptaPremioB 2" />
+    <MESSAGE value="Añadido a OPEN B impresion txt de jugadorOptaPremioB 3" />
+    <option name="LAST_COMMIT_MESSAGE" value="Añadido a OPEN B impresion txt de jugadorOptaPremioB 3" />
   </component>
 </project>
