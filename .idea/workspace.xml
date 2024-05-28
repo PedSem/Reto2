@@ -4,13 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="be0f0c1d-6403-44e9-9eed-91d92bd7b058" name="Changes" comment="Choicebox OPEN A">
-      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+    <list default="true" id="be0f0c1d-6403-44e9-9eed-91d92bd7b058" name="Changes" comment="media lista final jugador A">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/torneotabla/ControlGanadoresOpenA.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/torneotabla/ControlGanadoresOpenA.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/torneotabla/ControlOpenA.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/torneotabla/ControlOpenA.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/torneotabla/Jugador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/torneotabla/Jugador.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/torneotabla/LecturaCSV.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/torneotabla/LecturaCSV.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/torneotabla/OpenAView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/torneotabla/OpenAView.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/torneotabla/ControlOpenA$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/torneotabla/ControlOpenA$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/torneotabla/ControlOpenA.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/torneotabla/ControlOpenA.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/torneotabla/Jugador.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/torneotabla/Jugador.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/torneotabla/LecturaCSV.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/torneotabla/LecturaCSV.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/torneotabla/OpenAView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/torneotabla/OpenAView.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -165,7 +168,7 @@
       <workItem from="1716544305808" duration="3566000" />
       <workItem from="1716568615353" duration="1713000" />
       <workItem from="1716800753695" duration="1609000" />
-      <workItem from="1716876471514" duration="2498000" />
+      <workItem from="1716876471514" duration="3422000" />
     </task>
     <task id="LOCAL-00001" summary="clase lecturacsv">
       <option name="closed" value="true" />
@@ -479,7 +482,15 @@
       <option name="project" value="LOCAL" />
       <updated>1716806502371</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="Importación finalistas A">
+      <option name="closed" value="true" />
+      <created>1716879012512</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1716879012512</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -510,8 +521,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="2" />
-    <MESSAGE value="Agregado Boton Insertar en OpenA" />
     <MESSAGE value="Agregado: &#10;Boton Insertar en OpenB&#10;Boton Modificar en OpenA&#10;Boton Modificar en OpenB" />
     <MESSAGE value="Insertar jugadores OPEN A" />
     <MESSAGE value=" LecturaCSV" />
@@ -535,7 +544,9 @@
     <MESSAGE value="Añadido a OPEN B impresion txt de jugadorOptaPremioB 3" />
     <MESSAGE value="Arreglos" />
     <MESSAGE value="Choicebox OPEN A" />
-    <option name="LAST_COMMIT_MESSAGE" value="Choicebox OPEN A" />
+    <MESSAGE value="Importación finalistas A" />
+    <MESSAGE value="media lista final jugador A" />
+    <option name="LAST_COMMIT_MESSAGE" value="media lista final jugador A" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

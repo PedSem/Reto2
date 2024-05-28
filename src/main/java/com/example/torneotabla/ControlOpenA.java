@@ -346,7 +346,6 @@ public class ControlOpenA implements Initializable {
             // Asigno el controlador
             ControlGanadoresOpenA controlador = loader.getController();
 
-
             // Creo el Scene
             Scene scene = new Scene(root);
 

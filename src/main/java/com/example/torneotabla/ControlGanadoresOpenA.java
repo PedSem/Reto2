@@ -5,6 +5,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.*;
+import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.stage.Stage;
 
 import java.net.URL;
@@ -43,11 +44,17 @@ public class ControlGanadoresOpenA implements Initializable {
 
     private Jugador jugador;
 
-
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-
+        this.tablaRanking.setItems(ControlOpenA.getJugador());
+        this.RankingFinal.setCellValueFactory(new PropertyValueFactory<>("RangoFinal"));
+        this.RankingInicial.setCellValueFactory(new PropertyValueFactory<>("RangoInicial"));
+        this.nombre.setCellValueFactory(new PropertyValueFactory<>("nombre"));
+        this.elo.setCellValueFactory(new PropertyValueFactory<>("ELO"));
+        this.torneo.setCellValueFactory(new PropertyValueFactory<>("NomTorneo"));
     }
+
+
 
     @FXML
     private void salir(ActionEvent event) {
