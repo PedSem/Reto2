@@ -25,7 +25,7 @@
             <TableColumn fx:id="torneo" prefWidth="75.0" text="Torneo" />
         </columns>
       </TableView>
-      <Button fx:id="btnImportarGanadores" layoutX="42.0" layoutY="247.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="186.0" text="Importación Ganadores" />
+      <Button fx:id="btnImportarGanadores" layoutX="42.0" layoutY="247.0" mnemonicParsing="false" onAction="#meterRFinal" prefHeight="34.0" prefWidth="186.0" text="Importación Ganadores" />
       <Button fx:id="btnEliminarJugador" layoutX="75.0" layoutY="196.0" mnemonicParsing="false" onAction="#eliminar" prefHeight="34.0" prefWidth="123.0" text="Eliminar Jugador" />
    </children>
 </AnchorPane>
