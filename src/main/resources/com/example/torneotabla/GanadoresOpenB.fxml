@@ -13,9 +13,9 @@
                <TableColumn fx:id="nombre" prefWidth="126.39997863769531" text="Nombre" />
                <TableColumn fx:id="elo" prefWidth="82.39996337890625" text="ELO" />
                <TableColumn fx:id="torneo" prefWidth="97.60003662109375" text="Torneo" />
-            <TableColumn fx:id="torneo1" prefWidth="128.0" text="Categoría" />
-            <TableColumn fx:id="torneo11" prefWidth="83.99993896484375" text="Puesto" />
-            <TableColumn fx:id="torneo111" prefWidth="103.2000732421875" text="Premio" />
+            <TableColumn fx:id="categoria" prefWidth="128.0" text="Categoría" />
+            <TableColumn fx:id="puesto" prefWidth="83.99993896484375" text="Puesto" />
+            <TableColumn fx:id="premio" prefWidth="103.2000732421875" text="Premio" />
            </columns>
        </TableView>
    </children>
