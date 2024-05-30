@@ -373,9 +373,10 @@ public class ControlOpenA implements Initializable {
 
     }
 
-    public  void meterRFinal(){
+    public void meterRFinal(){
         LecturaCSV.introducirfinal("OPEN A");
         tablaRanking.refresh();
+        cargar();
     }
 
 
