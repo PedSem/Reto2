@@ -159,7 +159,7 @@ public class ControlOpenB implements Initializable {
         }
 
     }
-    public ObservableList<Jugador> getJugador(){
+    public static ObservableList<Jugador> getJugador(){
         ObservableList<Jugador> obs = FXCollections.observableArrayList();
         Connection cnx;
         try {
