@@ -127,7 +127,7 @@ public class ControlGanadoresOpenA implements Initializable {
             String [] categorias;
 
             for (int i = 1; i < jugadores.size(); i++){
-                PreparedStatement ps = cnx.prepareStatement("select group_concat(Tipo) as Tipo from jugadoroptapremio where NomTorneo = 'OPEN A' and RangoInicial = ( select RangoInicial from jugador where RangoFinal = ? )");
+                PreparedStatement ps = cnx.prepareStatement("select group_concat(Tipo) as Tipo from jugadoroptapremio where NomTorneo = 'OPEN A' and RangoInicial = ( select RangoInicial from jugador where RangoFinal = ? and NomTorneo = 'OPEN A')");
                 ps.setInt(1,i);
                 ps.execute();
 
@@ -226,7 +226,7 @@ public class ControlGanadoresOpenA implements Initializable {
                             break;
                     }
                 }
-                PreparedStatement psP = cnx.prepareStatement("update Premio set RangoInicial = ( select RangoInicial from jugador where RangoFinal = ? ) where (Tipo = ? and puesto = ?) and NomTorneo = 'OPEN A'");
+                PreparedStatement psP = cnx.prepareStatement("update Premio set RangoInicial = ( select RangoInicial from jugador where RangoFinal = ? and NomTorneo = 'OPEN A') where (Tipo = ? and puesto = ?) and NomTorneo = 'OPEN A'");
                 psP.setInt(1,i);
                 psP.setString(2,categoria);
                 psP.setInt(3,puesto);
