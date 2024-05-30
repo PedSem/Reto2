@@ -339,7 +339,11 @@ public class ControlOpenB implements Initializable {
 
     }
 
-
+    public void meterRFinal(){
+        LecturaCSV.introducirfinal("OPEN B");
+        tablaRanking.refresh();
+        cargar();
+    }
 
 
 

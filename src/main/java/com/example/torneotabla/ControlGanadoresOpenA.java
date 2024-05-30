@@ -10,6 +10,8 @@ import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.stage.Stage;
 
+import java.io.FileWriter;
+import java.io.IOException;
 import java.net.URL;
 import java.sql.*;
 import java.util.Arrays;
@@ -49,7 +51,7 @@ public class ControlGanadoresOpenA implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        prueba();
+        premiosGanan();
 
         this.tablaRanking.setItems(getJugadorconpremios());
         this.RankingFinal.setCellValueFactory(new PropertyValueFactory<>("RangoFinal"));
@@ -60,9 +62,15 @@ public class ControlGanadoresOpenA implements Initializable {
         this.categoria.setCellValueFactory(new PropertyValueFactory<>("Categoria"));
         this.Puesto.setCellValueFactory(new PropertyValueFactory<>("Puesto"));
         this.Premio.setCellValueFactory(new PropertyValueFactory<>("Premio"));
+
+        try {
+            escribirGanadores("GanadoresOpenA");
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
     }
 
-    private ObservableList<Jugador> getJugadorconpremios(){
+    private static ObservableList<Jugador> getJugadorconpremios(){
         ObservableList<Jugador> obsP = FXCollections.observableArrayList();
         Connection cnx;
         try {
@@ -97,8 +105,18 @@ public class ControlGanadoresOpenA implements Initializable {
         stage.close();
     }
 
+    private static void escribirGanadores(String filename) throws IOException {
+        FileWriter writer = new FileWriter(filename);
+        writer.write("Ganadores BENIDORM CHESS OPEN A\n");
+        writer.write(".-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-. \n");
+        ObservableList<Jugador> obs = getJugadorconpremios();
+        for (Jugador ob : obs) {
+            writer.write(ob.getRangoFinal() + " " + ob.getRangoInicial() + " " + ob.getNombre() + " " + ob.getELO() + " " + ob.getNomTorneo() + " " + ob.getCategoria() + " " + ob.getPuesto() + " " + ob.getPuesto() + " " + ob.getPremio() + "\n");
+            writer.write("-------------------------------------------------------------------------- \n");
+        }
+    }
 
-    public void prueba(){
+    public void premiosGanan(){
         try{
             Connection cnx = Conection.getConection();
             int dinero;
