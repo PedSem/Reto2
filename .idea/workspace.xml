@@ -4,15 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="be0f0c1d-6403-44e9-9eed-91d92bd7b058" name="Changes" comment="ChoiceBox B">
-      <change afterPath="$PROJECT_DIR$/GanadoresOpenB" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+    <list default="true" id="be0f0c1d-6403-44e9-9eed-91d92bd7b058" name="Changes" comment="Como puede pasar esto???&#10;(Funcion GanadorOPENA y B pero solo el primero en usarlo)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GanadoresOpenA" beforeDir="false" afterPath="$PROJECT_DIR$/GanadoresOpenA" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JugadorOptaPremioB.txt" beforeDir="false" afterPath="$PROJECT_DIR$/JugadorOptaPremioB.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/torneotabla/ControlGanadoresOpenA.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/torneotabla/ControlGanadoresOpenA.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/torneotabla/ControlGanadoresOpenB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/torneotabla/ControlGanadoresOpenB.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/torneotabla/ControlOpenB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/torneotabla/ControlOpenB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/torneotabla/ControlGanadoresOpenA.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/torneotabla/ControlGanadoresOpenA.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/example/torneotabla/ControlGanadoresOpenB.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/torneotabla/ControlGanadoresOpenB.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/torneotabla/ControlOpenB.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/torneotabla/ControlOpenB.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -521,7 +520,15 @@
       <option name="project" value="LOCAL" />
       <updated>1717107500439</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="Como puede pasar esto???&#10;(Funcion GanadorOPENA y B pero solo el primero en usarlo)">
+      <option name="closed" value="true" />
+      <created>1717108789637</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1717108789637</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -552,7 +559,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Tableview Open A funcional" />
     <MESSAGE value="Tableview Open A bien" />
     <MESSAGE value="Modificar a medias" />
     <MESSAGE value="Guardado" />
@@ -577,7 +583,8 @@
     <MESSAGE value="Premios OPEN A funcional" />
     <MESSAGE value="Puede que antes de la catastrofe" />
     <MESSAGE value="ChoiceBox B" />
-    <option name="LAST_COMMIT_MESSAGE" value="ChoiceBox B" />
+    <MESSAGE value="Como puede pasar esto???&#10;(Funcion GanadorOPENA y B pero solo el primero en usarlo)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Como puede pasar esto???&#10;(Funcion GanadorOPENA y B pero solo el primero en usarlo)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -586,6 +593,16 @@
           <url>file://$PROJECT_DIR$/src/main/java/com/example/torneotabla/LecturaCSV.java</url>
           <line>85</line>
           <option name="timeStamp" value="41" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/torneotabla/ControlGanadoresOpenA.java</url>
+          <line>62</line>
+          <option name="timeStamp" value="95" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/torneotabla/ControlGanadoresOpenB.java</url>
+          <line>131</line>
+          <option name="timeStamp" value="97" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/main/java/com/example/torneotabla/ControlJugadorOptaPremioOpenA.java</url>

@@ -53,7 +53,7 @@ public class ControlGanadoresOpenA implements Initializable {
     public void initialize(URL url, ResourceBundle rb) {
         premiosGanan();
 
-        this.tablaRanking.setItems(getJugadorconpremios());
+        this.tablaRanking.setItems(getJugadorconpremiosA());
         this.RankingFinal.setCellValueFactory(new PropertyValueFactory<>("RangoFinal"));
         this.RankingInicial.setCellValueFactory(new PropertyValueFactory<>("RangoInicial"));
         this.nombre.setCellValueFactory(new PropertyValueFactory<>("nombre"));
@@ -70,13 +70,13 @@ public class ControlGanadoresOpenA implements Initializable {
         }
     }
 
-    private static ObservableList<Jugador> getJugadorconpremios(){
+    private static ObservableList<Jugador> getJugadorconpremiosA(){
         ObservableList<Jugador> obsP = FXCollections.observableArrayList();
         Connection cnx;
         try {
             cnx = Conection.getConection();
             Statement stm = cnx.createStatement();
-            ResultSet rs = stm.executeQuery("SELECT jugador.RangoInicial,Jugador.Nombre,Jugador.ELO,Jugador.RangoFinal,Jugador.NomTorneo,Premio.Tipo,Premio.Puesto,Premio.Cantidad FROM jugador join premio on jugador.RangoInicial=Premio.RangoInicial where jugador.NomTorneo = 'OPEN A' order by Premio.RangoInicial");
+            ResultSet rs = stm.executeQuery("SELECT jugador.RangoInicial,Jugador.Nombre,Jugador.ELO,Jugador.RangoFinal,Jugador.NomTorneo,Premio.Tipo,Premio.Puesto,Premio.Cantidad FROM jugador join premio on jugador.RangoInicial=Premio.RangoInicial where jugador.NomTorneo = 'OPEN A' and Premio.NomTorneo = 'OPEN A' order by Premio.RangoInicial");
             while (rs.next()) {
                 int rinicial = rs.getInt("RangoInicial");
                 String nom = rs.getString("Nombre");
@@ -109,7 +109,7 @@ public class ControlGanadoresOpenA implements Initializable {
         FileWriter writer = new FileWriter(filename);
         writer.write("Ganadores BENIDORM CHESS OPEN A\n");
         writer.write(".-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-. \n");
-        ObservableList<Jugador> obs = getJugadorconpremios();
+        ObservableList<Jugador> obs = getJugadorconpremiosA();
         for (Jugador ob : obs) {
             writer.write(ob.getRangoFinal() + " " + ob.getRangoInicial() + " " + ob.getNombre() + " " + ob.getELO() + " " + ob.getNomTorneo() + " " + ob.getCategoria() + " " + ob.getPuesto() + " " + ob.getPuesto() + " " + ob.getPremio() + "\n");
             writer.write("-------------------------------------------------------------------------- \n");
