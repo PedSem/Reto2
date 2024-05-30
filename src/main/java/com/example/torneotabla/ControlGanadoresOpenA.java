@@ -1,7 +1,7 @@
 package com.example.torneotabla;
 
 
-import com.sun.source.tree.TryTree;
+import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -13,7 +13,6 @@ import javafx.stage.Stage;
 import java.net.URL;
 import java.sql.*;
 import java.util.Arrays;
-import java.util.Collection;
 import java.util.Collections;
 import java.util.ResourceBundle;
 
@@ -41,28 +40,53 @@ public class ControlGanadoresOpenA implements Initializable {
     private TableColumn<Jugador,String>  categoria;
 
     @FXML
-    private TableColumn<Jugador,String>  puesto;
+    private TableColumn<Jugador,String>  Puesto;
 
     @FXML
-    private TableColumn<Jugador,String>  premio;
-
-    private ObservableList<Jugador> jugadores;
+    private TableColumn<Jugador,String>  Premio;
 
     private Jugador jugador;
 
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        this.tablaRanking.setItems(ControlOpenA.getJugador());
+        prueba();
+
+        this.tablaRanking.setItems(getJugadorconpremios());
         this.RankingFinal.setCellValueFactory(new PropertyValueFactory<>("RangoFinal"));
         this.RankingInicial.setCellValueFactory(new PropertyValueFactory<>("RangoInicial"));
         this.nombre.setCellValueFactory(new PropertyValueFactory<>("nombre"));
         this.elo.setCellValueFactory(new PropertyValueFactory<>("ELO"));
         this.torneo.setCellValueFactory(new PropertyValueFactory<>("NomTorneo"));
-
-        prueba();
-
+        this.categoria.setCellValueFactory(new PropertyValueFactory<>("Categoria"));
+        this.Puesto.setCellValueFactory(new PropertyValueFactory<>("Puesto"));
+        this.Premio.setCellValueFactory(new PropertyValueFactory<>("Premio"));
     }
 
+    private ObservableList<Jugador> getJugadorconpremios(){
+        ObservableList<Jugador> obsP = FXCollections.observableArrayList();
+        Connection cnx;
+        try {
+            cnx = Conection.getConection();
+            Statement stm = cnx.createStatement();
+            ResultSet rs = stm.executeQuery("SELECT jugador.RangoInicial,Jugador.Nombre,Jugador.ELO,Jugador.RangoFinal,Jugador.NomTorneo,Premio.Tipo,Premio.Puesto,Premio.Cantidad FROM jugador join premio on jugador.RangoInicial=Premio.RangoInicial where jugador.NomTorneo = 'OPEN A' order by Premio.RangoInicial");
+            while (rs.next()) {
+                int rinicial = rs.getInt("RangoInicial");
+                String nom = rs.getString("Nombre");
+                int elo = rs.getInt("ELO");
+                int rfinal = rs.getInt("RangoFinal");
+                String nomtorneo = rs.getString("NomTorneo");
+                String categoria = rs.getString("Tipo");
+                int puesto = rs.getInt("Puesto");
+                int premio = rs.getInt("Cantidad");
+
+                Jugador j = new Jugador(rfinal,rinicial,nom,elo,nomtorneo,categoria,puesto,premio);
+                obsP.add(j);
+            }
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+        return obsP;
+    }
 
 
     @FXML
@@ -77,12 +101,11 @@ public class ControlGanadoresOpenA implements Initializable {
     public void prueba(){
         try{
             Connection cnx = Conection.getConection();
-            int dinero = 0;
-            int puesto = 0;
-            String categoria = "";
+            int dinero;
+            int puesto;
+            String categoria;
 
             ObservableList<Jugador> jugadores = ControlOpenA.getJugador();
-            System.out.println(jugadores.size());
             String [] categorias;
 
             for (int i = 1; i < jugadores.size(); i++){
@@ -98,7 +121,6 @@ public class ControlGanadoresOpenA implements Initializable {
                     categorias = new String[]{""};
                 }
                 Arrays.sort(categorias, Collections.reverseOrder());
-                System.out.println(Arrays.toString(categorias));
                 ps.close();
 
                 dinero = 0;
@@ -115,9 +137,7 @@ public class ControlGanadoresOpenA implements Initializable {
                 puesto = rsG.getInt(2);
                 dinero = rsG.getInt(3);
                 }
-                }catch (SQLDataException e){
-                    System.out.println("No quedan de General");
-                }
+                }catch (SQLDataException ignored){}
                 psG.close();
 
                 for (String s : categorias) {
@@ -135,9 +155,7 @@ public class ControlGanadoresOpenA implements Initializable {
                                         dinero = rsS24.getInt(3);
                                     }
                                 }
-                            }catch (SQLDataException e){
-                                System.out.println("No quedan de SUB 2400");
-                            }
+                            }catch (SQLDataException ignored){}
                             psS24.close();
                             break;
                         case "SUB 2200":
@@ -153,9 +171,7 @@ public class ControlGanadoresOpenA implements Initializable {
                                     dinero = rsS22.getInt(3);
                                 }
                             }
-                            }catch (SQLDataException e){
-                                System.out.println("No quedan de SUB 2200");
-                            }
+                            }catch (SQLDataException ignored){}
                             psS22.close();
                             break;
                         case "Com.Valenciana":
@@ -171,9 +187,7 @@ public class ControlGanadoresOpenA implements Initializable {
                                         dinero = rsCV.getInt(3);
                                     }
                                 }
-                            }catch (SQLDataException e){
-                                System.out.println("No quedan de Comunidad Valencian");
-                            }
+                            }catch (SQLDataException ignored){}
                             psCV.close();
                             break;
                         case "Alojados":
@@ -189,13 +203,10 @@ public class ControlGanadoresOpenA implements Initializable {
                                         dinero = rsA.getInt(3);
                                     }
                                 }
-                            }catch (SQLDataException e){
-                                System.out.println("No queda espacio en Alojados");
-                            }
+                            }catch (SQLDataException ignored){}
                             psA.close();
                             break;
                     }
-                    System.out.println(dinero + " " + " " + puesto+ " " + " " + categoria);
                 }
                 PreparedStatement psP = cnx.prepareStatement("update Premio set RangoInicial = ( select RangoInicial from jugador where RangoFinal = ? ) where (Tipo = ? and puesto = ?) and NomTorneo = 'OPEN A'");
                 psP.setInt(1,i);

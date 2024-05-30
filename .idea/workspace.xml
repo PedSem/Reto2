@@ -4,17 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="be0f0c1d-6403-44e9-9eed-91d92bd7b058" name="Changes" comment="media lista final jugador A">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+    <list default="true" id="be0f0c1d-6403-44e9-9eed-91d92bd7b058" name="Changes" comment="Sale medio bien :)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/torneotabla/ControlGanadoresOpenA.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/torneotabla/ControlGanadoresOpenA.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/torneotabla/ControlOpenA.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/torneotabla/ControlOpenA.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/torneotabla/Jugador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/torneotabla/Jugador.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/torneotabla/GanadoresOpenA.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/torneotabla/GanadoresOpenA.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/example/torneotabla/ControlGanadoresOpenA.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/torneotabla/ControlGanadoresOpenA.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/torneotabla/ControlOpenA.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/torneotabla/ControlOpenA.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/module-info.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/module-info.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/torneotabla/ControlGanadoresOpenB.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/torneotabla/ControlGanadoresOpenB.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/torneotabla/GanadoresOpenA.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/torneotabla/GanadoresOpenA.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/torneotabla/GanadoresOpenB.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/torneotabla/GanadoresOpenB.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/torneotabla/Jugador.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/torneotabla/Jugador.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -491,7 +490,15 @@
       <option name="project" value="LOCAL" />
       <updated>1716879012512</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="Sale medio bien :)">
+      <option name="closed" value="true" />
+      <created>1717100556029</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1717100556029</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -522,7 +529,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Agregado: &#10;Boton Insertar en OpenB&#10;Boton Modificar en OpenA&#10;Boton Modificar en OpenB" />
     <MESSAGE value="Insertar jugadores OPEN A" />
     <MESSAGE value=" LecturaCSV" />
     <MESSAGE value=" AAAAAAAAAAAAAAAAAAAA" />
@@ -547,7 +553,8 @@
     <MESSAGE value="Choicebox OPEN A" />
     <MESSAGE value="Importación finalistas A" />
     <MESSAGE value="media lista final jugador A" />
-    <option name="LAST_COMMIT_MESSAGE" value="media lista final jugador A" />
+    <MESSAGE value="Sale medio bien :)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Sale medio bien :)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -606,151 +613,6 @@
           <url>file://$PROJECT_DIR$/src/main/java/com/example/torneotabla/LecturaCSV.java</url>
           <line>84</line>
           <option name="timeStamp" value="41" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/example/torneotabla/ControlGanadoresOpenA.java</url>
-          <line>83</line>
-          <option name="timeStamp" value="42" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/example/torneotabla/ControlGanadoresOpenA.java</url>
-          <line>84</line>
-          <option name="timeStamp" value="43" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/example/torneotabla/ControlGanadoresOpenA.java</url>
-          <line>87</line>
-          <option name="timeStamp" value="45" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/example/torneotabla/ControlGanadoresOpenA.java</url>
-          <line>88</line>
-          <option name="timeStamp" value="46" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/example/torneotabla/ControlGanadoresOpenA.java</url>
-          <line>90</line>
-          <option name="timeStamp" value="47" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/example/torneotabla/ControlGanadoresOpenA.java</url>
-          <line>89</line>
-          <option name="timeStamp" value="48" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/example/torneotabla/ControlGanadoresOpenA.java</url>
-          <line>92</line>
-          <option name="timeStamp" value="49" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/example/torneotabla/ControlGanadoresOpenA.java</url>
-          <line>122</line>
-          <option name="timeStamp" value="67" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/example/torneotabla/ControlGanadoresOpenA.java</url>
-          <line>123</line>
-          <option name="timeStamp" value="68" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/example/torneotabla/ControlGanadoresOpenA.java</url>
-          <line>124</line>
-          <option name="timeStamp" value="69" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/example/torneotabla/ControlGanadoresOpenA.java</url>
-          <line>130</line>
-          <option name="timeStamp" value="71" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/example/torneotabla/ControlGanadoresOpenA.java</url>
-          <line>134</line>
-          <option name="timeStamp" value="73" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/example/torneotabla/ControlGanadoresOpenA.java</url>
-          <line>133</line>
-          <option name="timeStamp" value="74" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/example/torneotabla/ControlGanadoresOpenA.java</url>
-          <line>143</line>
-          <option name="timeStamp" value="75" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/example/torneotabla/ControlGanadoresOpenA.java</url>
-          <line>152</line>
-          <option name="timeStamp" value="76" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/example/torneotabla/ControlGanadoresOpenA.java</url>
-          <line>151</line>
-          <option name="timeStamp" value="77" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/example/torneotabla/ControlGanadoresOpenA.java</url>
-          <line>161</line>
-          <option name="timeStamp" value="78" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/example/torneotabla/ControlGanadoresOpenA.java</url>
-          <line>170</line>
-          <option name="timeStamp" value="79" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/example/torneotabla/ControlGanadoresOpenA.java</url>
-          <line>169</line>
-          <option name="timeStamp" value="80" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/example/torneotabla/ControlGanadoresOpenA.java</url>
-          <line>179</line>
-          <option name="timeStamp" value="81" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/example/torneotabla/ControlGanadoresOpenA.java</url>
-          <line>188</line>
-          <option name="timeStamp" value="82" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/example/torneotabla/ControlGanadoresOpenA.java</url>
-          <line>187</line>
-          <option name="timeStamp" value="83" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/example/torneotabla/ControlGanadoresOpenA.java</url>
-          <line>202</line>
-          <option name="timeStamp" value="84" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/example/torneotabla/ControlGanadoresOpenA.java</url>
-          <line>201</line>
-          <option name="timeStamp" value="85" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/example/torneotabla/ControlGanadoresOpenA.java</url>
-          <line>200</line>
-          <option name="timeStamp" value="86" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/example/torneotabla/ControlGanadoresOpenA.java</url>
-          <line>199</line>
-          <option name="timeStamp" value="87" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/example/torneotabla/ControlGanadoresOpenA.java</url>
-          <line>115</line>
-          <option name="timeStamp" value="88" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/example/torneotabla/ControlGanadoresOpenA.java</url>
-          <line>107</line>
-          <option name="timeStamp" value="92" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/example/torneotabla/ControlGanadoresOpenA.java</url>
-          <line>114</line>
-          <option name="timeStamp" value="93" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/main/java/com/example/torneotabla/ControlJugadorOptaPremioOpenA.java</url>
