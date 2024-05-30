@@ -1,0 +1,89 @@
+.root{
+    -fx-background-image: url("Ajedrez.jpg");
+}
+
+
+.table-view{
+    -fx-background-color: white;
+}
+
+
+.table-view .column-header-background{
+    -fx-background-color: linear-gradient(#ffffff 0%, #000000 100%);
+}
+
+.table-view .column-header-background .label{
+    -fx-text-fill: white;
+}
+
+.table-view .column-header {
+    -fx-background-color: transparent;
+}
+
+.table-view .table-cell{
+    -fx-text-fill: white;
+}
+
+.table-row-cell:even{
+    -fx-background-color: -fx-table-cell-border-color, #616161;
+    -fx-background-insets: 0, 0 0 1 0;
+    -fx-padding: 0.0em; /* 0 */
+}
+
+.table-row-cell:odd{
+    -fx-background-color: -fx-table-cell-border-color, #424242;
+    -fx-background-insets: 0, 0 0 1 0;
+    -fx-padding: 0.0em; /* 0 */
+}
+
+.table-row-cell:hover{
+    -fx-background-color: -fx-table-cell-border-color, #cfcfcf;
+    -fx-background-insets: 0, 0 0 1 0;
+    -fx-padding: 0.0em; /* 0 */
+}
+
+.table-row-cell:selected {
+    -fx-background-color: #8ffbff;
+    -fx-background-insets: 0;
+    -fx-background-radius: 1;
+}
+
+.choice-box{
+    -fx-background-color: white;
+    -fx-text-fill: black;
+    -fx-font-weight: bold;
+    -fx-font-size: larger;
+    -fx-border-radius: 5px;
+}
+
+.choice-box:hover{
+    -fx-background-color: black;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: larger;
+    -fx-border-color: white;
+    -fx-border-width: 3px;
+    -fx-border-radius: 5px;
+}
+
+.button{
+    -fx-background-color: white;
+    -fx-text-fill: black;
+    -fx-font-weight: bold;
+    -fx-font-size: larger;
+    -fx-border-radius: 5px;
+}
+
+.button:hover{
+    -fx-background-color: black;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: larger;
+    -fx-border-color: white;
+    -fx-border-width: 3px;
+    -fx-border-radius: 5px;
+}
+
+.button:armed{
+    -fx-background-color: #8ffbff;
+}
