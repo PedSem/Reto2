@@ -86,6 +86,7 @@ public class ControlOpenA implements Initializable {
     public void initialize(URL url, ResourceBundle rb) {
         ObservableList<Jugador> jugadores = getJugador();
         tablaRanking.setItems(jugadores);
+        this.RankingFinal.setCellValueFactory(new PropertyValueFactory<>("RangoFinal"));
         this.RankingInicial.setCellValueFactory(new PropertyValueFactory<>("RangoInicial"));
         this.fideid.setCellValueFactory(new PropertyValueFactory<>("FIDEID"));
         this.nombre.setCellValueFactory(new PropertyValueFactory<>("nombre"));
@@ -107,6 +108,7 @@ public class ControlOpenA implements Initializable {
     public void cargar(){
         ObservableList<Jugador> jugadores = getJugador();
         this.tablaRanking.setItems(jugadores);
+        this.RankingFinal.setCellValueFactory(new PropertyValueFactory<>("RangoFinal"));
         this.RankingInicial.setCellValueFactory(new PropertyValueFactory<>("RangoInicial"));
         this.fideid.setCellValueFactory(new PropertyValueFactory<>("FIDEID"));
         this.nombre.setCellValueFactory(new PropertyValueFactory<>("nombre"));
@@ -344,7 +346,6 @@ public class ControlOpenA implements Initializable {
             // Asigno el controlador
             ControlGanadoresOpenA controlador = loader.getController();
 
-
             // Creo el Scene
             Scene scene = new Scene(root);
 
@@ -372,7 +373,10 @@ public class ControlOpenA implements Initializable {
 
     }
 
-
+    public  void meterRFinal(){
+        LecturaCSV.introducirfinal("OPEN A");
+        tablaRanking.refresh();
+    }
 
 
    public void closeWindows() {

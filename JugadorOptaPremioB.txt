@@ -1,0 +1,224 @@
+BENIDORM CHESS OPEN B
+.-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-. 
+Sonis, Francesco 1 Com.Valenciana OPEN B
+ --------------------------------------------------------------- 
+Richter, Michael 2 Com.Valenciana OPEN B
+ --------------------------------------------------------------- 
+Dauner, Benedikt 3 Alojados,Com.Valenciana OPEN B
+ --------------------------------------------------------------- 
+Olsson, William 4 Alojados,Com.Valenciana OPEN B
+ --------------------------------------------------------------- 
+Carlsson, Ludvig 5 Com.Valenciana OPEN B
+ --------------------------------------------------------------- 
+Arkell, Keith C 6 Com.Valenciana OPEN B
+ --------------------------------------------------------------- 
+Vestby-Ellingsen, Mads 7 Alojados OPEN B
+ --------------------------------------------------------------- 
+Kanov, Nikola 8 Alojados,Com.Valenciana OPEN B
+ --------------------------------------------------------------- 
+Ilinca, Felix-Antonio 9 Com.Valenciana OPEN B
+ --------------------------------------------------------------- 
+Ramoutar, Alan-Safar 10 Alojados OPEN B
+ --------------------------------------------------------------- 
+Cappelletto, Joshuaede 11 Alojados OPEN B
+ --------------------------------------------------------------- 
+Yordanov, Lachezar 12 Com.Valenciana OPEN B
+ --------------------------------------------------------------- 
+Ezra Paul Chambers 13 Alojados OPEN B
+ --------------------------------------------------------------- 
+Morchiashvili, Bachana 14 Alojados OPEN B
+ --------------------------------------------------------------- 
+Mingarro Carceller, Sergi 16 Alojados OPEN B
+ --------------------------------------------------------------- 
+Jordan Martinez, Miguel 17 Alojados,Com.Valenciana OPEN B
+ --------------------------------------------------------------- 
+Rey Malde, Henrique 18 Alojados OPEN B
+ --------------------------------------------------------------- 
+Hercegovac, Neven 19 Alojados OPEN B
+ --------------------------------------------------------------- 
+Webb, Laurence E 20 Alojados OPEN B
+ --------------------------------------------------------------- 
+Balabayeva, Xeniya 22 Alojados,Com.Valenciana OPEN B
+ --------------------------------------------------------------- 
+Torres Sanchez, Jose 23 Alojados,Com.Valenciana OPEN B
+ --------------------------------------------------------------- 
+Nava Pereda, Carlos 24 Alojados OPEN B
+ --------------------------------------------------------------- 
+Mueller, Magnus 25 Alojados,Com.Valenciana OPEN B
+ --------------------------------------------------------------- 
+Mannion, Stephen R 26 Alojados,Com.Valenciana OPEN B
+ --------------------------------------------------------------- 
+Krishnan, Ritvik 27 Com.Valenciana OPEN B
+ --------------------------------------------------------------- 
+Grabuzova, Tatiana 28 Alojados,Com.Valenciana OPEN B
+ --------------------------------------------------------------- 
+Torres Rebolledo, Victor 29 Alojados OPEN B
+ --------------------------------------------------------------- 
+Roulet-Dubonnet, Emerik Vapensta 30 Alojados OPEN B
+ --------------------------------------------------------------- 
+Nied, Pascal 31 Alojados OPEN B
+ --------------------------------------------------------------- 
+Castro Quijano, Eduardo 32 Alojados,Com.Valenciana OPEN B
+ --------------------------------------------------------------- 
+Jordan Martinez, David 33 Alojados OPEN B
+ --------------------------------------------------------------- 
+Torres Rebolledo, Alvaro 34 Alojados,Com.Valenciana OPEN B
+ --------------------------------------------------------------- 
+Horcajada Reales, Guillermo 35 Com.Valenciana OPEN B
+ --------------------------------------------------------------- 
+Palomo Teruel, Xavier 36 Alojados OPEN B
+ --------------------------------------------------------------- 
+Atienza Alvarez, Javier 38 Alojados OPEN B
+ --------------------------------------------------------------- 
+Floris, Federico 39 Alojados,SUB 1800 OPEN B
+ --------------------------------------------------------------- 
+Holand, Per Fredrik 40 Alojados,SUB 1800 OPEN B
+ --------------------------------------------------------------- 
+Pedersen, Max Moe 41 Com.Valenciana,SUB 1800 OPEN B
+ --------------------------------------------------------------- 
+Sendra Tormo, Juan 42 Alojados,SUB 1800 OPEN B
+ --------------------------------------------------------------- 
+Bevia Martinez, Luis 43 Com.Valenciana,SUB 1800 OPEN B
+ --------------------------------------------------------------- 
+Lopez Martinez, Jaime 44 Com.Valenciana,SUB 1800 OPEN B
+ --------------------------------------------------------------- 
+Mompel Ferruz, Xavier 45 Alojados,SUB 1800 OPEN B
+ --------------------------------------------------------------- 
+Gonzalez Aguirre, Luis 46 Alojados,Com.Valenciana,SUB 1800 OPEN B
+ --------------------------------------------------------------- 
+Nesse, David 47 Alojados,SUB 1800 OPEN B
+ --------------------------------------------------------------- 
+Troffiguer, Olivier 48 Com.Valenciana,SUB 1800 OPEN B
+ --------------------------------------------------------------- 
+Unhjem, Bjorn Robert Lovoll 49 Alojados,SUB 1800 OPEN B
+ --------------------------------------------------------------- 
+Fernandez Vazquez, Jorge 50 Alojados,SUB 1800 OPEN B
+ --------------------------------------------------------------- 
+Hernandez Tellez, Claudia 51 Com.Valenciana,SUB 1800 OPEN B
+ --------------------------------------------------------------- 
+Bascunana Sanchez, Pablo 52 Alojados,SUB 1800 OPEN B
+ --------------------------------------------------------------- 
+Amundsen, Ask 53 Alojados,SUB 1800 OPEN B
+ --------------------------------------------------------------- 
+Draghici Flutur, Gavril 54 Alojados,SUB 1800 OPEN B
+ --------------------------------------------------------------- 
+Blanco Sanchez, Jose Fernando 55 Alojados,SUB 1800 OPEN B
+ --------------------------------------------------------------- 
+Wiesmann, Dominique 56 Alojados,SUB 1800 OPEN B
+ --------------------------------------------------------------- 
+Kandic, Milan 57 Com.Valenciana,SUB 1800 OPEN B
+ --------------------------------------------------------------- 
+Rutherford, William 58 Com.Valenciana,SUB 1800 OPEN B
+ --------------------------------------------------------------- 
+Andrzejewska, Anna 59 Alojados,SUB 1800 OPEN B
+ --------------------------------------------------------------- 
+Ghita, Vlad-Bogdan 60 Com.Valenciana,SUB 1800 OPEN B
+ --------------------------------------------------------------- 
+Doll, Rebecca 61 Com.Valenciana,SUB 1800 OPEN B
+ --------------------------------------------------------------- 
+Fox, Anthony 62 Alojados,SUB 1600,SUB 1800 OPEN B
+ --------------------------------------------------------------- 
+Gasland, Lukas Dominik 63 Alojados,SUB 1600,SUB 1800 OPEN B
+ --------------------------------------------------------------- 
+Lilliehook, Victor 64 Alojados,SUB 1600,SUB 1800 OPEN B
+ --------------------------------------------------------------- 
+Teply Koutsky, David 65 Com.Valenciana,SUB 1600,SUB 1800 OPEN B
+ --------------------------------------------------------------- 
+Szelag, Zuzanna 66 Alojados,SUB 1600,SUB 1800 OPEN B
+ --------------------------------------------------------------- 
+Halvorsen, Benjamin 67 SUB 1600,SUB 1800 OPEN B
+ --------------------------------------------------------------- 
+Daksh Jain 68 Alojados,SUB 1600,SUB 1800 OPEN B
+ --------------------------------------------------------------- 
+Voronaya, Eva 69 Alojados,SUB 1600,SUB 1800 OPEN B
+ --------------------------------------------------------------- 
+Ilinca Ilinca, Filip Antonio 70 Alojados,Com.Valenciana,SUB 1600,SUB 1800 OPEN B
+ --------------------------------------------------------------- 
+Rehbein, Vitus 71 Alojados,SUB 1600,SUB 1800 OPEN B
+ --------------------------------------------------------------- 
+Vidal Moscardo, Blas 72 Alojados,Com.Valenciana,SUB 1600,SUB 1800 OPEN B
+ --------------------------------------------------------------- 
+Enriquez Munoz, Diego 73 Alojados,SUB 1600,SUB 1800 OPEN B
+ --------------------------------------------------------------- 
+Gutierrez Bolado, Juan Antonio 74 Alojados,SUB 1600,SUB 1800 OPEN B
+ --------------------------------------------------------------- 
+Valenzuela Garcia, Alberto 75 Alojados,Com.Valenciana,SUB 1600,SUB 1800 OPEN B
+ --------------------------------------------------------------- 
+Marin Giner, Gustavo 76 Com.Valenciana,SUB 1600,SUB 1800 OPEN B
+ --------------------------------------------------------------- 
+Verhoeven, Rudiger 77 Alojados,SUB 1600,SUB 1800 OPEN B
+ --------------------------------------------------------------- 
+Arcas Rodriguez, Jordi 78 Alojados,SUB 1600,SUB 1800 OPEN B
+ --------------------------------------------------------------- 
+Ruiz Garcia, Jose Luis II .. 79 Com.Valenciana,SUB 1600,SUB 1800 OPEN B
+ --------------------------------------------------------------- 
+Benitez Cadenas, Luis Miguel 80 Com.Valenciana,SUB 1600,SUB 1800 OPEN B
+ --------------------------------------------------------------- 
+Nardi, Hector 81 Alojados,Com.Valenciana,SUB 1600,SUB 1800 OPEN B
+ --------------------------------------------------------------- 
+Yanston, Kseniia 82 Com.Valenciana,SUB 1600,SUB 1800 OPEN B
+ --------------------------------------------------------------- 
+Embuena Molina, Miguel Angel 83 Alojados,Com.Valenciana,SUB 1600,SUB 1800 OPEN B
+ --------------------------------------------------------------- 
+Shi, Shaoquan 84 Alojados,SUB 1600,SUB 1800 OPEN B
+ --------------------------------------------------------------- 
+Munoz Gonzalez, Martin 85 Alojados,SUB 1600,SUB 1800 OPEN B
+ --------------------------------------------------------------- 
+Richter, Anastasia 86 SUB 1400,SUB 1600,SUB 1800 OPEN B
+ --------------------------------------------------------------- 
+Gonzalez Caceres, Lauren 87 Com.Valenciana,SUB 1400,SUB 1600,SUB 1800 OPEN B
+ --------------------------------------------------------------- 
+Shi, Shaoting .. 88 Alojados,SUB 1400,SUB 1600,SUB 1800 OPEN B
+ --------------------------------------------------------------- 
+Henning Lubberding, Hans 89 SUB 1400,SUB 1600,SUB 1800 OPEN B
+ --------------------------------------------------------------- 
+Algaze Obadia, Rodrigue 90 Com.Valenciana,SUB 1400,SUB 1600,SUB 1800 OPEN B
+ --------------------------------------------------------------- 
+Nguyen, Tri Khoi 91 Alojados,SUB 1400,SUB 1600,SUB 1800 OPEN B
+ --------------------------------------------------------------- 
+Morata Perez, Jose 92 Alojados,SUB 1400,SUB 1600,SUB 1800 OPEN B
+ --------------------------------------------------------------- 
+Hidalgo Mena, Manel 93 Com.Valenciana,SUB 1400,SUB 1600,SUB 1800 OPEN B
+ --------------------------------------------------------------- 
+Kristiansen, David 94 Alojados,SUB 1400,SUB 1600,SUB 1800 OPEN B
+ --------------------------------------------------------------- 
+Navarro Juan, Isaac 95 Alojados,Com.Valenciana,SUB 1400,SUB 1600,SUB 1800 OPEN B
+ --------------------------------------------------------------- 
+Bukharkov, Stepan  .. 96 SUB 1400,SUB 1600,SUB 1800 OPEN B
+ --------------------------------------------------------------- 
+Cervera Diaz, Aaron 97 Com.Valenciana,SUB 1400,SUB 1600,SUB 1800 OPEN B
+ --------------------------------------------------------------- 
+Carrascosa Grau, Eduard 98 Alojados,Com.Valenciana,SUB 1400,SUB 1600,SUB 1800 OPEN B
+ --------------------------------------------------------------- 
+Mulet Salva, Jeroni 99 Com.Valenciana,SUB 1400,SUB 1600,SUB 1800 OPEN B
+ --------------------------------------------------------------- 
+Krisha Tamhant Jain 100 Alojados,SUB 1400,SUB 1600,SUB 1800 OPEN B
+ --------------------------------------------------------------- 
+Ferrero Martinez, Daniel 101 Com.Valenciana,SUB 1400,SUB 1600,SUB 1800 OPEN B
+ --------------------------------------------------------------- 
+Alarcon Alarcon, Marina 102 Alojados,SUB 1400,SUB 1600,SUB 1800 OPEN B
+ --------------------------------------------------------------- 
+Mabras Lloret, Monserrat 103 Com.Valenciana,SUB 1400,SUB 1600,SUB 1800 OPEN B
+ --------------------------------------------------------------- 
+Mena Lena, Antonio 104 Alojados,SUB 1400,SUB 1600,SUB 1800 OPEN B
+ --------------------------------------------------------------- 
+Ulla Centelles, Llorens 105 Alojados,Com.Valenciana,SUB 1400,SUB 1600,SUB 1800 OPEN B
+ --------------------------------------------------------------- 
+Larsson, Susanne Wiggen 106 Alojados,SUB 1400,SUB 1600,SUB 1800 OPEN B
+ --------------------------------------------------------------- 
+Munoz Martinez, Francisco 107 Com.Valenciana,SUB 1400,SUB 1600,SUB 1800 OPEN B
+ --------------------------------------------------------------- 
+Galletero Monsalve, Juan Francis 108 Alojados,SUB 1400,SUB 1600,SUB 1800 OPEN B
+ --------------------------------------------------------------- 
+Razhnou, Lev 109 Alojados,SUB 1400,SUB 1600,SUB 1800 OPEN B
+ --------------------------------------------------------------- 
+Fossaas, Oskar Erland 110 Alojados,SUB 1400,SUB 1600,SUB 1800 OPEN B
+ --------------------------------------------------------------- 
+Guio Del Rio, José Antonio 111 Com.Valenciana,SUB 1400,SUB 1600,SUB 1800 OPEN B
+ --------------------------------------------------------------- 
+Razhnova, Aryna 112 Alojados,SUB 1400,SUB 1600,SUB 1800 OPEN B
+ --------------------------------------------------------------- 
+Risueno Banuls, Manuel 113 Com.Valenciana,SUB 1400,SUB 1600,SUB 1800 OPEN B
+ --------------------------------------------------------------- 
+Villar Ramos-Izquierdo, Maria Do 114 Alojados,Com.Valenciana,SUB 1400,SUB 1600,SUB 1800 OPEN B
+ --------------------------------------------------------------- 

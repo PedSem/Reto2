@@ -77,6 +77,8 @@ public class ControlOpenB implements Initializable {
     @FXML
     private TableColumn<Jugador,String>  torneo;
 
+    private ObservableList<Jugador> jugadores;
+
 
     @Override
     public void initialize(URL url, ResourceBundle rb) {
@@ -119,7 +121,7 @@ public class ControlOpenB implements Initializable {
     private void insertarJugador(javafx.event.ActionEvent actionEvent) {
 
         try {
-
+            jugadores = getJugador();
             // Cargo la vista
             FXMLLoader loader = new FXMLLoader(getClass().getResource("btnInsertarJugadorB.fxml"));
 
@@ -128,6 +130,7 @@ public class ControlOpenB implements Initializable {
 
             // Asigno el controlador
             ControlInsertarOpenB controlador = loader.getController();
+            controlador.initAtributtes(jugadores);
 
             // Creo el Scene
             Scene scene = new Scene(root);
@@ -142,6 +145,8 @@ public class ControlOpenB implements Initializable {
             stage.setScene(scene);
             stage.setTitle("Insertar Nuevo Jugador");
             stage.showAndWait();
+
+            cargar();
 
         } catch (IOException e) {
             Alert alert = new Alert(Alert.AlertType.ERROR);
@@ -184,9 +189,11 @@ public class ControlOpenB implements Initializable {
     @FXML
     void modificarJugador(ActionEvent event) {
 
-        /** La idea aquí es primero seleccionar un jugador en la TableView y después ya darle a modificar para hacer los cambios**/
+        /* La idea aquí es primero seleccionar un jugador en la TableView y después ya darle a modificar para hacer los cambios*/
+        Jugador j = this.tablaRanking.getSelectionModel().getSelectedItem();
 
         try {
+            jugadores = getJugador();
             // Cargo la vista
             FXMLLoader loader = new FXMLLoader(getClass().getResource("btnModificarJugadorB.fxml"));
 
@@ -195,6 +202,7 @@ public class ControlOpenB implements Initializable {
 
             // Asigno el controlador
             ControlModificarOpenB controlador = loader.getController();
+            controlador.initAtributtes(jugadores,j);
 
             // Creo el Scene
             Scene scene = new Scene(root);
@@ -210,6 +218,13 @@ public class ControlOpenB implements Initializable {
             stage.setTitle("Modificar Jugador");
             stage.showAndWait();
 
+            // Se asigna la persona devuelta
+            Jugador jSeleccionado = controlador.getJugador();
+
+            if (jSeleccionado != null) {
+                tablaRanking.refresh();
+            }
+
         } catch (IOException e) {
             Alert alert = new Alert(Alert.AlertType.ERROR);
             alert.setHeaderText(null);
@@ -217,6 +232,32 @@ public class ControlOpenB implements Initializable {
             alert.setContentText(e.getMessage());
             alert.showAndWait();
         }
+    }
+
+    @FXML
+    private void eliminar(ActionEvent event) throws SQLException {
+
+        Jugador j = this.tablaRanking.getSelectionModel().getSelectedItem();
+
+        Connection cnx = Conection.getConection();
+        Statement stm = cnx.createStatement();
+
+        PreparedStatement ps = cnx.prepareStatement("DELETE FROM jugador where NomTorneo = ?  and RangoInicial = ?");
+
+        ps.setString(1,j.getNomTorneo());
+        ps.setInt(2,j.getRangoInicial());
+
+        ps.execute();
+        ps.close();
+
+
+        Alert alert = new Alert(Alert.AlertType.INFORMATION);
+        alert.setHeaderText(null);
+        alert.setTitle("Informacion");
+        alert.setContentText("Se ha eliminado correctamente");
+        alert.showAndWait();
+
+        cargar();
     }
 
 

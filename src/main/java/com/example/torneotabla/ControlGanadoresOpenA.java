@@ -4,9 +4,8 @@ import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
-import javafx.scene.control.Button;
-import javafx.scene.control.CheckBox;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
+import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.stage.Stage;
 
 import java.net.URL;
@@ -15,35 +14,53 @@ import java.util.ResourceBundle;
 public class ControlGanadoresOpenA implements Initializable {
 
     @FXML
-    private TextField txtNombre;
+    private TableView<Jugador> tablaRanking;
+
     @FXML
-    private TextField txtFIDEID;
+    private TableColumn<Jugador,Integer> RankingFinal;
+
     @FXML
-    private TextField txtPais;
+    private TableColumn<Jugador,Integer> RankingInicial;
+
     @FXML
-    private CheckBox cbCV;
+    private TableColumn<Jugador,String>  nombre;
+
     @FXML
-    private CheckBox cbHotel;
+    private TableColumn<Jugador,Integer> elo;
+
+    @FXML
+    private TableColumn<Jugador,String>  torneo;
+
+    @FXML
+    private TableColumn<Jugador,String>  categoria;
+
+    @FXML
+    private TableColumn<Jugador,String>  puesto;
+
+    @FXML
+    private TableColumn<Jugador,String>  premio;
+
+    private ObservableList<Jugador> jugadores;
 
     private Jugador jugador;
 
-    private ObservableList<Jugador> jugadores;
-    @FXML
-    private Button btnGuardar;
-    @FXML
-    private Button btnSalir;
-
-
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-
+        this.tablaRanking.setItems(ControlOpenA.getJugador());
+        this.RankingFinal.setCellValueFactory(new PropertyValueFactory<>("RangoFinal"));
+        this.RankingInicial.setCellValueFactory(new PropertyValueFactory<>("RangoInicial"));
+        this.nombre.setCellValueFactory(new PropertyValueFactory<>("nombre"));
+        this.elo.setCellValueFactory(new PropertyValueFactory<>("ELO"));
+        this.torneo.setCellValueFactory(new PropertyValueFactory<>("NomTorneo"));
     }
+
+
 
     @FXML
     private void salir(ActionEvent event) {
         this.jugador = null;
         // Cerrar la ventana
-        Stage stage = (Stage) this.btnGuardar.getScene().getWindow();
+        Stage stage = (Stage) this.tablaRanking.getScene().getWindow();
         stage.close();
     }
 

@@ -1,7 +1,5 @@
 package com.example.torneotabla;
 
-import javafx.scene.control.TextField;
-
 public class Jugador {
     private int RangoInicial;
     private String FIDEID;
@@ -10,10 +8,10 @@ public class Jugador {
     private String Pais;
     private boolean CV;
     private boolean Hotel;
-    private int rangofinal;
+    private int RangoFinal;
     private String NomTorneo;
 
-    public Jugador(int rangoInicial, String FIDEID,String Nombre, int ELO, String pais, boolean CV, boolean hotel, int rangofinal, String nomTorneo) {
+    public Jugador(int rangoInicial, String FIDEID,String Nombre, int ELO, String pais, boolean CV, boolean hotel, int RangoFinal, String nomTorneo) {
         this.RangoInicial = rangoInicial;
         this.FIDEID = FIDEID;
         this.Nombre = Nombre;
@@ -21,7 +19,7 @@ public class Jugador {
         this.Pais = pais;
         this.CV = CV;
         this.Hotel = hotel;
-        this.rangofinal = rangofinal;
+        this.RangoFinal = RangoFinal;
         this.NomTorneo = nomTorneo;
     }
 
@@ -73,12 +71,12 @@ public class Jugador {
     public void setHotel(boolean Hotel) {
         this.Hotel = Hotel;
     }
-    public int getRangofinal() {
-        return rangofinal;
+    public int getRangoFinal() {
+        return RangoFinal;
 
     }
-    public void setRangofinal(int rangofinal) {
-        this.rangofinal = rangofinal;
+    public void setRangoFinal(int RangoFinal) {
+        this.RangoFinal = RangoFinal;
     }
     public String getNomTorneo() {
         return NomTorneo;
@@ -90,7 +88,7 @@ public class Jugador {
         if (o == null || getClass() != o.getClass()) return false;
 
         Jugador jugador = (Jugador) o;
-        return RangoInicial == jugador.RangoInicial && ELO == jugador.ELO && CV == jugador.CV && Hotel == jugador.Hotel && rangofinal == jugador.rangofinal && FIDEID.equals(jugador.FIDEID) && Pais.equals(jugador.Pais) && NomTorneo.equals(jugador.NomTorneo);
+        return RangoInicial == jugador.RangoInicial && ELO == jugador.ELO && CV == jugador.CV && Hotel == jugador.Hotel && RangoFinal == jugador.RangoFinal && FIDEID.equals(jugador.FIDEID) && Pais.equals(jugador.Pais) && NomTorneo.equals(jugador.NomTorneo);
     }
 
     @Override
@@ -101,7 +99,7 @@ public class Jugador {
         result=primo*result+((FIDEID==null)?0:FIDEID.hashCode());
         result=primo*result + ELO;
         result=primo*result + ((Pais==null)?0:Pais.hashCode());
-        result=primo*result + rangofinal;
+        result=primo*result + RangoFinal;
         result=primo*result + ((NomTorneo==null)?0:NomTorneo.hashCode());
         return result;
     }

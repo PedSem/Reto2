@@ -1,5 +1,7 @@
 package com.example.torneotabla;
 
+import javafx.beans.value.ChangeListener;
+import javafx.beans.value.ObservableValue;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
@@ -9,6 +11,7 @@ import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.stage.Stage;
 
+
 import java.io.FileWriter;
 import java.io.IOException;
 import java.net.URL;
@@ -16,6 +19,9 @@ import java.sql.*;
 import java.util.ResourceBundle;
 
 public class ControlJugadorOptaPremioOpenA implements Initializable {
+    ObservableList<String> optados = FXCollections.observableArrayList("","Alojado","CM","SUB2200","SUB2400");
+
+
     //Mirar
     @FXML
     private TableView<PremiosOptarJugador> tablaRanking;
@@ -31,8 +37,8 @@ public class ControlJugadorOptaPremioOpenA implements Initializable {
 
     @FXML
     private TableColumn<PremiosOptarJugador,String>  Torneo;
-
-
+    @FXML
+    private  ChoiceBox<String> choiceBox;
 
     private Jugador jugador;
 
@@ -41,7 +47,7 @@ public class ControlJugadorOptaPremioOpenA implements Initializable {
 
     public void imprimir (ActionEvent event) throws IOException {
         try {
-            writeToTextFile("JugadorOptaPremio.txt");
+            escribirOptaOpenA("JugadorOptaPremioA.txt");
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -49,6 +55,9 @@ public class ControlJugadorOptaPremioOpenA implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle rb) {
+        choiceBox.setItems(optados);
+        choiceBox.setValue("");
+
         ObservableList<PremiosOptarJugador> jugadoresPremiosOptan = getJugadorOptaPremio();
         this.tablaRanking.setItems(jugadoresPremiosOptan);
         this.RankingInicial.setCellValueFactory(new PropertyValueFactory<>("RangoInicial"));
@@ -56,8 +65,42 @@ public class ControlJugadorOptaPremioOpenA implements Initializable {
         this.tipo.setCellValueFactory(new PropertyValueFactory<>("tipo"));
         this.Torneo.setCellValueFactory(new PropertyValueFactory<>("Torneo"));
 
-        cargar();
+        choiceBox.getSelectionModel().selectedItemProperty().addListener(new ChangeListener<String>() {
+            @Override
+            public void changed(ObservableValue<? extends String> observableValue, String s, String t1) {
+                try {
+                    Connection cnx = Conection.getConection();
+                    Statement stm = cnx.createStatement();
+
+                    switch (choiceBox.getValue()){
+                        case "Alojado":
+                            ResultSet rsAlojados = stm.executeQuery("SELECT j.RangoInicial, j.Nombre, p.Tipo, p.NomTorneo FROM jugador j JOIN Premio p ON j.NomTorneo = p.NomTorneo WHERE (p.NomTorneo = 'OPEN A' AND j.NomTorneo = 'OPEN A') AND (j.Hotel = true AND p.Tipo = 'Alojados') GROUP BY p.Tipo, j.Nombre ORDER BY j.RangoInicial");
+                            cargarSwitch(rsAlojados);
+                            tablaRanking.refresh();
+                            break;
+                        case "CM":
+                            ResultSet rsCV = stm.executeQuery("SELECT j.RangoInicial, j.Nombre, p.Tipo, p.NomTorneo FROM jugador j JOIN Premio p ON j.NomTorneo = p.NomTorneo WHERE (p.NomTorneo = 'OPEN A' AND j.NomTorneo = 'OPEN A') AND (j.CV = true AND p.Tipo = 'Com.Valenciana') GROUP BY p.Tipo, j.Nombre ORDER BY j.RangoInicial;");
+                            cargarSwitch(rsCV);
+                            break;
+                        case "SUB2200":
+                            ResultSet rsSUB2200 = stm.executeQuery("SELECT j.RangoInicial, j.Nombre, p.Tipo, p.NomTorneo FROM jugador j JOIN Premio p ON j.NomTorneo = p.NomTorneo WHERE (p.NomTorneo = 'OPEN A' AND j.NomTorneo = 'OPEN A') AND (j.ELO < 2200 AND p.Tipo = 'SUB 2200') GROUP BY p.Tipo, j.Nombre ORDER BY j.RangoInicial;");
+                            cargarSwitch(rsSUB2200);
+                            break;
+                        case "SUB2400":
+                            ResultSet rsSUB2400 = stm.executeQuery("SELECT j.RangoInicial, j.Nombre, p.Tipo, p.NomTorneo FROM jugador j JOIN Premio p ON j.NomTorneo = p.NomTorneo WHERE (p.NomTorneo = 'OPEN A' AND j.NomTorneo = 'OPEN A') AND (j.ELO < 2400 AND p.Tipo = 'SUB 2400') GROUP BY p.Tipo, j.Nombre ORDER BY j.RangoInicial");
+                            cargarSwitch(rsSUB2400);
+                            break;
+                        case "":
+                            cargar();
+                            break;
+                    }
+                } catch (SQLException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+        });
     }
+
 
     public ObservableList<PremiosOptarJugador> getJugadorOptaPremio(){
         ObservableList<PremiosOptarJugador> obs = FXCollections.observableArrayList();
@@ -78,7 +121,7 @@ public class ControlJugadorOptaPremioOpenA implements Initializable {
                 obs.add(premiosOpta);
             }
 
-            ResultSet rsSUB2400 = stm.executeQuery("SELECT j.RangoInicial, j.Nombre, p.Tipo, p.NomTorneo FROM jugador j JOIN premio p ON j.NomTorneo = p.NomTorneo WHERE (p.NomTorneo = 'OPEN A' AND j.NomTorneo = 'OPEN A') AND (j.ELO < 2400 AND p.Tipo = 'SUB 2400') GROUP BY p.Tipo, j.Nombre ORDER BY j.RangoInicial");
+            ResultSet rsSUB2400 = stm.executeQuery("SELECT j.RangoInicial, j.Nombre, p.Tipo, p.NomTorneo FROM jugador j JOIN Premio p ON j.NomTorneo = p.NomTorneo WHERE (p.NomTorneo = 'OPEN A' AND j.NomTorneo = 'OPEN A') AND (j.ELO < 2400 AND p.Tipo = 'SUB 2400') GROUP BY p.Tipo, j.Nombre ORDER BY j.RangoInicial");
 
             while (rsSUB2400.next()) {
 
@@ -90,7 +133,7 @@ public class ControlJugadorOptaPremioOpenA implements Initializable {
                 obs.add(premiosOpta);
             }
 
-            ResultSet rsSUB2200 = stm.executeQuery("SELECT j.RangoInicial, j.Nombre, p.Tipo, p.NomTorneo FROM jugador j JOIN premio p ON j.NomTorneo = p.NomTorneo WHERE (p.NomTorneo = 'OPEN A' AND j.NomTorneo = 'OPEN A') AND (j.ELO < 2200 AND p.Tipo = 'SUB 2200') GROUP BY p.Tipo, j.Nombre ORDER BY j.RangoInicial;");
+            ResultSet rsSUB2200 = stm.executeQuery("SELECT j.RangoInicial, j.Nombre, p.Tipo, p.NomTorneo FROM jugador j JOIN Premio p ON j.NomTorneo = p.NomTorneo WHERE (p.NomTorneo = 'OPEN A' AND j.NomTorneo = 'OPEN A') AND (j.ELO < 2200 AND p.Tipo = 'SUB 2200') GROUP BY p.Tipo, j.Nombre ORDER BY j.RangoInicial;");
 
             while (rsSUB2200.next()) {
 
@@ -102,7 +145,7 @@ public class ControlJugadorOptaPremioOpenA implements Initializable {
                 obs.add(premiosOpta);
             }
 
-            ResultSet rsCV = stm.executeQuery("SELECT j.RangoInicial, j.Nombre, p.Tipo, p.NomTorneo FROM jugador j JOIN premio p ON j.NomTorneo = p.NomTorneo WHERE (p.NomTorneo = 'OPEN A' AND j.NomTorneo = 'OPEN A') AND (j.CV = true AND p.Tipo = 'Com.Valenciana') GROUP BY p.Tipo, j.Nombre ORDER BY j.RangoInicial;");
+            ResultSet rsCV = stm.executeQuery("SELECT j.RangoInicial, j.Nombre, p.Tipo, p.NomTorneo FROM jugador j JOIN Premio p ON j.NomTorneo = p.NomTorneo WHERE (p.NomTorneo = 'OPEN A' AND j.NomTorneo = 'OPEN A') AND (j.CV = true AND p.Tipo = 'Com.Valenciana') GROUP BY p.Tipo, j.Nombre ORDER BY j.RangoInicial;");
 
             while (rsCV.next()) {
                 int rinicial = rsCV.getInt("RangoInicial");
@@ -135,20 +178,20 @@ public class ControlJugadorOptaPremioOpenA implements Initializable {
 
 
         } catch (SQLException e) {
-            e.printStackTrace();
+            System.out.println("Finalizado carga jugador opta premios");
         }
 
 
         return obs;
     }
 
-    private static void writeToTextFile(String filename) throws IOException {
+    private static void escribirOptaOpenA(String filename) throws IOException {
         //select jugador.nombre,jugadoroptapremio.RangoInicial,group_concat(distinct Tipo) as Tipo , jugadoroptapremio.NomTorneo from jugadoroptapremio join jugador on jugador.RangoInicial = jugadoroptapremio.RangoInicial group by jugadoroptapremio.RangoInicial;
         try {
             Connection cnx = Conection.getConection();
             Statement stm = cnx.createStatement();
             FileWriter writer = new FileWriter(filename);
-            ResultSet wJOPA = stm.executeQuery("select jugador.nombre,jugadoroptapremio.RangoInicial,group_concat(distinct Tipo) as Tipo , jugadoroptapremio.NomTorneo from jugadoroptapremio join jugador on jugador.RangoInicial = jugadoroptapremio.RangoInicial group by jugadoroptapremio.RangoInicial");
+            ResultSet wJOPA = stm.executeQuery("select jugador.nombre,jugadoroptapremio.RangoInicial,group_concat(distinct Tipo) as Tipo , jugadoroptapremio.NomTorneo from jugadoroptapremio join jugador on jugador.RangoInicial = jugadoroptapremio.RangoInicial WHERE jugadoroptapremio.NomTorneo = 'OPEN A' group by jugadoroptapremio.RangoInicial");
 
             writer.write("BENIDORM CHESS OPEN A\n");
             writer.write(".-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-. \n");
@@ -175,35 +218,30 @@ public class ControlJugadorOptaPremioOpenA implements Initializable {
         this.nombre.setCellValueFactory(new PropertyValueFactory<>("nombre"));
         this.tipo.setCellValueFactory(new PropertyValueFactory<>("tipo"));
         this.Torneo.setCellValueFactory(new PropertyValueFactory<>("Torneo"));
-
     }
 
-    /*
-    public ControlJugadorOptaPremioOpenA(TableView<Premios> tablaJugadores) {
-        this.tablaRanking = tablaJugadores;
+    public void cargarSwitch(ResultSet a){
+        try {
+            ObservableList<PremiosOptarJugador> obc = FXCollections.observableArrayList();
+        while (a.next()) {
+
+            int rinicial = a.getInt("RangoInicial");
+            String nom = a.getString("Nombre");
+            String tipo = a.getString("Tipo");
+            String nomtorneo = a.getString("NomTorneo");
+            PremiosOptarJugador premiosOpta = new PremiosOptarJugador(rinicial, nom, tipo, nomtorneo);
+            obc.add(premiosOpta);
+        }
+
+        this.tablaRanking.setItems(obc);
+        this.RankingInicial.setCellValueFactory(new PropertyValueFactory<>("RangoInicial"));
+        this.nombre.setCellValueFactory(new PropertyValueFactory<>("nombre"));
+        this.tipo.setCellValueFactory(new PropertyValueFactory<>("tipo"));
+        this.Torneo.setCellValueFactory(new PropertyValueFactory<>("Torneo"));
+        }catch (SQLException e){
+            e.printStackTrace();
+        }
     }
-
-
-
-
-    public void initAtributtes(ObservableList<Premios> premios) {
-    this.tablaRanking.setItems(premios);
-    }
-    */
-
-    //Mirar
-
-    /*
-    public void initAtributtes(ObservableList<Jugador> premios) {
-        this.tablaJugadores = premios;
-    }
-    */
-
-    /*
-    public ObservableList<Premios> obtenerDatosDeTabla() {
-        return tablaJugadores.getItems();
-    }
-     */
 
     @FXML
     private void salir(ActionEvent event) {
