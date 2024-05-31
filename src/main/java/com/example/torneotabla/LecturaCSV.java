@@ -77,11 +77,12 @@ public class LecturaCSV {
             while ((line = br.readLine()) != null){
                 String[] data = line.split(";");
                 if (cont >= 5) {
-                    PreparedStatement ps = cnx.prepareStatement("update jugador set RangoFinal = ? where RangoInicial = ? and NomTorneo = 'OPEN A'");
+                    PreparedStatement ps = cnx.prepareStatement("update jugador set RangoFinal = ? where RangoInicial = ? and NomTorneo = ?");
                     int rfinal = Integer.parseInt(data[0]);
                     int rinicial = Integer.parseInt(data[1]);
                     ps.setInt(1, rfinal);
                     ps.setInt(2, rinicial);
+                    ps.setString(3, torneo);
                     ps.executeUpdate();
                     ps.close();
                 }else cont++;

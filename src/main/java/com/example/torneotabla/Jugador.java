@@ -10,6 +10,9 @@ public class Jugador {
     private boolean Hotel;
     private int RangoFinal;
     private String NomTorneo;
+    private int premio;
+    private int puesto;
+    private String categoria;
 
     public Jugador(int rangoInicial, String FIDEID,String Nombre, int ELO, String pais, boolean CV, boolean hotel, int RangoFinal, String nomTorneo) {
         this.RangoInicial = rangoInicial;
@@ -25,6 +28,17 @@ public class Jugador {
 
 
     public Jugador(String nombre, String fIDEID, String pais, Boolean cv, Boolean hotel) {
+    }
+
+    public Jugador(int rangoInicial, int rangoFinal, String nombre, int ELO, String nomTorneo, String categoria, int puesto, int premio) {
+        RangoInicial = rangoInicial;
+        RangoFinal = rangoFinal;
+        Nombre = nombre;
+        this.ELO = ELO;
+        NomTorneo = nomTorneo;
+        this.categoria = categoria;
+        this.puesto = puesto;
+        this.premio = premio;
     }
 
     public int getRangoInicial() {
@@ -80,6 +94,30 @@ public class Jugador {
     }
     public String getNomTorneo() {
         return NomTorneo;
+    }
+
+    public int getPremio() {
+        return premio;
+    }
+
+    public void setPremio(int premio) {
+        this.premio = premio;
+    }
+
+    public int getPuesto() {
+        return puesto;
+    }
+
+    public void setPuesto(int puesto) {
+        this.puesto = puesto;
+    }
+
+    public String getCategoria() {
+        return categoria;
+    }
+
+    public void setCategoria(String categoria) {
+        this.categoria = categoria;
     }
 
     @Override
