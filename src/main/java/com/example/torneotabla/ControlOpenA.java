@@ -357,7 +357,7 @@ public class ControlOpenA implements Initializable {
 
             stage.initModality(Modality.APPLICATION_MODAL);
             stage.setScene(scene);
-            stage.setTitle("Lista de jugadores y premios a los que optan");
+            stage.setTitle("Lista de ganadores OPEN A");
             stage.showAndWait();
 
 

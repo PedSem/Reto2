@@ -78,7 +78,7 @@ public class ControlGanadoresOpenB implements Initializable {
         try {
             cnx = Conection.getConection();
             Statement stm = cnx.createStatement();
-            ResultSet rs = stm.executeQuery("SELECT jugador.RangoInicial,Jugador.Nombre,Jugador.ELO,Jugador.RangoFinal,Jugador.NomTorneo,Premio.Tipo,Premio.Puesto,Premio.Cantidad FROM jugador join premio on jugador.RangoInicial=Premio.RangoInicial where jugador.NomTorneo = 'OPEN B' and Premio.NomTorneo = 'OPEN B' order by Premio.RangoInicial");
+            ResultSet rs = stm.executeQuery("SELECT jugador.RangoInicial,jugador.Nombre,jugador.ELO,jugador.RangoFinal,jugador.NomTorneo,Premio.Tipo,Premio.Puesto,Premio.Cantidad FROM jugador join Premio on jugador.RangoInicial=Premio.RangoInicial where jugador.NomTorneo = 'OPEN B' and Premio.NomTorneo = 'OPEN B' order by Premio.RangoInicial");
             while (rs.next()) {
                 int rinicial = rs.getInt("RangoInicial");
                 String nom = rs.getString("Nombre");

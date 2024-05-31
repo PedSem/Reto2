@@ -63,6 +63,7 @@ public class ControlGanadoresOpenA implements Initializable {
         this.Puesto.setCellValueFactory(new PropertyValueFactory<>("Puesto"));
         this.Premio.setCellValueFactory(new PropertyValueFactory<>("Premio"));
 
+
         try {
             escribirGanadores("GanadoresOpenA");
         } catch (IOException e) {
@@ -76,7 +77,7 @@ public class ControlGanadoresOpenA implements Initializable {
         try {
             cnx = Conection.getConection();
             Statement stm = cnx.createStatement();
-            ResultSet rs = stm.executeQuery("SELECT jugador.RangoInicial,Jugador.Nombre,Jugador.ELO,Jugador.RangoFinal,Jugador.NomTorneo,Premio.Tipo,Premio.Puesto,Premio.Cantidad FROM jugador join premio on jugador.RangoInicial=Premio.RangoInicial where jugador.NomTorneo = 'OPEN A' and Premio.NomTorneo = 'OPEN A' order by Premio.RangoInicial");
+            ResultSet rs = stm.executeQuery("SELECT jugador.RangoInicial,jugador.Nombre,jugador.ELO,jugador.RangoFinal,jugador.NomTorneo,Premio.Tipo,Premio.Puesto,Premio.Cantidad FROM jugador join Premio on jugador.RangoInicial=Premio.RangoInicial where jugador.NomTorneo = 'OPEN A' and Premio.NomTorneo = 'OPEN A' order by Premio.RangoInicial");
             while (rs.next()) {
                 int rinicial = rs.getInt("RangoInicial");
                 String nom = rs.getString("Nombre");
@@ -145,7 +146,7 @@ public class ControlGanadoresOpenA implements Initializable {
                 puesto = 0;
                 categoria = "";
 
-                PreparedStatement psG = cnx.prepareStatement("select Tipo,Puesto,Cantidad from Premio where (NomTorneo = 'OPEN A' and RangoInicial is null) and Tipo = 'General' order by puesto asc limit 1");
+                PreparedStatement psG = cnx.prepareStatement("select Tipo,Puesto,Cantidad from Premio where (NomTorneo = 'OPEN A' and RangoInicial is null) and Tipo = 'General' order by Puesto asc limit 1");
                 psG.execute();
                 ResultSet rsG = psG.executeQuery();
                 try {
@@ -161,7 +162,7 @@ public class ControlGanadoresOpenA implements Initializable {
                 for (String s : categorias) {
                     switch (s) {
                         case "SUB 2400":
-                            PreparedStatement psS24 = cnx.prepareStatement("select Tipo,Puesto,Cantidad from Premio where (NomTorneo = 'OPEN A' and RangoInicial is null) and Tipo = 'SUB 2400' order by puesto asc limit 1");
+                            PreparedStatement psS24 = cnx.prepareStatement("select Tipo,Puesto,Cantidad from Premio where (NomTorneo = 'OPEN A' and RangoInicial is null) and Tipo = 'SUB 2400' order by Puesto asc limit 1");
                             psS24.execute();
                             ResultSet rsS24 = psS24.executeQuery();
                             try {
@@ -177,7 +178,7 @@ public class ControlGanadoresOpenA implements Initializable {
                             psS24.close();
                             break;
                         case "SUB 2200":
-                            PreparedStatement psS22 = cnx.prepareStatement("select Tipo,Puesto,Cantidad from Premio where (NomTorneo = 'OPEN A' and RangoInicial is null) and Tipo = 'SUB 2200' order by puesto asc limit 1");
+                            PreparedStatement psS22 = cnx.prepareStatement("select Tipo,Puesto,Cantidad from Premio where (NomTorneo = 'OPEN A' and RangoInicial is null) and Tipo = 'SUB 2200' order by Puesto asc limit 1");
                             psS22.execute();
                             ResultSet rsS22 = psS22.executeQuery();
                             try{
@@ -193,7 +194,7 @@ public class ControlGanadoresOpenA implements Initializable {
                             psS22.close();
                             break;
                         case "Com.Valenciana":
-                            PreparedStatement psCV = cnx.prepareStatement("select Tipo,Puesto,Cantidad from Premio where (NomTorneo = 'OPEN A' and RangoInicial is null) and Tipo = 'Com.Valenciana' order by puesto asc limit 1");
+                            PreparedStatement psCV = cnx.prepareStatement("select Tipo,Puesto,Cantidad from Premio where (NomTorneo = 'OPEN A' and RangoInicial is null) and Tipo = 'Com.Valenciana' order by Puesto asc limit 1");
                             psCV.execute();
                             ResultSet rsCV = psCV.executeQuery();
                             try {
@@ -209,7 +210,7 @@ public class ControlGanadoresOpenA implements Initializable {
                             psCV.close();
                             break;
                         case "Alojados":
-                            PreparedStatement psA = cnx.prepareStatement("select Tipo,Puesto,Cantidad from Premio where (NomTorneo = 'OPEN A' and RangoInicial is null) and Tipo = 'Alojados' order by puesto asc limit 1");
+                            PreparedStatement psA = cnx.prepareStatement("select Tipo,Puesto,Cantidad from Premio where (NomTorneo = 'OPEN A' and RangoInicial is null) and Tipo = 'Alojados' order by Puesto asc limit 1");
                             psA.execute();
                             ResultSet rsA = psA.executeQuery();
                             try {
@@ -226,7 +227,7 @@ public class ControlGanadoresOpenA implements Initializable {
                             break;
                     }
                 }
-                PreparedStatement psP = cnx.prepareStatement("update Premio set RangoInicial = ( select RangoInicial from jugador where RangoFinal = ? and NomTorneo = 'OPEN A') where (Tipo = ? and puesto = ?) and NomTorneo = 'OPEN A'");
+                PreparedStatement psP = cnx.prepareStatement("update Premio set RangoInicial = ( select RangoInicial from jugador where RangoFinal = ? and NomTorneo = 'OPEN A') where (Tipo = ? and Puesto = ?) and NomTorneo = 'OPEN A'");
                 psP.setInt(1,i);
                 psP.setString(2,categoria);
                 psP.setInt(3,puesto);
